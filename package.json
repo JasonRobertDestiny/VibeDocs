@@ -6,7 +6,11 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "docker:build": "docker build -t vibedoc .",
+    "docker:run": "docker run -p 3000:3000 vibedoc",
+    "deploy:vercel": "vercel --prod",
+    "type-check": "tsc --noEmit"
   },
   "dependencies": {
     "@radix-ui/react-label": "^2.1.7",
