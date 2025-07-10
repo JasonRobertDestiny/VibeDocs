@@ -1,3 +1,22 @@
+---
+title: VibeDoc - AI驱动的开发计划生成器
+emoji: 🚀
+colorFrom: blue
+colorTo: purple
+sdk: docker
+app_port: 3000
+pinned: true
+license: mit
+tags:
+  - AI
+  - MCP Server
+  - Development Planning
+  - Next.js
+  - TypeScript
+  - Silicon Flow
+short_description: 基于AI的智能开发计划生成工具，参赛魔搭AI Hackathon 2025 MCP Server开发赛道
+---
+
 # VibeDoc - AI驱动的开发计划生成器
 
 > 🏆 **参赛项目** - 魔搭AI Hackathon 2025 - 赛道一：MCP Server开发赛道
@@ -190,6 +209,36 @@ VibeDocs/
 2. 配置模型服务
 3. 设置环境变量
 4. 部署到魔塔平台
+
+## 🌟 魔塔平台部署
+
+本项目已针对魔塔平台进行优化配置：
+
+### 部署配置
+- **SDK**: Docker
+- **端口**: 3000
+- **框架**: Next.js 15
+- **运行环境**: Node.js 18
+
+### 环境变量
+在魔塔平台的环境变量配置中添加：
+```
+SILICONFLOW_API_KEY=your_silicon_flow_api_key_here
+NODE_ENV=production
+```
+
+### 自动部署
+1. 从GitHub导入项目：`https://github.com/JasonRobertDestiny/VibeDocs.git`
+2. 选择Docker SDK
+3. 配置环境变量
+4. 启动部署
+
+### 验证部署
+- 访问应用主页确认界面正常
+- 测试AI生成功能是否工作正常
+- 检查API接口响应
+
+---
 
 ## 🏆 赛道亮点
 
