@@ -1,5 +1,5 @@
 # 使用官方Node.js镜像
-FROM node:18-alpine AS base
+FROM node:20-alpine AS base
 
 # 设置工作目录
 WORKDIR /app
@@ -7,8 +7,8 @@ WORKDIR /app
 # 复制package.json和package-lock.json
 COPY package*.json ./
 
-# 安装依赖
-RUN npm ci --only=production
+# 安装所有依赖（包括开发依赖，因为需要构建）
+RUN npm ci
 
 # 复制应用代码
 COPY . .
