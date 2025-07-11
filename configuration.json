@@ -1,5 +1,0 @@
-{
-    "framework": "gradio",
-    "tasks": ["auto-planning", "document-generation"],
-    "license": "Apache-2.0"
-}
