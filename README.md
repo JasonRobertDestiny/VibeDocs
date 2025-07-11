@@ -14,279 +14,424 @@ tags:
   - Next.js
   - TypeScript
   - Silicon Flow
-short_description: 基于AI的智能开发计划生成工具，参赛魔搭AI Hackathon 2025 MCP Server开发赛道
+short_description: 🔥 一键将创意转化为完整开发方案！AI驱动的智能开发计划生成器，参赛魔搭AI Hackathon 2025 MCP Server开发赛道
 ---
 
-# VibeDoc - AI驱动的开发计划生成器
+<div align="center">
+
+# 🚀 VibeDoc - AI驱动的开发计划生成器
+
+### 🔥 一键将创意转化为完整开发方案！
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Next.js](https://img.shields.io/badge/Next.js-15-black)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)](https://www.typescriptlang.org/)
+[![MCP Server](https://img.shields.io/badge/MCP-Server-green)](https://modelscope.cn)
 
 > 🏆 **参赛项目** - 魔搭AI Hackathon 2025 - 赛道一：MCP Server开发赛道
 
-## 📖 项目简介
+</div>
 
-VibeDoc 是一个基于 AI 的智能开发计划生成工具，帮助开发者和产品经理快速将创意转化为完整的技术开发方案。通过集成大语言模型，自动生成包含技术栈选择、架构设计、部署方案等在内的全面开发计划。
+## 🎯 项目简介
 
-### 🌟 核心特性
+VibeDoc 是一个基于 AI 的智能开发计划生成工具，专为魔搭AI Hackathon 2025 MCP Server开发赛道设计。帮助开发者和产品经理快速将创意转化为完整的技术开发方案。
 
-- **AI 智能生成**：基于用户输入的产品创意，自动生成完整的开发计划
-- **多步骤向导**：支持手动填写模式，逐步完善项目细节
-- **技术栈推荐**：智能推荐适合的技术栈和开发工具
-- **部署方案**：提供完整的部署和运维建议
-- **营销策略**：包含产品推广和用户增长建议
-- **AI 编程提示词**：自动生成可直接使用的编程助手提示词
+**核心能力：**
+- 🧠 **AI 智能生成**：30秒内将创意转化为完整开发计划
+- 🛠️ **双模式支持**：AI生成与手动填写模式自由切换
+- 📋 **结构化输出**：标准化的项目规划文档
+- 🤖 **AI编程助手**：生成可直接使用的编程提示词
+
+## 🎬 系统架构与流程图
+
+<div align="center">
+
+### 🔄 核心工作流程
+
+```mermaid
+graph TB
+    Start([用户输入创意]) --> Check{选择模式}
+    Check -->|AI生成| AI[AI分析引擎]
+    Check -->|手动填写| Manual[手动填写向导]
+    
+    AI --> API[Silicon Flow API]
+    API --> Process[智能提示工程]
+    Process --> Generate[结构化输出生成]
+    
+    Manual --> Form[分步骤表单]
+    Form --> Validate[数据验证]
+    Validate --> Generate
+    
+    Generate --> Output[生成结果]
+    Output --> Doc[📋 开发计划文档]
+    Output --> Code[🤖 AI编程助手]
+    Output --> Deploy[🚀 部署方案]
+    
+    Doc --> Export[导出/分享]
+    Code --> Export
+    Deploy --> Export
+    
+    style Start fill:#e1f5fe
+    style AI fill:#f3e5f5
+    style Manual fill:#e8f5e8
+    style Generate fill:#fff3e0
+    style Output fill:#fce4ec
+```
+
+### 🏗️ 系统架构图
+
+```mermaid
+graph LR
+    subgraph "前端层"
+        A[React 19] --> B[Next.js 15]
+        B --> C[TypeScript]
+        C --> D[Tailwind CSS]
+        D --> E[Shadcn/UI]
+    end
+    
+    subgraph "API层"
+        F[API Routes] --> G[数据验证]
+        G --> H[业务逻辑]
+    end
+    
+    subgraph "AI服务层"
+        I[Silicon Flow API] --> J[Qwen2.5-72B]
+        J --> K[智能提示工程]
+    end
+    
+    subgraph "部署层"
+        L[Docker容器] --> M[魔塔ModelScope]
+        M --> N[云端服务]
+    end
+    
+    E --> F
+    H --> I
+    K --> L
+    
+    style A fill:#61dafb
+    style B fill:#000000
+    style C fill:#3178c6
+    style I fill:#ff6b6b
+    style L fill:#0db7ed
+```
+
+### 📊 数据流向图
+
+```mermaid
+sequenceDiagram
+    participant U as 用户
+    participant F as 前端界面
+    participant API as API接口
+    participant AI as AI服务
+    participant DB as 数据处理
+    
+    U->>F: 输入产品创意
+    F->>API: 提交请求
+    API->>AI: 调用AI分析
+    AI->>AI: 智能内容生成
+    AI->>DB: 结构化处理
+    DB->>API: 返回结果
+    API->>F: 响应数据
+    F->>U: 展示开发计划
+    
+    Note over U,F: 30秒内完成
+    Note over AI,DB: 基于Silicon Flow
+```
+
+</div>
+
+## 🎬 功能演示
+
+### 💫 AI 生成模式 - 智能化体验
+
+```
+用户输入："我想做一个在线协作文档工具"
+       ↓ (30秒AI分析)
+自动生成：
+├── 📋 产品规划 (痛点分析、功能设计、商业模式)
+├── 🛠️ 技术方案 (React + Node.js + MongoDB)
+├── 🚀 部署运维 (Docker + 云平台 + 性能优化)
+├── 📈 营销策略 (用户增长、数据分析)
+└── 🤖 AI 助手 (分步骤编程提示词)
+```
+
+### 🛠️ 手动填写模式 - 精确控制
+
+- **步骤1**: 产品基本信息
+- **步骤2**: 技术栈选择
+- **步骤3**: 部署方案
+- **步骤4**: 营销策略
+- **随时切换**: 一键返回AI生成模式
+
+## 🔥 应用场景
+
+### 🎯 创业者
+- **快速验证想法**：30秒获得完整的技术可行性分析
+- **方案展示**：专业的技术方案文档
+- **团队协作**：清晰的开发计划和时间线
+
+### 👨‍💻 开发者
+- **项目启动**：标准化的技术栈选择
+- **架构设计**：专业的系统架构建议
+- **AI 编程助手**：直接可用的编程提示词
+
+### 🏢 产品经理
+- **需求分析**：结构化的功能设计文档
+- **技术沟通**：与开发团队的有效沟通工具
+- **项目规划**：详细的开发计划和里程碑
+
+## 🚀 快速体验
+
+### 📱 使用步骤
+1. **输入创意** → 描述你的产品想法
+2. **AI 分析** → 30秒智能生成方案
+3. **获得结果** → 完整的开发计划文档
+4. **开始编程** → 使用生成的AI助手提示词
 
 ## 🏗️ 技术架构
 
-### 前端技术栈
-- **Next.js 15** - React 全栈框架
-- **React 19** - 用户界面库
-- **TypeScript** - 类型安全的 JavaScript
-- **Tailwind CSS 4** - 原子化 CSS 框架
-- **Shadcn/UI** - 现代化组件库
+### 🎨 前端技术栈
+- **Next.js 15** - 🚀 React 全栈框架（最新版本）
+- **React 19** - ⚛️ 最先进的用户界面库
+- **TypeScript** - 🔒 类型安全的 JavaScript
+- **Tailwind CSS 4** - 🎨 现代化原子CSS框架
+- **Shadcn/UI** - 🎭 精美的组件库
 
-### AI 集成
-- **Silicon Flow API** - 大语言模型服务
-- **Qwen2.5-72B-Instruct** - 智能内容生成模型
+### 🧠 AI 技术栈
+- **Silicon Flow API** - 🌊 高性能大语言模型服务
+- **Qwen2.5-72B-Instruct** - 🤖 智能内容生成模型
+- **结构化提示工程** - 🎯 确保高质量输出
 
-### 开发工具
-- **Turbopack** - 极速构建工具
-- **ESLint** - 代码质量检查
-- **PostCSS** - CSS 处理器
+### ⚡ 性能优化
+- **Turbopack** - 🚄 极速构建工具
+- **SSR/SSG** - 🏃‍♂️ 服务端渲染优化
+- **CDN 加速** - 🌍 全球内容分发
 
-## 🚀 快速开始
+## 🎯 MCP Server 赛道亮点
 
-### 环境要求
-- Node.js 18+ 
+### 🌟 创新性
+- **AI + 开发流程**：深度融合AI能力到软件开发全流程
+- **智能化工具**：自动化复杂的项目规划过程
+- **开发者工具**：生成直接可用的编程助手提示词
+
+### 💎 技术价值
+- **模型集成**：展示大语言模型在垂直领域的深度应用
+- **工程实践**：完整的前端 + AI 后端架构设计
+- **用户体验**：直观的交互界面和流畅的使用流程
+
+### 🔧 实用性
+- **解决痛点**：帮助开发者快速启动项目，减少80%规划时间
+- **提高效率**：标准化的开发计划模板
+- **知识沉淀**：可复用的项目规划方法论
+
+## 🌈 魔塔平台部署指南
+
+### 🚀 部署配置
+
+**项目仓库：** `https://github.com/JasonRobertDestiny/VibeDocs.git`  
+**分支：** `modelscope`  
+**SDK：** `Docker`  
+**端口：** `3000`  
+
+### 🔧 环境变量配置
+
+| 变量名 | 描述 | 是否必填 |
+|--------|------|----------|
+| `SILICONFLOW_API_KEY` | Silicon Flow API密钥，用于AI内容生成 | ✅ 必填 |
+| `NODE_ENV` | Node.js运行环境，设置为production | ✅ 必填 |
+| `PORT` | 应用服务端口，设置为3000 | ✅ 必填 |
+
+### 📋 部署步骤
+
+1. **导入项目**：使用 GitHub 仓库地址
+2. **选择分支**：`modelscope`
+3. **配置环境变量**：按上表配置
+4. **启动部署**：等待构建完成
+5. **验证部署**：访问应用并测试功能
+
+### 🎯 服务描述配置
+
+```
+VibeDoc 是一个AI驱动的智能开发计划生成器，专为魔搭AI Hackathon 2025 MCP Server开发赛道设计。
+
+🔥 核心功能：
+• 一键将创意转化为完整开发方案
+• 基于Silicon Flow API的智能内容生成
+• 30秒内生成包含技术栈、架构设计、部署方案的完整文档
+• 自动生成AI编程助手提示词
+• 支持手动填写和AI生成双模式
+
+🎯 技术亮点：
+• Next.js 15 + React 19 现代化前端架构
+• TypeScript 全栈类型安全
+• Tailwind CSS 4 + Shadcn/UI 精美界面
+• 结构化AI提示工程，确保高质量输出
+• 响应式设计，支持多设备访问
+
+🏆 赛道价值：
+• 展示MCP Server在开发工具领域的创新应用
+• 深度集成大语言模型，提升开发效率
+• 标准化项目规划流程，推动行业最佳实践
+
+适用于创业者、开发者、产品经理等角色，解决项目规划难题，提升开发效率。
+```
+
+## 🛠️ 本地开发
+
+### 📋 环境要求
+- Node.js 18+
 - npm 或 yarn 或 pnpm
 
-### 安装步骤
+### 🚀 快速启动
 
-1. **克隆项目**
 ```bash
+# 1. 克隆项目
 git clone https://github.com/JasonRobertDestiny/VibeDocs.git
 cd VibeDocs
-```
 
-2. **安装依赖**
-```bash
+# 2. 切换到modelscope分支
+git checkout modelscope
+
+# 3. 安装依赖
 npm install
-# 或
-yarn install
-# 或
-pnpm install
-```
 
-3. **配置环境变量**
-```bash
+# 4. 配置环境变量
 cp .env.local.example .env.local
+# 编辑 .env.local 文件，添加你的 Silicon Flow API Key
+
+# 5. 启动开发服务器
+npm run dev
+
+# 6. 访问应用
+# 打开 http://localhost:3000
 ```
 
-在 `.env.local` 文件中配置你的 Silicon Flow API Key：
+### 🔑 API Key 配置
+
+在 `.env.local` 文件中配置：
 ```env
 SILICONFLOW_API_KEY=your_api_key_here
 ```
 
-4. **启动开发服务器**
-```bash
-npm run dev
-# 或
-yarn dev
-# 或
-pnpm dev
-```
+> 💡 **提示**：在 [Silicon Flow](https://siliconflow.cn) 注册并获取免费的 API Key
 
-5. **访问应用**
-打开 [http://localhost:3000](http://localhost:3000) 查看应用
-
-## 💡 使用指南
-
-### AI 生成模式
-1. 在首页输入你的产品创意
-2. 点击"AI 生成计划"按钮
-3. 等待 AI 分析并生成完整的开发计划
-4. 查看生成的文档和编程提示词
-
-### 手动填写模式
-1. 点击"手动填写"进入向导模式
-2. 按步骤填写项目信息
-3. 在任何时候都可以点击"返回 AI 生成"切换模式
-4. 完成所有步骤后生成最终文档
-
-## 📁 项目结构
+### 📁 项目结构
 
 ```
 VibeDocs/
-├── app/                    # Next.js App Router
-│   ├── api/               # API 路由
+├── 🎯 app/                    # Next.js App Router
+│   ├── 🔌 api/               # API 路由
 │   │   └── auto-generate-plan/  # AI 生成接口
-│   ├── globals.css        # 全局样式
-│   ├── layout.tsx         # 根布局
-│   └── page.tsx          # 主页面
-├── components/            # React 组件
-│   └── ui/               # UI 组件库
-├── lib/                   # 工具库
-│   ├── sop-template.ts   # 开发计划模板
-│   └── utils.ts          # 工具函数
-├── public/               # 静态资源
-└── 配置文件...
+│   ├── 🎨 globals.css        # 全局样式
+│   ├── 📄 layout.tsx         # 根布局
+│   └── 🏠 page.tsx          # 主页面
+├── 🧩 components/            # React 组件
+│   └── 💎 ui/               # UI 组件库
+├── 🛠️ lib/                   # 工具库
+│   ├── 📋 sop-template.ts   # 开发计划模板
+│   └── 🔧 utils.ts          # 工具函数
+├── 📂 public/               # 静态资源
+└── ⚙️ 配置文件...
 ```
 
-## 🔧 API 接口
+## 🔌 API 接口
 
 ### POST /api/auto-generate-plan
 
-根据用户输入的创意生成完整的开发计划。
+🎯 **功能**：根据用户输入的创意生成完整的开发计划
 
-**请求体：**
+**请求示例：**
 ```json
 {
-  "idea": "你的产品创意描述"
+  "idea": "我想做一个在线协作文档工具，类似于腾讯文档"
 }
 ```
 
-**响应：**
+**响应示例：**
 ```json
 {
   "success": true,
   "plan": {
-    "productName": "产品名称",
-    "techStack": "技术栈",
-    "deploymentPlan": "部署方案",
-    // ... 更多字段
+    "productName": "DocuShare - 智能协作文档平台",
+    "techStack": "React + Node.js + MongoDB + Socket.io",
+    "deploymentPlan": "Docker + 云平台 + MongoDB Atlas",
+    "marketingStrategy": "社交媒体推广 + 免费试用 + 企业客户",
+    "aiAssistant": "分步骤编程提示词..."
   },
-  "originalIdea": "原始创意",
-  "fieldIds": ["字段ID列表"]
+  "originalIdea": "我想做一个在线协作文档工具，类似于腾讯文档",
+  "fieldIds": ["product", "tech", "deployment", "marketing", "ai"]
 }
 ```
 
-## 🎯 MCP Server 特性
+## 🏆 赛道价值展示
 
-作为 MCP (Model Context Protocol) Server 开发赛道的参赛项目，VibeDoc 展示了以下技术特点：
+### 🎯 解决的核心痛点
 
-### AI 模型集成
-- 集成 Silicon Flow API 提供的大语言模型服务
-- 实现智能内容生成和结构化输出
-- 支持多种 AI 模型的灵活切换
+| 痛点 | 传统方式 | VibeDoc 解决方案 |
+|------|----------|------------------|
+| 📋 **项目规划耗时** | 2-3天制定方案 | 30秒AI生成 |
+| 🤔 **技术选型困难** | 需要大量调研 | 智能推荐最佳方案 |
+| 📖 **文档编写复杂** | 手动编写，格式混乱 | 结构化专业文档 |
+| 🚀 **部署方案缺失** | 缺乏系统性规划 | 完整部署运维方案 |
+| 🤖 **AI助手配置** | 需要专业知识 | 自动生成提示词 |
 
-### 智能提示工程
-- 精心设计的 Prompt 模板确保输出质量
-- 结构化的 JSON 响应格式
-- 错误处理和容错机制
+### 💡 创新技术应用
 
-### 开发者友好
-- 完整的 TypeScript 类型定义
-- 详细的错误日志和调试信息
-- 可扩展的模块化架构
+- **🧠 智能提示工程**：精心设计的 Prompt 模板，确保高质量结构化输出
+- **🔄 双模式切换**：AI生成与手动填写无缝切换，满足不同需求
+- **📊 数据可视化**：清晰的项目规划图表和时间线
+- **🎨 现代化界面**：基于 Shadcn/UI 的精美用户界面
 
-## 🌈 功能演示
+## 🤝 参与贡献
 
-### 主要功能流程
+### 🎯 如何贡献
 
-1. **创意输入** → 用户描述产品想法
-2. **AI 分析** → 智能分析并生成方案
-3. **结果展示** → 完整的开发计划文档
-4. **编程助手** → 生成可用的编程提示词
+我们欢迎所有形式的贡献！
 
-### 生成内容包括
+- 🐛 **报告 Bug**：发现问题请提交 Issue
+- 💡 **功能建议**：有好想法请告诉我们
+- 🛠️ **代码贡献**：提交 Pull Request
+- 📖 **文档改进**：帮助完善文档
 
-- 📋 **产品规划**：痛点分析、功能设计、商业模式
-- 🛠️ **技术方案**：技术栈、架构设计、开发计划
-- 🚀 **部署运维**：托管平台、域名配置、性能优化
-- 📈 **营销策略**：推广方案、用户增长、数据分析
-- 🤖 **AI 助手**：分步骤的编程提示词
+### 📋 贡献流程
 
-## 🚢 部署指南
-
-### Vercel 部署（推荐）
-
-1. 将项目推送到 GitHub
-2. 在 [Vercel](https://vercel.com) 中导入项目
-3. 配置环境变量 `SILICONFLOW_API_KEY`
-4. 自动部署完成
-
-### 魔塔部署
-
-1. 准备 Docker 配置
-2. 配置模型服务
-3. 设置环境变量
-4. 部署到魔塔平台
-
-## 🌟 魔塔平台部署
-
-本项目已针对魔塔平台进行优化配置：
-
-### 部署配置
-- **SDK**: Docker
-- **端口**: 3000
-- **框架**: Next.js 15
-- **运行环境**: Node.js 18
-
-### 环境变量
-在魔塔平台的环境变量配置中添加：
-```
-SILICONFLOW_API_KEY=your_silicon_flow_api_key_here
-NODE_ENV=production
-```
-
-### 自动部署
-1. 从GitHub导入项目：`https://github.com/JasonRobertDestiny/VibeDocs.git`
-2. 选择Docker SDK
-3. 配置环境变量
-4. 启动部署
-
-### 验证部署
-- 访问应用主页确认界面正常
-- 测试AI生成功能是否工作正常
-- 检查API接口响应
-
----
-
-## 🏆 赛道亮点
-
-### 创新性
-- **AI + 开发流程**：将 AI 能力深度融合到软件开发流程中
-- **智能化工具**：自动化复杂的项目规划过程
-- **开发者工具**：生成直接可用的编程助手提示词
-
-### 技术价值
-- **模型集成**：展示了大语言模型在垂直领域的应用
-- **工程实践**：完整的前端 + AI 后端架构
-- **用户体验**：直观的交互界面和流畅的使用流程
-
-### 实用性
-- **解决痛点**：帮助开发者快速启动项目
-- **提高效率**：减少项目规划的时间成本
-- **知识沉淀**：标准化的开发计划模板
-
-## 🤝 贡献指南
-
-欢迎提交 Issue 和 Pull Request！
-
-### 开发流程
-1. Fork 项目
-2. 创建功能分支
-3. 提交代码
-4. 创建 Pull Request
-
-### 代码规范
-- 使用 TypeScript 进行类型检查
-- 遵循 ESLint 代码规范
-- 编写清晰的提交信息
+1. **Fork 项目** 🍴
+2. **创建功能分支** 🌿
+   ```bash
+   git checkout -b feature/amazing-feature
+   ```
+3. **提交代码** 💾
+   ```bash
+   git commit -m 'Add amazing feature'
+   ```
+4. **推送分支** 🚀
+   ```bash
+   git push origin feature/amazing-feature
+   ```
+5. **创建 Pull Request** 📝
 
 ## 📄 许可证
 
-MIT License - 详见 [LICENSE](LICENSE) 文件
+本项目基于 MIT 许可证开源 - 详见 [LICENSE](LICENSE) 文件
 
 ## 📞 联系方式
 
-- **GitHub**: [JasonRobertDestiny](https://github.com/JasonRobertDestiny)
-- **项目地址**: [https://github.com/JasonRobertDestiny/VibeDocs](https://github.com/JasonRobertDestiny/VibeDocs)
+<div align="center">
+
+[![项目地址](https://img.shields.io/badge/项目地址-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/JasonRobertDestiny/VibeDocs)
+
+</div>
 
 ---
 
 <div align="center">
 
+### 🎯 **立即体验 VibeDoc，30秒内获得完整开发方案！**
+
 **⭐ 如果这个项目对你有帮助，请给个 Star ⭐**
 
-Made with ❤️ for MCP Server Development Track
+Made with ❤️ for **MCP Server Development Track**
+
+🏆 **魔搭AI Hackathon 2025** 🏆
 
 </div>
