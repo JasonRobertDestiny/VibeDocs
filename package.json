@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p $PORT",
     "lint": "next lint",
     "docker:build": "docker build -t vibedoc .",
     "docker:run": "docker run -p 3000:3000 vibedoc",
