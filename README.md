@@ -23,46 +23,126 @@ short_description: 🔥 一键将创意转化为完整开发方案！AI驱动的
 
 ### 🔥 一键将创意转化为完整开发方案！
 
-[![GitHub stars](https://img.shields.io/github/stars/JasonRobertDestiny/VibeDocs?style=social)](https://github.com/JasonRobertDestiny/VibeDocs)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Next.js](https://img.shields.io/badge/Next.js-15-black)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)](https://www.typescriptlang.org/)
-[![MCP Server](https://img.shields.io/badge/MCP-Server-green)](https://github.com/modelcontextprotocol)
+[![MCP Server](https://img.shields.io/badge/MCP-Server-green)](https://modelscope.cn)
 
 > 🏆 **参赛项目** - 魔搭AI Hackathon 2025 - 赛道一：MCP Server开发赛道
 
 </div>
 
-## 🎯 为什么选择 VibeDoc？
+## 🎯 项目简介
 
-**还在为项目规划而烦恼？** 📋  
-**技术栈选择困难症？** 🤔  
-**部署方案不知道怎么写？** 🚀  
+VibeDoc 是一个基于 AI 的智能开发计划生成工具，专为魔搭AI Hackathon 2025 MCP Server开发赛道设计。帮助开发者和产品经理快速将创意转化为完整的技术开发方案。
 
-**VibeDoc 一键解决！**
+**核心能力：**
+- 🧠 **AI 智能生成**：30秒内将创意转化为完整开发计划
+- 🛠️ **双模式支持**：AI生成与手动填写模式自由切换
+- 📋 **结构化输出**：标准化的项目规划文档
+- 🤖 **AI编程助手**：生成可直接使用的编程提示词
 
-✨ **只需输入一个想法，30秒内获得完整的开发计划！**
+## 🎬 系统架构与流程图
 
-## 🌟 核心价值
+<div align="center">
 
-### 🧠 AI 智能生成
-- 基于先进的大语言模型，深度理解你的产品创意
-- 自动生成包含技术栈、架构设计、部署方案的完整开发计划
-- 智能推荐最适合的技术选型和开发工具
+### 🔄 核心工作流程
 
-### ⚡ 极速体验
-- **30秒内**生成完整开发计划
-- **一键切换**手动填写和AI生成模式
-- **实时预览**生成的文档和提示词
+```mermaid
+graph TB
+    Start([用户输入创意]) --> Check{选择模式}
+    Check -->|AI生成| AI[AI分析引擎]
+    Check -->|手动填写| Manual[手动填写向导]
+    
+    AI --> API[Silicon Flow API]
+    API --> Process[智能提示工程]
+    Process --> Generate[结构化输出生成]
+    
+    Manual --> Form[分步骤表单]
+    Form --> Validate[数据验证]
+    Validate --> Generate
+    
+    Generate --> Output[生成结果]
+    Output --> Doc[📋 开发计划文档]
+    Output --> Code[🤖 AI编程助手]
+    Output --> Deploy[🚀 部署方案]
+    
+    Doc --> Export[导出/分享]
+    Code --> Export
+    Deploy --> Export
+    
+    style Start fill:#e1f5fe
+    style AI fill:#f3e5f5
+    style Manual fill:#e8f5e8
+    style Generate fill:#fff3e0
+    style Output fill:#fce4ec
+```
 
-### 🎨 专业输出
-- **结构化文档**：清晰的项目规划文档
-- **AI编程助手**：生成可直接使用的编程提示词
-- **营销策略**：包含完整的推广和增长建议
+### 🏗️ 系统架构图
 
-## � 功能演示
+```mermaid
+graph LR
+    subgraph "前端层"
+        A[React 19] --> B[Next.js 15]
+        B --> C[TypeScript]
+        C --> D[Tailwind CSS]
+        D --> E[Shadcn/UI]
+    end
+    
+    subgraph "API层"
+        F[API Routes] --> G[数据验证]
+        G --> H[业务逻辑]
+    end
+    
+    subgraph "AI服务层"
+        I[Silicon Flow API] --> J[Qwen2.5-72B]
+        J --> K[智能提示工程]
+    end
+    
+    subgraph "部署层"
+        L[Docker容器] --> M[魔塔ModelScope]
+        M --> N[云端服务]
+    end
+    
+    E --> F
+    H --> I
+    K --> L
+    
+    style A fill:#61dafb
+    style B fill:#000000
+    style C fill:#3178c6
+    style I fill:#ff6b6b
+    style L fill:#0db7ed
+```
 
-### 💫 AI 生成模式 - 魔法般的体验
+### 📊 数据流向图
+
+```mermaid
+sequenceDiagram
+    participant U as 用户
+    participant F as 前端界面
+    participant API as API接口
+    participant AI as AI服务
+    participant DB as 数据处理
+    
+    U->>F: 输入产品创意
+    F->>API: 提交请求
+    API->>AI: 调用AI分析
+    AI->>AI: 智能内容生成
+    AI->>DB: 结构化处理
+    DB->>API: 返回结果
+    API->>F: 响应数据
+    F->>U: 展示开发计划
+    
+    Note over U,F: 30秒内完成
+    Note over AI,DB: 基于Silicon Flow
+```
+
+</div>
+
+## 🎬 功能演示
+
+### 💫 AI 生成模式 - 智能化体验
 
 ```
 用户输入："我想做一个在线协作文档工具"
@@ -70,7 +150,7 @@ short_description: 🔥 一键将创意转化为完整开发方案！AI驱动的
 自动生成：
 ├── 📋 产品规划 (痛点分析、功能设计、商业模式)
 ├── 🛠️ 技术方案 (React + Node.js + MongoDB)
-├── 🚀 部署运维 (Docker + Vercel + 性能优化)
+├── 🚀 部署运维 (Docker + 云平台 + 性能优化)
 ├── 📈 营销策略 (用户增长、数据分析)
 └── 🤖 AI 助手 (分步骤编程提示词)
 ```
@@ -83,11 +163,11 @@ short_description: 🔥 一键将创意转化为完整开发方案！AI驱动的
 - **步骤4**: 营销策略
 - **随时切换**: 一键返回AI生成模式
 
-## 🔥 实际应用场景
+## 🔥 应用场景
 
 ### 🎯 创业者
 - **快速验证想法**：30秒获得完整的技术可行性分析
-- **投资人演示**：专业的技术方案文档
+- **方案展示**：专业的技术方案文档
 - **团队协作**：清晰的开发计划和时间线
 
 ### 👨‍💻 开发者
@@ -100,36 +180,15 @@ short_description: 🔥 一键将创意转化为完整开发方案！AI驱动的
 - **技术沟通**：与开发团队的有效沟通工具
 - **项目规划**：详细的开发计划和里程碑
 
-## 🚀 立即体验
+## 🚀 快速体验
 
-## 🚀 立即体验
-
-### � 在线体验
-👉 **[立即试用 VibeDoc](https://vibedoc.modelscope.cn)** 👈
-
-### 📱 快速上手
+### 📱 使用步骤
 1. **输入创意** → 描述你的产品想法
 2. **AI 分析** → 30秒智能生成方案
 3. **获得结果** → 完整的开发计划文档
 4. **开始编程** → 使用生成的AI助手提示词
 
-## �🏗️ 技术架构
-
-<div align="center">
-
-```mermaid
-graph TB
-    A[用户输入] --> B[AI 分析引擎]
-    B --> C[Silicon Flow API]
-    B --> D[智能提示工程]
-    C --> E[结构化输出]
-    D --> E
-    E --> F[开发计划文档]
-    E --> G[AI 编程助手]
-    E --> H[部署方案]
-```
-
-</div>
+## 🏗️ 技术架构
 
 ### 🎨 前端技术栈
 - **Next.js 15** - 🚀 React 全栈框架（最新版本）
@@ -165,11 +224,33 @@ graph TB
 - **提高效率**：标准化的开发计划模板
 - **知识沉淀**：可复用的项目规划方法论
 
-## 🌈 魔塔平台部署
+## 🌈 魔塔平台部署指南
 
-### 🚀 自定义部署配置
+### 🚀 部署配置
 
-**服务描述：**
+**项目仓库：** `https://github.com/JasonRobertDestiny/VibeDocs.git`  
+**分支：** `modelscope`  
+**SDK：** `Docker`  
+**端口：** `3000`  
+
+### 🔧 环境变量配置
+
+| 变量名 | 描述 | 是否必填 |
+|--------|------|----------|
+| `SILICONFLOW_API_KEY` | Silicon Flow API密钥，用于AI内容生成 | ✅ 必填 |
+| `NODE_ENV` | Node.js运行环境，设置为production | ✅ 必填 |
+| `PORT` | 应用服务端口，设置为3000 | ✅ 必填 |
+
+### 📋 部署步骤
+
+1. **导入项目**：使用 GitHub 仓库地址
+2. **选择分支**：`modelscope`
+3. **配置环境变量**：按上表配置
+4. **启动部署**：等待构建完成
+5. **验证部署**：访问应用并测试功能
+
+### 🎯 服务描述配置
+
 ```
 VibeDoc 是一个AI驱动的智能开发计划生成器，专为魔搭AI Hackathon 2025 MCP Server开发赛道设计。
 
@@ -195,65 +276,10 @@ VibeDoc 是一个AI驱动的智能开发计划生成器，专为魔搭AI Hackath
 适用于创业者、开发者、产品经理等角色，解决项目规划难题，提升开发效率。
 ```
 
-**类型选择：** `可信推理部署`
-
-**服务配置：**
-```json
-{
-  "mcpServers": {
-    "vibedoc": {
-      "args": [],
-      "command": "npm",
-      "env": {
-        "SILICONFLOW_API_KEY": "${SILICONFLOW_API_KEY}",
-        "NODE_ENV": "production",
-        "PORT": "3000"
-      }
-    }
-  }
-}
-```
-
-**自定义标签：**
-```
-AI开发工具,MCP Server,开发计划生成器,Next.js,TypeScript,Silicon Flow,项目规划,AI助手,创业工具,开发者工具
-```
-
-### 🔧 环境变量配置
-
-在魔塔平台环境变量设置中添加：
-
-| 变量名 | 值 | 描述 |
-|--------|-----|------|
-| `SILICONFLOW_API_KEY` | `your_api_key_here` | Silicon Flow API 密钥 |
-| `NODE_ENV` | `production` | 运行环境 |
-| `PORT` | `3000` | 服务端口 |
-
-### 📋 部署步骤
-
-1. **导入项目**：使用 GitHub 仓库地址
-   ```
-   https://github.com/JasonRobertDestiny/VibeDocs.git
-   ```
-
-2. **选择配置**：
-   - SDK: `Docker`
-   - 端口: `3000`
-   - 分支: `modelscope`
-
-3. **环境变量**：按上表配置环境变量
-
-4. **启动部署**：等待构建和部署完成
-
-5. **验证部署**：
-   - ✅ 访问应用主页
-   - ✅ 测试AI生成功能
-   - ✅ 检查API接口响应
-
-## �️ 本地开发
+## 🛠️ 本地开发
 
 ### 📋 环境要求
-- Node.js 18+ 
+- Node.js 18+
 - npm 或 yarn 或 pnpm
 
 ### 🚀 快速启动
@@ -263,17 +289,20 @@ AI开发工具,MCP Server,开发计划生成器,Next.js,TypeScript,Silicon Flow,
 git clone https://github.com/JasonRobertDestiny/VibeDocs.git
 cd VibeDocs
 
-# 2. 安装依赖
+# 2. 切换到modelscope分支
+git checkout modelscope
+
+# 3. 安装依赖
 npm install
 
-# 3. 配置环境变量
+# 4. 配置环境变量
 cp .env.local.example .env.local
 # 编辑 .env.local 文件，添加你的 Silicon Flow API Key
 
-# 4. 启动开发服务器
+# 5. 启动开发服务器
 npm run dev
 
-# 5. 访问应用
+# 6. 访问应用
 # 打开 http://localhost:3000
 ```
 
@@ -305,7 +334,7 @@ VibeDocs/
 └── ⚙️ 配置文件...
 ```
 
-## � API 接口
+## 🔌 API 接口
 
 ### POST /api/auto-generate-plan
 
@@ -325,7 +354,7 @@ VibeDocs/
   "plan": {
     "productName": "DocuShare - 智能协作文档平台",
     "techStack": "React + Node.js + MongoDB + Socket.io",
-    "deploymentPlan": "Docker + Vercel + MongoDB Atlas",
+    "deploymentPlan": "Docker + 云平台 + MongoDB Atlas",
     "marketingStrategy": "社交媒体推广 + 免费试用 + 企业客户",
     "aiAssistant": "分步骤编程提示词..."
   },
@@ -334,25 +363,7 @@ VibeDocs/
 }
 ```
 
-## � 界面截图
-
-<div align="center">
-
-### 🏠 主页面
-![主页面](https://via.placeholder.com/800x400/6366f1/ffffff?text=VibeDoc+主页面)
-
-### 🤖 AI 生成模式
-![AI生成模式](https://via.placeholder.com/800x400/8b5cf6/ffffff?text=AI+生成模式)
-
-### 📝 手动填写模式
-![手动填写模式](https://via.placeholder.com/800x400/06b6d4/ffffff?text=手动填写模式)
-
-### 📋 生成结果
-![生成结果](https://via.placeholder.com/800x400/10b981/ffffff?text=生成结果展示)
-
-</div>
-
-## � 赛道价值展示
+## 🏆 赛道价值展示
 
 ### 🎯 解决的核心痛点
 
@@ -367,25 +378,9 @@ VibeDocs/
 ### 💡 创新技术应用
 
 - **🧠 智能提示工程**：精心设计的 Prompt 模板，确保高质量结构化输出
-- **� 双模式切换**：AI生成与手动填写无缝切换，满足不同需求
+- **🔄 双模式切换**：AI生成与手动填写无缝切换，满足不同需求
 - **📊 数据可视化**：清晰的项目规划图表和时间线
 - **🎨 现代化界面**：基于 Shadcn/UI 的精美用户界面
-
-### 🎖️ 技术创新点
-
-1. **🚀 性能优化**：
-   - 使用 Next.js 15 + Turbopack 实现极速构建
-   - SSR/SSG 优化，首屏加载时间 < 1s
-   - 智能缓存策略，提升用户体验
-
-2. **🔒 安全性**：
-   - TypeScript 全栈类型安全
-   - API 接口安全验证
-   - 环境变量安全管理
-
-3. **📱 响应式设计**：
-   - 支持移动端、平板、桌面端
-   - 自适应布局，确保最佳体验
 
 ## 🤝 参与贡献
 
@@ -415,51 +410,15 @@ VibeDocs/
    ```
 5. **创建 Pull Request** 📝
 
-### 🏅 贡献者
-
-<div align="center">
-
-感谢所有为 VibeDoc 做出贡献的开发者！
-
-[![Contributors](https://contrib.rocks/image?repo=JasonRobertDestiny/VibeDocs)](https://github.com/JasonRobertDestiny/VibeDocs/graphs/contributors)
-
-</div>
-
-## 📊 项目统计
-
-<div align="center">
-
-![GitHub repo size](https://img.shields.io/github/repo-size/JasonRobertDestiny/VibeDocs)
-![GitHub language count](https://img.shields.io/github/languages/count/JasonRobertDestiny/VibeDocs)
-![GitHub top language](https://img.shields.io/github/languages/top/JasonRobertDestiny/VibeDocs)
-![GitHub last commit](https://img.shields.io/github/last-commit/JasonRobertDestiny/VibeDocs)
-![GitHub issues](https://img.shields.io/github/issues/JasonRobertDestiny/VibeDocs)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/JasonRobertDestiny/VibeDocs)
-
-</div>
-
-## 🎉 赞助支持
-
-如果 VibeDoc 对你有帮助，请考虑支持我们的开发：
-
-<div align="center">
-
-[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-支持开发-orange?style=for-the-badge&logo=buy-me-a-coffee)](https://buymeacoffee.com/jasonrobert)
-[![Sponsor](https://img.shields.io/badge/Sponsor-赞助项目-red?style=for-the-badge&logo=github-sponsors)](https://github.com/sponsors/JasonRobertDestiny)
-
-</div>
-
 ## 📄 许可证
 
 本项目基于 MIT 许可证开源 - 详见 [LICENSE](LICENSE) 文件
 
-## 📞 联系我们
+## 📞 联系方式
 
 <div align="center">
 
-[![GitHub](https://img.shields.io/badge/GitHub-JasonRobertDestiny-181717?style=for-the-badge&logo=github)](https://github.com/JasonRobertDestiny)
-[![Email](https://img.shields.io/badge/Email-联系我们-0078d4?style=for-the-badge&logo=microsoft-outlook)](mailto:contact@vibedoc.com)
-[![Twitter](https://img.shields.io/badge/Twitter-关注我们-1da1f2?style=for-the-badge&logo=twitter)](https://twitter.com/JasonRobertDest)
+[![项目地址](https://img.shields.io/badge/项目地址-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/JasonRobertDestiny/VibeDocs)
 
 </div>
 
@@ -468,9 +427,6 @@ VibeDocs/
 <div align="center">
 
 ### 🎯 **立即体验 VibeDoc，30秒内获得完整开发方案！**
-
-[![在线体验](https://img.shields.io/badge/🚀%20在线体验-立即试用-6366f1?style=for-the-badge)](https://vibedoc.modelscope.cn)
-[![查看源码](https://img.shields.io/badge/📱%20查看源码-GitHub-181717?style=for-the-badge)](https://github.com/JasonRobertDestiny/VibeDocs)
 
 **⭐ 如果这个项目对你有帮助，请给个 Star ⭐**
 
