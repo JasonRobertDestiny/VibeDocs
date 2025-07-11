@@ -5,7 +5,7 @@
 **项目名称**: VibeDoc - AI驱动的开发计划生成器  
 **比赛信息**: 魔搭AI Hackathon 2025 - 赛道一：MCP Server开发赛道  
 **GitHub仓库**: https://github.com/JasonRobertDestiny/VibeDocs  
-**完成状态**: ✅ 已完成并成功上传
+**完成状态**: ✅ 已完成并成功上传我从GitHub创建，基础信息解析完成，未识别到服务配置。请在README文件中补充完善后再试或前往自定义创建补充。怎么回事呢
 
 ## 🏗️ 项目架构
 

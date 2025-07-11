@@ -1,58 +1,8 @@
-# Dependencies
+Dockerfile
+.dockerignore
 node_modules
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# Next.js build output
-.next
-out
-
-# Environment variables
-.env*
-!.env.example
-
-# Development files
+npm-debug.log
+README.md
+.env
 .git
 .gitignore
-README.md
-CHANGELOG.md
-CONTRIBUTING.md
-DEPLOY.md
-LICENSE
-MCP_SERVER_TRACK.md
-PROJECT_SUMMARY.md
-README_MODELSCOPE.md
-
-# IDE and editor files
-.vscode
-.idea
-*.swp
-*.swo
-
-# OS generated files
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
-
-# Docker files
-Dockerfile*
-docker-compose*
-.dockerignore
-
-# Deployment scripts
-deploy.sh
-app.yaml
-
-# Testing
-coverage
-.nyc_output
-.pytest_cache
-
-# Temporary files
-*.tmp
-*.temp
