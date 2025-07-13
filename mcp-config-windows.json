@@ -1,0 +1,55 @@
+{
+  "mcpServers": {
+    "vibedoc": {
+      "command": "cmd",
+      "args": [
+        "/c",
+        "cd /d \"%CD%\" && npm run mcp"
+      ],
+      "cwd": ".",
+      "env": {
+        "SILICONFLOW_API_KEY": "${SILICONFLOW_API_KEY}",
+        "NODE_ENV": "production"
+      },
+      "description": "VibeDoc MCP Server - AI驱动的开发计划生成器 | 魔搭MCP&Agent2025挑战赛",
+      "capabilities": {
+        "tools": true,
+        "resources": false,
+        "prompts": false
+      },
+      "windows_specific": {
+        "note": "Windows用户专用配置 - 使用cmd命令执行",
+        "alternative_command": {
+          "powershell": {
+            "command": "powershell",
+            "args": [
+              "-Command",
+              "cd $PWD; npm run mcp"
+            ]
+          },
+          "nodejs_direct": {
+            "command": "node",
+            "args": [
+              "dist/src/index.js"
+            ],
+            "note": "需要先运行 npm run mcp:build 构建项目"
+          }
+        }
+      }
+    }
+  },
+  "setup_instructions": {
+    "step1": "确保已安装 Node.js 18+ 和 npm",
+    "step2": "在项目根目录运行: npm install",
+    "step3": "运行构建: npm run mcp:build", 
+    "step4": "设置环境变量 SILICONFLOW_API_KEY",
+    "step5": "将此配置添加到 Claude Desktop 配置文件",
+    "step6": "重启 Claude Desktop 应用程序"
+  },
+  "troubleshooting": {
+    "path_issues": "如果路径有空格，请确保使用双引号包围",
+    "permission_denied": "以管理员身份运行 Claude Desktop",
+    "npm_not_found": "确保 npm 已添加到系统 PATH 环境变量",
+    "api_key_issues": "检查 SILICONFLOW_API_KEY 环境变量是否正确设置"
+  }
+}

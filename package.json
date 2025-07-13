@@ -1,7 +1,7 @@
 {
   "name": "vibedoc-mcp-server",
   "version": "1.0.0",
-  "description": "VibeDoc - AI-powered development planning ecosystem for ModelScope AI Hackathon 2025 MCP Track",
+  "description": "🏆 VibeDoc MCP Server - 魔搭MCP&Agent2025挑战赛MCP赛道一 | 首个基于Model Context Protocol的AI开发规划服务",
   "main": "src/index.ts",
   "type": "module",
   "scripts": {
@@ -47,18 +47,22 @@
     "typescript": "^5"
   },
   "keywords": [
-    "mcp",
-    "mcp-server", 
-    "ai",
-    "development-planning",
-    "project-management",
-    "hackathon",
-    "modelscope",
+    "mcp-server",
+    "model-context-protocol", 
+    "魔搭挑战赛",
+    "modelscope-hackathon",
+    "ai-development-planning",
+    "claude-desktop",
     "silicon-flow",
-    "typescript",
-    "nextjs"
+    "qwen2.5-72b",
+    "typescript-mcp",
+    "development-tools",
+    "ai-assistant",
+    "project-planning",
+    "智能开发助手",
+    "开发规划工具"
   ],
-  "author": "JasonRobertDestiny",
+  "author": "JasonRobertDestiny <jason@vibedoc.dev>",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -71,5 +75,22 @@
   "engines": {
     "node": ">=18.0.0",
     "npm": ">=8.0.0"
+  },
+  "mcp": {
+    "server": {
+      "name": "vibedoc",
+      "version": "1.0.0",
+      "description": "AI-powered development planning MCP server",
+      "tools": [
+        "generate_development_plan",
+        "get_project_template", 
+        "generate_ai_prompts"
+      ],
+      "protocol_version": "1.15.1"
+    }
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/JasonRobertDestiny"
   }
 }
