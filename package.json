@@ -12,7 +12,8 @@
     "mcp": "tsx src/index.ts",
     "mcp:build": "tsc src/index.ts --outDir dist --target ES2022 --module ESNext --moduleResolution bundler --allowSyntheticDefaultImports",
     "mcp:start": "node dist/index.js",
-    "test:mcp": "node test-mcp.js",
+    "test:mcp": "node test-mcp-server.js",
+    "test:full": "npm run mcp:build && node test-mcp-server.js",
     "postinstall": "npm run mcp:build"
   },
   "dependencies": {

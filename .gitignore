@@ -46,6 +46,7 @@ next-env.d.ts
 image*.png
 prompt.md
 test-*.js
+!test-mcp-server.js
 demo-*.js
 demo-*.mjs
 

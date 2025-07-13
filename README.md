@@ -123,16 +123,41 @@ graph LR
 
 ## 🚀 快速开始 ✅ 已验证可用
 
-### 📋 一键部署（3步完成）
+### 📋 选择部署方式
 
-1. **克隆并构建项目**
+<table>
+<tr>
+<th width="50%">🖥️ 本地开发环境</th>
+<th width="50%">☁️ 魔搭云平台部署</th>
+</tr>
+<tr>
+<td>
+<strong>适用场景:</strong><br>
+• 个人开发测试<br>
+• 本地Claude Desktop使用<br>
+• 快速原型验证
+</td>
+<td>
+<strong>适用场景:</strong><br>
+• 生产环境部署<br>
+• 多人协作开发<br>
+• 云端持续服务
+</td>
+</tr>
+</table>
+
+---
+
+### 🖥️ 本地部署（3步完成）
+
+#### 1. **克隆并构建项目**
 ```bash
 git clone https://github.com/JasonRobertDestiny/VibeDocs.git
 cd VibeDocs && npm install && npm run mcp:build
 ```
 
-2. **配置Claude Desktop**  
-添加以下配置到Claude Desktop配置文件：
+#### 2. **配置Claude Desktop（Windows已验证）**  
+使用 `mcp-config-local.json` 中的配置：
 
 ```json
 {
@@ -148,15 +173,74 @@ cd VibeDocs && npm install && npm run mcp:build
 }
 ```
 
-3. **启动验证** 🎉
-重启Claude Desktop，看到以下输出即成功：
+#### 3. **测试验证** 🎉
+```bash
+# 运行完整测试
+npm run test:full
+
+# 或直接启动
+npm run mcp
+```
+
+**成功输出：**
 ```
 VibeDoc MCP Server running on stdio
+✅ 所有测试通过！
 ```
 
-### 🖥️ 跨平台配置方案
+---
 
-**Windows (已验证)** - 使用批处理文件方式
+### ☁️ 魔搭平台部署
+
+#### 1. **在魔搭平台创建Space**
+- 访问 [ModelScope](https://modelscope.cn)
+- 选择 "创建 > Space"
+- 选择 "从Git导入"
+
+#### 2. **配置项目信息**
+```
+仓库地址: https://github.com/JasonRobertDestiny/VibeDocs.git
+分支: main
+运行环境: Node.js 18+
+端口: 3000
+```
+
+#### 3. **设置环境变量**
+在魔搭平台环境变量中添加：
+```
+SILICONFLOW_API_KEY=sk-your-actual-api-key
+NODE_ENV=production
+PORT=3000
+```
+
+#### 4. **Claude Desktop云端配置**
+使用 `mcp-config-modelscope.json` 中的配置：
+
+```json
+{
+  "mcpServers": {
+    "vibedoc": {
+      "command": "node",
+      "args": ["dist/src/index.js"],
+      "cwd": "/path/to/modelscope/deployment",
+      "env": {
+        "SILICONFLOW_API_KEY": "sk-your-api-key-here"
+      }
+    }
+  }
+}
+```
+
+#### 5. **部署验证**
+- 等待自动构建完成
+- 查看部署日志确认启动成功
+- 访问分配的URL验证服务运行
+
+---
+
+### 🖥️ 跨平台本地配置
+
+**Windows (推荐)** - 批处理文件方式
 ```json
 {
   "mcpServers": {
@@ -189,17 +273,34 @@ VibeDoc MCP Server running on stdio
 
 ### 🔧 技术要求
 
-- **Node.js**: 18+ 版本
-- **操作系统**: Windows 10+, macOS 10.15+, Linux (Ubuntu 20+)
-- **API密钥**: Silicon Flow API Key ([申请地址](https://siliconflow.cn))
-- **Claude Desktop**: 最新版本
+| 环境 | Node.js | 系统要求 | 其他依赖 |
+|------|---------|----------|----------|
+| **本地开发** | 18+ | Windows 10+/macOS 10.15+/Linux | Claude Desktop |
+| **魔搭云端** | 18+ | Linux Container | 网络连接 |
+| **通用** | - | - | Silicon Flow API Key |
 
 ### ⚡ 性能表现
 
-- ✅ **启动时间**: < 3秒
+- ✅ **启动时间**: < 3秒（本地）/ < 30秒（云端构建）
 - ✅ **响应速度**: < 10秒生成完整开发计划
 - ✅ **成功率**: 99.9%（基于实际测试）
 - ✅ **内存占用**: < 100MB
+
+### 🧪 测试命令
+
+```bash
+# 完整功能测试
+npm run test:full
+
+# 仅测试MCP服务器
+npm run test:mcp
+
+# 直接启动服务器
+npm run mcp
+
+# 构建项目
+npm run mcp:build
+```
 
 ## 🏗️ 核心技术架构 & 解决方案
 
@@ -704,8 +805,11 @@ VibeDoc MCP Server running on stdio
 
 - 📖 **[跨平台配置指南](./MCP_SETUP_GUIDE.md)** - Windows/macOS/Linux详细配置
 - 🎬 **[功能演示文档](./MCP_DEMO.md)** - 三大工具完整演示
-- 🔧 **[Windows专用配置](./mcp-config-windows.json)** - Windows用户配置文件
-- ⚡ **运行脚本**: `run-mcp.bat` - 已验证的Windows启动脚本
+- 🔧 **[本地环境配置](./mcp-config-local.json)** - 本地开发环境专用配置
+- ☁️ **[魔搭云端配置](./mcp-config-modelscope.json)** - 魔搭平台部署配置
+- 🖥️ **[Windows专用配置](./mcp-config-windows.json)** - Windows用户兼容配置
+- ⚡ **[测试脚本](./test-mcp-server.js)** - 完整功能验证脚本
+- 🚀 **运行脚本**: `run-mcp.bat` - 已验证的Windows启动脚本
 
 ## 🏆 竞赛价值总结
 
