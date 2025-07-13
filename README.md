@@ -54,6 +54,8 @@ duplicated_from: JasonRobertDestiny/VibeDocs
 • <strong>全球首创</strong>：MCP协议在开发规划领域的首次深度应用<br>
 • <strong>技术融合</strong>：Silicon Flow + Qwen2.5-72B + 智能提示工程<br>
 • <strong>生态创新</strong>：Claude Desktop + Web应用双模式架构
+  <img width="1922" height="1411" alt="image" src="https://github.com/user-attachments/assets/06ebcba8-40b0-4d2d-b4dd-1f1856a14a4e" />
+
 </td>
 </tr>
 <tr>
@@ -330,6 +332,8 @@ SILICONFLOW_API_KEY="sk-your-key" node test-mcp-usage.js
 - **协议规范**: 100%符合MCP 1.15.1标准规范
 - **跨平台**: Windows/macOS/Linux全平台无缝支持
 - **生态集成**: 完美适配Claude Desktop生态系统
+
+<img width="1922" height="1411" alt="image" src="https://github.com/user-attachments/assets/96ed4a3f-1a92-43ae-93eb-811f845421c5" />
 
 ### ⚙️ **技术深度 (20%)**
 - **架构设计**: 模块化、可扩展的企业级架构
