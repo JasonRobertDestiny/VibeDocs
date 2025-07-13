@@ -1,0 +1,18 @@
+{
+  "mcpServers": {
+    "vibedoc": {
+      "command": "npm",
+      "args": ["run", "mcp"],
+      "cwd": ".",
+      "env": {
+        "SILICONFLOW_API_KEY": "${SILICONFLOW_API_KEY}"
+      },
+      "description": "VibeDoc AI开发计划生成器 - 智能化项目规划工具",
+      "capabilities": {
+        "tools": true,
+        "resources": false,
+        "prompts": false
+      }
+    }
+  }
+}

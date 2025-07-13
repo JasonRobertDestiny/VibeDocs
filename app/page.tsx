@@ -9,6 +9,11 @@ import { Label } from '@/components/ui/label'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
 import { Button } from '@/components/ui/button'
+import { ErrorDisplay } from '@/components/ui/error-display'
+import { IdeaTemplates } from '@/components/ui/idea-templates'
+import { InputGuide } from '@/components/ui/input-guide'
+import { ProgressiveGeneration } from '@/components/ui/progressive-generation'
+import { generationCache } from '@/lib/cache'
 
 // CodeBlock component for rendering code blocks with copy functionality
 function CodeBlock({ children, ...props }: ComponentProps<'pre'>) {
@@ -56,6 +61,16 @@ export default function Home() {
   const [showWizard, setShowWizard] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
   
+  // Enhanced error handling states
+  const [error, setError] = useState<string | null>(null)
+  const [errorType, setErrorType] = useState<'network' | 'api' | 'validation' | 'general'>('general')
+  const [retryCount, setRetryCount] = useState(0)
+  const [isRetrying, setIsRetrying] = useState(false)
+  
+  // Input enhancement states
+  const [showTemplates, setShowTemplates] = useState(false)
+  const [showInputGuide, setShowInputGuide] = useState(true)
+  
   const currentStepData = SOP_TEMPLATE.find(item => item.step === currentStep)
 
   const handleNextStep = () => {
@@ -73,37 +88,115 @@ export default function Home() {
     }))
   }
 
-  // New handler function as specified
-  const handleAutoGenerate = async () => {
-    if (!idea.trim()) return;
+  // Enhanced auto-generate handler with caching and better error handling
+  const handleAutoGenerate = async (isRetry = false) => {
+    if (!idea.trim()) {
+      setError('请输入您的产品想法')
+      setErrorType('validation')
+      return
+    }
     
-    setIsLoading(true);
+    // Check cache first for faster responses
+    if (!isRetry) {
+      const cachedResult = generationCache.get(idea)
+      if (cachedResult) {
+        console.log('Using cached result for faster response')
+        setAnswers(cachedResult)
+        setShowWizard(true)
+        return
+      }
+    }
+    
+    if (isRetry) {
+      setIsRetrying(true)
+    } else {
+      setIsLoading(true)
+      setRetryCount(0)
+    }
+    
+    setError(null)
+    
     try {
+      const controller = new AbortController()
+      const timeoutId = setTimeout(() => controller.abort(), 120000) // 2分钟超时
+      
       const response = await fetch('/api/auto-generate-plan', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({ idea }),
-      });
+        signal: controller.signal
+      })
+      
+      clearTimeout(timeoutId)
       
       if (!response.ok) {
-        throw new Error('Failed to generate plan');
+        const errorData = await response.json().catch(() => ({ error: '未知错误' }))
+        throw new Error(errorData.error || `HTTP ${response.status}: ${response.statusText}`)
       }
       
-      const data = await response.json();
+      const data = await response.json()
       
       if (data.success && data.plan) {
-        setAnswers(data.plan);
-        setShowWizard(true);
+        // Cache the successful result
+        generationCache.set(idea, data.plan)
+        
+        setAnswers(data.plan)
+        setShowWizard(true)
+        setRetryCount(0)
+      } else {
+        throw new Error(data.error || '生成计划失败')
       }
-    } catch (error) {
-      console.error('Error generating plan:', error);
-      alert('生成计划时出错，请重试');
+    } catch (error: unknown) {
+      console.error('Error generating plan:', error)
+      
+      let errorMessage = '生成计划时出错，请重试'
+      let errorTypeToSet: typeof errorType = 'general'
+      
+      if (error instanceof Error && error.name === 'AbortError') {
+        errorMessage = '请求超时，请检查网络连接后重试'
+        errorTypeToSet = 'network'
+      } else if (error instanceof Error && error.message?.includes('Failed to fetch') || error instanceof Error && error.message?.includes('NetworkError')) {
+        errorMessage = '网络连接失败，请检查您的网络设置'
+        errorTypeToSet = 'network'
+      } else if (error instanceof Error && error.message?.includes('API key')) {
+        errorMessage = 'AI服务配置错误，请联系管理员'
+        errorTypeToSet = 'api'
+      } else if (error instanceof Error && error.message) {
+        errorMessage = error.message
+      }
+      
+      setError(errorMessage)
+      setErrorType(errorTypeToSet)
+      setRetryCount(prev => prev + 1)
     } finally {
-      setIsLoading(false);
+      setIsLoading(false)
+      setIsRetrying(false)
     }
-  };
+  }
+  
+  // Retry handler
+  const handleRetry = () => {
+    handleAutoGenerate(true)
+  }
+  
+  // Template selection handler
+  const handleTemplateSelect = (template: string) => {
+    setIdea(template)
+    setShowTemplates(false)
+    if (error && errorType === 'validation') {
+      setError(null)
+    }
+  }
+  
+  // Input guide suggestion handler  
+  const handleSuggestionApply = (suggestion: string) => {
+    setIdea(suggestion)
+    if (error && errorType === 'validation') {
+      setError(null)
+    }
+  }
 
   const handleGenerateDocument = () => {
     let markdown = '# VibeDoc Development Plan\n\n'
@@ -212,13 +305,18 @@ export default function Home() {
     setGeneratedMarkdown('')
     setIdea('')
     setShowWizard(false)
+    setError(null)
+    setRetryCount(0)
+    setIsRetrying(false)
+    setShowTemplates(false)
+    setShowInputGuide(true)
   }
 
   // Initial AI input view - shown when showWizard is false
   if (!showWizard) {
     return (
       <div className="min-h-screen bg-gray-50 p-8">
-        <div className="max-w-2xl mx-auto">
+        <div className="max-w-2xl mx-auto space-y-6">
           <Card>
             <CardHeader>
               <CardTitle className="text-2xl font-bold text-center">
@@ -229,34 +327,113 @@ export default function Home() {
               </p>
             </CardHeader>
             <CardContent className="space-y-6">
-              <div className="space-y-2">
-                <Label htmlFor="user-idea" className="text-sm font-medium">
-                  你的产品想法
-                  <span className="text-red-500 ml-1">*</span>
-                </Label>
-                <Textarea
-                  id="user-idea"
-                  placeholder="例如：我想做一个帮助开发者快速生成项目文档的AI工具..."
-                  className="min-h-[120px]"
-                  value={idea}
-                  onChange={(e) => setIdea(e.target.value)}
+              {/* Progressive Generation Display */}
+              {isLoading && (
+                <ProgressiveGeneration
+                  isGenerating={isLoading}
+                  totalEstimatedTime={45}
                 />
-              </div>
+              )}
+              
+              {/* Error Display */}
+              <ErrorDisplay
+                error={error}
+                type={errorType}
+                onRetry={handleRetry}
+                isRetrying={isRetrying}
+                showRetry={retryCount < 3}
+              />
+              
+              {/* Templates Section */}
+              {!isLoading && showTemplates && (
+                <IdeaTemplates
+                  onTemplateSelect={handleTemplateSelect}
+                  onClose={() => setShowTemplates(false)}
+                />
+              )}
+              
+              {/* Input Form - Hidden during loading */}
+              {!isLoading && !showTemplates && (
+                <div className="space-y-4">
+                  <div className="flex items-center justify-between">
+                    <Label htmlFor="user-idea" className="text-sm font-medium">
+                      你的产品想法
+                      <span className="text-red-500 ml-1">*</span>
+                    </Label>
+                    <Button
+                      variant="ghost"
+                      size="sm"
+                      onClick={() => setShowTemplates(true)}
+                      className="text-blue-600 hover:text-blue-700"
+                    >
+                      💡 看看示例
+                    </Button>
+                  </div>
+                  
+                  <Textarea
+                    id="user-idea"
+                    placeholder="例如：我想做一个帮助开发者快速生成项目文档的AI工具..."
+                    className="min-h-[120px]"
+                    value={idea}
+                    onChange={(e) => {
+                      setIdea(e.target.value)
+                      if (error && errorType === 'validation') {
+                        setError(null)
+                      }
+                    }}
+                  />
+                  
+                  {idea.length > 0 && (
+                    <div className="flex items-center justify-between text-xs text-muted-foreground">
+                      <span>已输入 {idea.length} 个字符</span>
+                      {idea.length > 300 && (
+                        <span className="text-green-600">✓ 内容很详细</span>
+                      )}
+                    </div>
+                  )}
+                </div>
+              )}
+              
+              {/* Input Guide - Only show when not loading and not showing templates */}
+              {!isLoading && !showTemplates && showInputGuide && (
+                <InputGuide
+                  currentText={idea}
+                  onSuggestionApply={handleSuggestionApply}
+                />
+              )}
             </CardContent>
-            <CardFooter className="flex justify-between">
-              <Button
-                variant="outline"
-                onClick={() => setShowWizard(true)}
-              >
-                手动填写
-              </Button>
-              <Button
-                onClick={handleAutoGenerate}
-                disabled={!idea.trim() || isLoading}
-              >
-                {isLoading ? '生成中...' : 'AI 生成计划'}
-              </Button>
-            </CardFooter>
+            
+            {!isLoading && !showTemplates && (
+              <CardFooter className="flex justify-between">
+                <Button
+                  variant="outline"
+                  onClick={() => setShowWizard(true)}
+                >
+                  手动填写
+                </Button>
+                <div className="flex gap-2">
+                  {idea.length > 0 && (
+                    <Button
+                      variant="ghost"
+                      size="sm"
+                      onClick={() => {
+                        setIdea('')
+                        setShowInputGuide(true)
+                      }}
+                    >
+                      清空
+                    </Button>
+                  )}
+                  <Button
+                    onClick={() => handleAutoGenerate(false)}
+                    disabled={!idea.trim() || isLoading}
+                    className="min-w-[120px]"
+                  >
+                    {isLoading ? '生成中...' : 'AI 生成计划'}
+                  </Button>
+                </div>
+              </CardFooter>
+            )}
           </Card>
         </div>
       </div>
