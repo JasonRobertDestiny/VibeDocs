@@ -46,6 +46,8 @@ next-env.d.ts
 image*.png
 prompt.md
 test-*.js
+demo-*.js
+demo-*.mjs
 
 # IDE files
 .vscode/
@@ -55,3 +57,15 @@ test-*.js
 .cache/
 .npm/
 .eslintcache
+
+# MCP Server logs and temp files
+*.log
+mcp-server-*.log
+start-mcp.bat
+test-mcp-usage.js
+demo-showcase.mjs
+ultimate-solution.json
+working-claude-config.json
+final-claude-config.json
+claude-desktop-config-solution.json
+log/

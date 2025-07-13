@@ -1,55 +1,69 @@
 {
   "mcpServers": {
     "vibedoc": {
-      "command": "cmd",
-      "args": [
-        "/c",
-        "cd /d \"%CD%\" && npm run mcp"
-      ],
-      "cwd": ".",
+      "command": "D:\\VibeCoding_pgm\\VibeDocs_MCP\\run-mcp.bat",
+      "cwd": "D:\\VibeCoding_pgm\\VibeDocs_MCP",
       "env": {
-        "SILICONFLOW_API_KEY": "${SILICONFLOW_API_KEY}",
-        "NODE_ENV": "production"
+        "SILICONFLOW_API_KEY": "sk-your-api-key-here"
       },
-      "description": "VibeDoc MCP Server - AI驱动的开发计划生成器 | 魔搭MCP&Agent2025挑战赛",
+      "description": "VibeDoc MCP Server - AI驱动的开发计划生成器 | 魔搭MCP&Agent2025挑战赛 ✅已验证",
       "capabilities": {
         "tools": true,
         "resources": false,
         "prompts": false
-      },
-      "windows_specific": {
-        "note": "Windows用户专用配置 - 使用cmd命令执行",
-        "alternative_command": {
-          "powershell": {
-            "command": "powershell",
-            "args": [
-              "-Command",
-              "cd $PWD; npm run mcp"
-            ]
-          },
-          "nodejs_direct": {
-            "command": "node",
-            "args": [
-              "dist/src/index.js"
-            ],
-            "note": "需要先运行 npm run mcp:build 构建项目"
-          }
-        }
       }
     }
   },
   "setup_instructions": {
     "step1": "确保已安装 Node.js 18+ 和 npm",
-    "step2": "在项目根目录运行: npm install",
-    "step3": "运行构建: npm run mcp:build", 
-    "step4": "设置环境变量 SILICONFLOW_API_KEY",
-    "step5": "将此配置添加到 Claude Desktop 配置文件",
-    "step6": "重启 Claude Desktop 应用程序"
+    "step2": "在项目根目录运行: npm install && npm run mcp:build",
+    "step3": "确保 run-mcp.bat 文件存在且可执行", 
+    "step4": "将你的Silicon Flow API密钥替换 sk-your-api-key-here",
+    "step5": "将项目路径 D:\\VibeCoding_pgm\\VibeDocs_MCP 替换为你的实际路径",
+    "step6": "将此配置添加到 Claude Desktop 配置文件",
+    "step7": "重启 Claude Desktop，查看输出: VibeDoc MCP Server running on stdio"
+  },
+  "verified_working_solution": {
+    "note": "此配置已在Windows环境下完整验证，解决了中文路径编码问题",
+    "batch_file_content": [
+      "@echo off",
+      "chcp 65001 >nul",
+      "cd /d \"你的项目路径\"", 
+      "set SILICONFLOW_API_KEY=你的API密钥",
+      "node dist/src/index.js",
+      "pause"
+    ],
+    "key_features": [
+      "UTF-8编码支持 (chcp 65001)",
+      "绝对路径配置避免路径解析问题", 
+      "直接node执行绕过npm命令行问题",
+      "暂停功能便于查看运行状态"
+    ]
   },
   "troubleshooting": {
-    "path_issues": "如果路径有空格，请确保使用双引号包围",
-    "permission_denied": "以管理员身份运行 Claude Desktop",
-    "npm_not_found": "确保 npm 已添加到系统 PATH 环境变量",
-    "api_key_issues": "检查 SILICONFLOW_API_KEY 环境变量是否正确设置"
+    "path_issues": "使用绝对路径配置，确保路径中的反斜杠正确转义",
+    "encoding_issues": "run-mcp.bat 文件已包含UTF-8编码支持 (chcp 65001)",
+    "permission_denied": "确保批处理文件有执行权限，必要时以管理员身份运行",
+    "api_key_issues": "检查 SILICONFLOW_API_KEY 在batch文件中是否正确设置",
+    "chinese_path_fix": "已通过 run-mcp.bat 方案解决中文路径问题"
+  },
+  "alternative_configurations": {
+    "direct_node": {
+      "command": "node",
+      "args": ["dist/src/index.js"],
+      "cwd": "你的项目路径",
+      "env": {
+        "SILICONFLOW_API_KEY": "sk-your-api-key-here"
+      },
+      "note": "需要先运行 npm run mcp:build，且可能遇到路径编码问题"
+    },
+    "powershell": {
+      "command": "powershell",
+      "args": [
+        "-Command",
+        "chcp 65001; cd '你的项目路径'; $env:SILICONFLOW_API_KEY='sk-your-api-key-here'; node dist/src/index.js"
+      ],
+      "note": "PowerShell方案，需要确保执行策略允许"
+    }
   }
 }
