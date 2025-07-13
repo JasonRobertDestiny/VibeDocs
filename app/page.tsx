@@ -99,9 +99,9 @@ export default function Home() {
     // Check cache first for faster responses
     if (!isRetry) {
       const cachedResult = generationCache.get(idea)
-      if (cachedResult) {
+      if (cachedResult && typeof cachedResult === 'object' && cachedResult !== null) {
         console.log('Using cached result for faster response')
-        setAnswers(cachedResult)
+        setAnswers(cachedResult as Record<string, string>)
         setShowWizard(true)
         return
       }

@@ -37,7 +37,9 @@ class GenerationCache {
     // Clean old entries if cache is full
     if (this.cache.size >= this.MAX_CACHE_SIZE) {
       const oldestKey = this.cache.keys().next().value
-      this.cache.delete(oldestKey)
+      if (oldestKey) {
+        this.cache.delete(oldestKey)
+      }
     }
     
     const hash = this.generateHash(idea)
