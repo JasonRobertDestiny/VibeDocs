@@ -1,15 +1,24 @@
 {
-  "name": "vibedoc",
-  "version": "0.1.0",
-  "private": true,
+  "name": "vibedoc-mcp-server",
+  "version": "1.0.0",
+  "description": "VibeDoc - AI-powered development planning ecosystem for ModelScope AI Hackathon 2025 MCP Track",
+  "main": "src/index.ts",
+  "type": "module",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && npm run mcp:build",
     "start": "cross-env PORT=${PORT:-3000} next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "mcp": "tsx src/index.ts",
+    "mcp:build": "tsc src/index.ts --outDir dist --target ES2022 --module ESNext --moduleResolution bundler --allowSyntheticDefaultImports",
+    "mcp:start": "node dist/index.js",
+    "test:mcp": "node test-mcp.js",
+    "postinstall": "npm run mcp:build"
   },
   "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.15.1",
     "@radix-ui/react-label": "^2.1.7",
+    "@radix-ui/react-progress": "^1.1.7",
     "@radix-ui/react-slot": "^1.2.3",
     "@tailwindcss/typography": "^0.5.16",
     "class-variance-authority": "^0.7.1",
@@ -25,14 +34,42 @@
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
+    "@types/node": "^20.19.7",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "cross-env": "^7.0.3",
     "eslint": "^9",
     "eslint-config-next": "15.3.5",
     "tailwindcss": "^4",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.20.3",
     "tw-animate-css": "^1.3.5",
     "typescript": "^5"
+  },
+  "keywords": [
+    "mcp",
+    "mcp-server", 
+    "ai",
+    "development-planning",
+    "project-management",
+    "hackathon",
+    "modelscope",
+    "silicon-flow",
+    "typescript",
+    "nextjs"
+  ],
+  "author": "JasonRobertDestiny",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JasonRobertDestiny/VibeDocs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JasonRobertDestiny/VibeDocs/issues"
+  },
+  "homepage": "https://github.com/JasonRobertDestiny/VibeDocs#readme",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
   }
 }

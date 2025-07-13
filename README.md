@@ -1,5 +1,5 @@
 ---
-title: VibeDoc - AI驱动的开发计划生成器
+title: VibeDoc MCP Server
 emoji: 🚀
 colorFrom: blue
 colorTo: purple
@@ -8,13 +8,17 @@ app_port: 3000
 pinned: true
 license: mit
 tags:
+  - MCP
   - AI
-  - MCP Server
   - Development Planning
-  - Next.js
-  - TypeScript
+  - Project Management
+  - Hackathon
+  - ModelScope
   - Silicon Flow
-short_description: 🔥 一键将创意转化为完整开发方案！AI驱动的智能开发计划生成器，参赛魔搭AI Hackathon 2025 MCP Server开发赛道
+  - TypeScript
+  - Next.js
+short_description: 🏆 VibeDoc - AI驱动的开发计划生成生态系统，专为魔塔AI Hackathon 2025 MCP赛道设计
+duplicated_from: JasonRobertDestiny/VibeDocs
 ---
 
 <div align="center">
