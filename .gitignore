@@ -42,11 +42,10 @@ debug.log
 *.tsbuildinfo
 next-env.d.ts
 
-# Test files and development images
-image*.png
+# Test files and development images (keep show*.png for README)
 prompt.md
 test-*.js
-!test-mcp-server.js
+debug-*.js
 demo-*.js
 demo-*.mjs
 
