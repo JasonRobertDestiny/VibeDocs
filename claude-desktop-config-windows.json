@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "vibedoc": {
+      "command": "C:\\Program Files\\nodejs\\npx.cmd",
+      "args": ["tsx", "src/index.ts"],
+      "cwd": "D:\\VibeCoding_pgm\\VibeDocs_MCP",
+      "env": {
+        "SILICONFLOW_API_KEY": "sk-eeqxcykxvmomeunmpbbgdsqgvrxqksyapauxzexphsiflgsy"
+      }
+    }
+  }
+}

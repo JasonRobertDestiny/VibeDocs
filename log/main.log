@@ -1,0 +1,842 @@
+2025-07-13 20:38:56 [info] Starting app {
+  appVersion: '0.11.6',
+  isPackaged: true,
+  platform: 'win32',
+  arch: 'x64',
+  nodeVersion: '22.15.1'
+}
+2025-07-13 20:38:56 [info] Claude Studio: Feature disabled, skipping initialization
+2025-07-13 20:38:57 [info] App is installed, enabling initial check and auto-updates
+2025-07-13 20:38:57 [info] Checking for updates
+2025-07-13 20:38:57 [info] Starting app {
+  appVersion: '0.11.6',
+  isPackaged: true,
+  platform: 'win32',
+  arch: 'x64',
+  nodeVersion: '22.15.1'
+}
+2025-07-13 20:38:58 [info] Claude Studio: Feature disabled, skipping initialization
+2025-07-13 20:38:58 [info] App is installed, enabling initial check and auto-updates
+2025-07-13 20:38:58 [info] Checking for updates
+2025-07-13 20:39:03 [info] Starting periodic extension update checks (interval: 21600000ms)
+2025-07-13 20:39:03 [warn] No blocklist data found from any source
+2025-07-13 20:39:03 [warn] No blocklist data received
+2025-07-13 20:39:18 [info] Starting app {
+  appVersion: '0.11.6',
+  isPackaged: true,
+  platform: 'win32',
+  arch: 'x64',
+  nodeVersion: '22.15.1'
+}
+2025-07-13 20:39:18 [info] Claude Studio: Feature disabled, skipping initialization
+2025-07-13 20:39:19 [info] App is installed, enabling initial check and auto-updates
+2025-07-13 20:39:19 [info] Checking for updates
+2025-07-13 20:39:27 [info] Failed to set title bar overlay, this is probably expected
+2025-07-13 20:39:30 [info] Failed to set title bar overlay, this is probably expected
+2025-07-13 20:39:38 [info] Failed to set title bar overlay, this is probably expected
+2025-07-13 20:39:50 [info] Failed to set title bar overlay, this is probably expected
+2025-07-13 20:40:08 [info] Failed to set title bar overlay, this is probably expected
+2025-07-13 20:40:13 [info] Failed to set title bar overlay, this is probably expected
+2025-07-13 20:40:21 [info] Failed to set title bar overlay, this is probably expected
+2025-07-13 20:40:24 [info] Failed to set title bar overlay, this is probably expected
+2025-07-13 20:40:46 [info] Failed to set title bar overlay, this is probably expected
+2025-07-13 20:40:51 [info] Failed to set title bar overlay, this is probably expected
+2025-07-13 20:43:37 [info] Failed to set title bar overlay, this is probably expected
+2025-07-13 20:43:43 [info] Failed to set title bar overlay, this is probably expected
+2025-07-13 20:44:34 [info] Failed to set title bar overlay, this is probably expected
+2025-07-13 20:44:37 [info] Failed to set title bar overlay, this is probably expected
+2025-07-13 20:44:42 [info] Failed to set title bar overlay, this is probably expected
+2025-07-13 20:45:54 [info] Failed to set title bar overlay, this is probably expected
+2025-07-13 20:45:56 [info] Config file written
+2025-07-13 20:48:55 [info] Failed to set title bar overlay, this is probably expected
+2025-07-13 20:49:01 [error] Error in claudeURLHandler: {
+  error: TypeError: Invalid URL
+      at new URL (node:internal/url:818:25)
+      at U8 (C:\Users\Robert\AppData\Local\AnthropicClaude\app-0.11.6\resources\app.asar\.vite\build\index-Dwt_NcbE.js:107:12091)
+      at App.<anonymous> (C:\Users\Robert\AppData\Local\AnthropicClaude\app-0.11.6\resources\app.asar\.vite\build\index-Dwt_NcbE.js:261:11579)
+      at App.emit (node:events:518:28)
+      at n.emit (C:\Users\Robert\AppData\Local\AnthropicClaude\app-0.11.6\resources\app.asar\.vite\build\index-Dwt_NcbE.js:28:29583) {
+    [stack]: [Getter/Setter],
+    [message]: 'Invalid URL',
+    code: 'ERR_INVALID_URL',
+    input: '--fetch-schemes=sentry-ipc'
+  }
+}
+2025-07-13 20:49:01 [info] Failed to set title bar overlay, this is probably expected
+2025-07-13 20:49:01 [info] Starting app {
+  appVersion: '0.11.6',
+  isPackaged: true,
+  platform: 'win32',
+  arch: 'x64',
+  nodeVersion: '22.15.1'
+}
+2025-07-13 20:49:02 [info] Claude Studio: Feature disabled, skipping initialization
+2025-07-13 20:49:02 [info] App is installed, enabling initial check and auto-updates
+2025-07-13 20:49:02 [info] Checking for updates
+2025-07-13 20:49:03 [info] Failed to set title bar overlay, this is probably expected
+2025-07-13 20:49:11 [info] Failed to set title bar overlay, this is probably expected
+2025-07-13 20:49:14 [info] Failed to set title bar overlay, this is probably expected
+2025-07-13 20:49:23 [info] Failed to set title bar overlay, this is probably expected
+2025-07-13 20:50:32 [info] Failed to set title bar overlay, this is probably expected
+2025-07-13 20:51:02 [info] Failed to set title bar overlay, this is probably expected
+2025-07-13 20:52:36 [info] Failed to set title bar overlay, this is probably expected
+2025-07-13 21:08:34 [info] Failed to set title bar overlay, this is probably expected
+2025-07-13 21:21:37 [error] Error in claudeURLHandler: {
+  error: TypeError: Invalid URL
+      at new URL (node:internal/url:818:25)
+      at U8 (C:\Users\Robert\AppData\Local\AnthropicClaude\app-0.11.6\resources\app.asar\.vite\build\index-Dwt_NcbE.js:107:12091)
+      at App.<anonymous> (C:\Users\Robert\AppData\Local\AnthropicClaude\app-0.11.6\resources\app.asar\.vite\build\index-Dwt_NcbE.js:261:11579)
+      at App.emit (node:events:518:28)
+      at n.emit (C:\Users\Robert\AppData\Local\AnthropicClaude\app-0.11.6\resources\app.asar\.vite\build\index-Dwt_NcbE.js:28:29583) {
+    [stack]: [Getter/Setter],
+    [message]: 'Invalid URL',
+    code: 'ERR_INVALID_URL',
+    input: '--fetch-schemes=sentry-ipc'
+  }
+}
+2025-07-13 21:21:37 [info] Failed to set title bar overlay, this is probably expected
+2025-07-13 21:21:37 [info] Starting app {
+  appVersion: '0.11.6',
+  isPackaged: true,
+  platform: 'win32',
+  arch: 'x64',
+  nodeVersion: '22.15.1'
+}
+2025-07-13 21:21:37 [info] Claude Studio: Feature disabled, skipping initialization
+2025-07-13 21:21:37 [info] App is installed, enabling initial check and auto-updates
+2025-07-13 21:21:37 [info] Checking for updates
+2025-07-13 21:21:39 [info] Failed to set title bar overlay, this is probably expected
+2025-07-13 21:21:41 [info] Failed to set title bar overlay, this is probably expected
+2025-07-13 21:21:55 [info] Failed to set title bar overlay, this is probably expected
+2025-07-13 21:39:16 [error] Error in claudeURLHandler: {
+  error: TypeError: Invalid URL
+      at new URL (node:internal/url:818:25)
+      at U8 (C:\Users\Robert\AppData\Local\AnthropicClaude\app-0.11.6\resources\app.asar\.vite\build\index-Dwt_NcbE.js:107:12091)
+      at App.<anonymous> (C:\Users\Robert\AppData\Local\AnthropicClaude\app-0.11.6\resources\app.asar\.vite\build\index-Dwt_NcbE.js:261:11579)
+      at App.emit (node:events:518:28)
+      at n.emit (C:\Users\Robert\AppData\Local\AnthropicClaude\app-0.11.6\resources\app.asar\.vite\build\index-Dwt_NcbE.js:28:29583) {
+    [stack]: [Getter/Setter],
+    [message]: 'Invalid URL',
+    code: 'ERR_INVALID_URL',
+    input: '--fetch-schemes=sentry-ipc'
+  }
+}
+2025-07-13 21:39:16 [info] Failed to set title bar overlay, this is probably expected
+2025-07-13 21:39:15 [info] Starting app {
+  appVersion: '0.11.6',
+  isPackaged: true,
+  platform: 'win32',
+  arch: 'x64',
+  nodeVersion: '22.15.1'
+}
+2025-07-13 21:39:16 [info] Claude Studio: Feature disabled, skipping initialization
+2025-07-13 21:39:16 [info] App is installed, enabling initial check and auto-updates
+2025-07-13 21:39:16 [info] Checking for updates
+2025-07-13 21:39:16 [info] Failed to set title bar overlay, this is probably expected
+2025-07-13 21:39:21 [info] Failed to set title bar overlay, this is probably expected
+2025-07-13 21:39:24 [info] Failed to set title bar overlay, this is probably expected
+2025-07-13 21:42:13 [info] Failed to set title bar overlay, this is probably expected
+2025-07-13 21:42:23 [info] Failed to set title bar overlay, this is probably expected
+2025-07-13 21:42:28 [error] Error in claudeURLHandler: {
+  error: TypeError: Invalid URL
+      at new URL (node:internal/url:818:25)
+      at U8 (C:\Users\Robert\AppData\Local\AnthropicClaude\app-0.11.6\resources\app.asar\.vite\build\index-Dwt_NcbE.js:107:12091)
+      at App.<anonymous> (C:\Users\Robert\AppData\Local\AnthropicClaude\app-0.11.6\resources\app.asar\.vite\build\index-Dwt_NcbE.js:261:11579)
+      at App.emit (node:events:518:28)
+      at n.emit (C:\Users\Robert\AppData\Local\AnthropicClaude\app-0.11.6\resources\app.asar\.vite\build\index-Dwt_NcbE.js:28:29583) {
+    [stack]: [Getter/Setter],
+    [message]: 'Invalid URL',
+    code: 'ERR_INVALID_URL',
+    input: '--fetch-schemes=sentry-ipc'
+  }
+}
+2025-07-13 21:42:28 [info] Failed to set title bar overlay, this is probably expected
+2025-07-13 21:42:27 [info] Starting app {
+  appVersion: '0.11.6',
+  isPackaged: true,
+  platform: 'win32',
+  arch: 'x64',
+  nodeVersion: '22.15.1'
+}
+2025-07-13 21:42:28 [info] Claude Studio: Feature disabled, skipping initialization
+2025-07-13 21:42:28 [info] App is installed, enabling initial check and auto-updates
+2025-07-13 21:42:28 [info] Checking for updates
+2025-07-13 21:42:29 [info] Failed to set title bar overlay, this is probably expected
+2025-07-13 21:43:03 [info] Failed to set title bar overlay, this is probably expected
+2025-07-13 21:43:09 [info] Failed to set title bar overlay, this is probably expected
+2025-07-13 21:43:10 [info] Failed to set title bar overlay, this is probably expected
+2025-07-13 21:44:00 [info] Starting app {
+  appVersion: '0.11.6',
+  isPackaged: true,
+  platform: 'win32',
+  arch: 'x64',
+  nodeVersion: '22.15.1'
+}
+2025-07-13 21:44:00 [info] Claude Studio: Feature disabled, skipping initialization
+2025-07-13 21:44:01 [info] App is installed, enabling initial check and auto-updates
+2025-07-13 21:44:01 [info] Checking for updates
+2025-07-13 21:44:03 [info] Starting periodic extension update checks (interval: 21600000ms)
+2025-07-13 21:44:03 [info] Checking if UtilityProcess should be used for extension vibedoc
+2025-07-13 21:44:03 [warn] UtilityProcess Check: Extension vibedoc not found in installed extensions
+2025-07-13 21:44:04 [info] Fetched 1 blocklists with 0 total entries
+2025-07-13 21:44:04 [info] Saved 1 blocklists with 0 entries
+2025-07-13 21:44:04 [info] Successfully updated 1 blocklists
+2025-07-13 21:45:06 [info] Starting app {
+  appVersion: '0.11.6',
+  isPackaged: true,
+  platform: 'win32',
+  arch: 'x64',
+  nodeVersion: '22.15.1'
+}
+2025-07-13 21:45:06 [info] Claude Studio: Feature disabled, skipping initialization
+2025-07-13 21:45:06 [info] App is installed, enabling initial check and auto-updates
+2025-07-13 21:45:06 [info] Checking for updates
+2025-07-13 21:45:13 [info] Starting periodic extension update checks (interval: 21600000ms)
+2025-07-13 21:45:13 [info] Checking if UtilityProcess should be used for extension vibedoc
+2025-07-13 21:45:13 [warn] UtilityProcess Check: Extension vibedoc not found in installed extensions
+2025-07-13 21:45:14 [info] Fetched 1 blocklists with 0 total entries
+2025-07-13 21:45:14 [info] Saved 1 blocklists with 0 entries
+2025-07-13 21:45:14 [info] Successfully updated 1 blocklists
+2025-07-13 21:50:18 [info] Starting app {
+  appVersion: '0.11.6',
+  isPackaged: true,
+  platform: 'win32',
+  arch: 'x64',
+  nodeVersion: '22.15.1'
+}
+2025-07-13 21:50:19 [info] Claude Studio: Feature disabled, skipping initialization
+2025-07-13 21:50:19 [info] App is installed, enabling initial check and auto-updates
+2025-07-13 21:50:19 [info] Checking for updates
+2025-07-13 21:50:22 [info] Starting periodic extension update checks (interval: 21600000ms)
+2025-07-13 21:50:22 [info] Checking if UtilityProcess should be used for extension vibedoc
+2025-07-13 21:50:22 [warn] UtilityProcess Check: Extension vibedoc not found in installed extensions
+2025-07-13 21:50:22 [info] Fetched 1 blocklists with 0 total entries
+2025-07-13 21:50:22 [info] Saved 1 blocklists with 0 entries
+2025-07-13 21:50:22 [info] Successfully updated 1 blocklists
+2025-07-13 21:52:07 [info] Starting app {
+  appVersion: '0.11.6',
+  isPackaged: true,
+  platform: 'win32',
+  arch: 'x64',
+  nodeVersion: '22.15.1'
+}
+2025-07-13 21:52:08 [info] Claude Studio: Feature disabled, skipping initialization
+2025-07-13 21:52:08 [info] App is installed, enabling initial check and auto-updates
+2025-07-13 21:52:08 [info] Checking for updates
+2025-07-13 21:52:10 [info] Starting periodic extension update checks (interval: 21600000ms)
+2025-07-13 21:52:10 [info] Checking if UtilityProcess should be used for extension vibedoc
+2025-07-13 21:52:10 [warn] UtilityProcess Check: Extension vibedoc not found in installed extensions
+2025-07-13 21:52:11 [info] Fetched 1 blocklists with 0 total entries
+2025-07-13 21:52:11 [info] Saved 1 blocklists with 0 entries
+2025-07-13 21:52:11 [info] Successfully updated 1 blocklists
+2025-07-13 21:54:03 [info] Starting app {
+  appVersion: '0.11.6',
+  isPackaged: true,
+  platform: 'win32',
+  arch: 'x64',
+  nodeVersion: '22.15.1'
+}
+2025-07-13 21:54:04 [info] Claude Studio: Feature disabled, skipping initialization
+2025-07-13 21:54:04 [info] App is installed, enabling initial check and auto-updates
+2025-07-13 21:54:04 [info] Checking for updates
+2025-07-13 21:54:07 [info] Starting periodic extension update checks (interval: 21600000ms)
+2025-07-13 21:54:07 [info] Checking if UtilityProcess should be used for extension vibedoc
+2025-07-13 21:54:07 [warn] UtilityProcess Check: Extension vibedoc not found in installed extensions
+2025-07-13 21:54:08 [info] Fetched 1 blocklists with 0 total entries
+2025-07-13 21:54:08 [info] Saved 1 blocklists with 0 entries
+2025-07-13 21:54:08 [info] Successfully updated 1 blocklists
+2025-07-13 21:57:33 [error] Error in claudeURLHandler: {
+  error: TypeError: Invalid URL
+      at new URL (node:internal/url:818:25)
+      at U8 (C:\Users\Robert\AppData\Local\AnthropicClaude\app-0.11.6\resources\app.asar\.vite\build\index-Dwt_NcbE.js:107:12091)
+      at App.<anonymous> (C:\Users\Robert\AppData\Local\AnthropicClaude\app-0.11.6\resources\app.asar\.vite\build\index-Dwt_NcbE.js:261:11579)
+      at App.emit (node:events:518:28)
+      at n.emit (C:\Users\Robert\AppData\Local\AnthropicClaude\app-0.11.6\resources\app.asar\.vite\build\index-Dwt_NcbE.js:28:29583) {
+    [stack]: [Getter/Setter],
+    [message]: 'Invalid URL',
+    code: 'ERR_INVALID_URL',
+    input: '--fetch-schemes=sentry-ipc'
+  }
+}
+2025-07-13 21:57:33 [info] Starting app {
+  appVersion: '0.11.6',
+  isPackaged: true,
+  platform: 'win32',
+  arch: 'x64',
+  nodeVersion: '22.15.1'
+}
+2025-07-13 21:57:33 [info] Claude Studio: Feature disabled, skipping initialization
+2025-07-13 21:57:34 [info] App is installed, enabling initial check and auto-updates
+2025-07-13 21:57:34 [info] Checking for updates
+2025-07-13 21:57:43 [info] Starting app {
+  appVersion: '0.11.6',
+  isPackaged: true,
+  platform: 'win32',
+  arch: 'x64',
+  nodeVersion: '22.15.1'
+}
+2025-07-13 21:57:43 [info] Claude Studio: Feature disabled, skipping initialization
+2025-07-13 21:57:43 [info] App is installed, enabling initial check and auto-updates
+2025-07-13 21:57:43 [info] Checking for updates
+2025-07-13 21:57:46 [info] Starting periodic extension update checks (interval: 21600000ms)
+2025-07-13 21:57:46 [info] Checking if UtilityProcess should be used for extension vibedoc
+2025-07-13 21:57:46 [warn] UtilityProcess Check: Extension vibedoc not found in installed extensions
+2025-07-13 21:57:47 [info] Fetched 1 blocklists with 0 total entries
+2025-07-13 21:57:47 [info] Saved 1 blocklists with 0 entries
+2025-07-13 21:57:47 [info] Successfully updated 1 blocklists
+2025-07-13 21:57:58 [info] Starting app {
+  appVersion: '0.11.6',
+  isPackaged: true,
+  platform: 'win32',
+  arch: 'x64',
+  nodeVersion: '22.15.1'
+}
+2025-07-13 21:57:58 [info] Claude Studio: Feature disabled, skipping initialization
+2025-07-13 21:57:58 [info] App is installed, enabling initial check and auto-updates
+2025-07-13 21:57:58 [info] Checking for updates
+2025-07-13 21:58:02 [info] Starting periodic extension update checks (interval: 21600000ms)
+2025-07-13 21:58:02 [info] Checking if UtilityProcess should be used for extension vibedoc
+2025-07-13 21:58:02 [warn] UtilityProcess Check: Extension vibedoc not found in installed extensions
+2025-07-13 21:58:02 [info] Fetched 1 blocklists with 0 total entries
+2025-07-13 21:58:02 [info] Saved 1 blocklists with 0 entries
+2025-07-13 21:58:02 [info] Successfully updated 1 blocklists
+2025-07-13 21:58:11 [info] Starting app {
+  appVersion: '0.11.6',
+  isPackaged: true,
+  platform: 'win32',
+  arch: 'x64',
+  nodeVersion: '22.15.1'
+}
+2025-07-13 21:58:11 [info] Claude Studio: Feature disabled, skipping initialization
+2025-07-13 21:58:11 [info] App is installed, enabling initial check and auto-updates
+2025-07-13 21:58:11 [info] Checking for updates
+2025-07-13 21:58:15 [info] Starting periodic extension update checks (interval: 21600000ms)
+2025-07-13 21:58:15 [info] Checking if UtilityProcess should be used for extension vibedoc
+2025-07-13 21:58:15 [warn] UtilityProcess Check: Extension vibedoc not found in installed extensions
+2025-07-13 21:58:15 [info] Fetched 1 blocklists with 0 total entries
+2025-07-13 21:58:15 [info] Saved 1 blocklists with 0 entries
+2025-07-13 21:58:15 [info] Successfully updated 1 blocklists
+2025-07-13 22:00:33 [info] Starting app {
+  appVersion: '0.11.6',
+  isPackaged: true,
+  platform: 'win32',
+  arch: 'x64',
+  nodeVersion: '22.15.1'
+}
+2025-07-13 22:00:33 [info] Claude Studio: Feature disabled, skipping initialization
+2025-07-13 22:00:33 [info] App is installed, enabling initial check and auto-updates
+2025-07-13 22:00:33 [info] Checking for updates
+2025-07-13 22:00:36 [info] Starting periodic extension update checks (interval: 21600000ms)
+2025-07-13 22:00:36 [info] Checking if UtilityProcess should be used for extension vibedoc
+2025-07-13 22:00:36 [warn] UtilityProcess Check: Extension vibedoc not found in installed extensions
+2025-07-13 22:00:36 [info] Fetched 1 blocklists with 0 total entries
+2025-07-13 22:00:36 [info] Saved 1 blocklists with 0 entries
+2025-07-13 22:00:36 [info] Successfully updated 1 blocklists
+2025-07-13 23:44:06 [info] Starting app {
+  appVersion: '0.11.6',
+  isPackaged: true,
+  platform: 'win32',
+  arch: 'x64',
+  nodeVersion: '22.15.1'
+}
+2025-07-13 23:44:06 [info] Claude Studio: Feature disabled, skipping initialization
+2025-07-13 23:44:07 [info] App is installed, enabling initial check and auto-updates
+2025-07-13 23:44:07 [info] Checking for updates
+2025-07-13 23:44:11 [info] Starting periodic extension update checks (interval: 21600000ms)
+2025-07-13 23:44:11 [info] Checking if UtilityProcess should be used for extension vibedoc
+2025-07-13 23:44:11 [warn] UtilityProcess Check: Extension vibedoc not found in installed extensions
+2025-07-13 23:44:11 [info] Fetched 1 blocklists with 0 total entries
+2025-07-13 23:44:11 [info] Saved 1 blocklists with 0 entries
+2025-07-13 23:44:11 [info] Successfully updated 1 blocklists
+2025-07-14 20:39:54 [info] Starting app {
+  appVersion: '0.11.6',
+  isPackaged: true,
+  platform: 'win32',
+  arch: 'x64',
+  nodeVersion: '22.15.1'
+}
+2025-07-14 20:39:54 [info] Claude Studio: Feature disabled, skipping initialization
+2025-07-14 20:39:54 [info] App is installed, enabling initial check and auto-updates
+2025-07-14 20:39:54 [info] Checking for updates
+2025-07-14 20:40:02 [info] Starting periodic extension update checks (interval: 21600000ms)
+2025-07-14 20:40:02 [info] Checking if UtilityProcess should be used for extension vibedoc
+2025-07-14 20:40:02 [warn] UtilityProcess Check: Extension vibedoc not found in installed extensions
+2025-07-14 20:40:03 [info] Fetched 1 blocklists with 0 total entries
+2025-07-14 20:40:03 [info] Saved 1 blocklists with 0 entries
+2025-07-14 20:40:03 [info] Successfully updated 1 blocklists
+2025-07-14 20:49:12 [error] Error in claudeURLHandler: {
+  error: TypeError: Invalid URL
+      at new URL (node:internal/url:818:25)
+      at U8 (C:\Users\Robert\AppData\Local\AnthropicClaude\app-0.11.6\resources\app.asar\.vite\build\index-Dwt_NcbE.js:107:12091)
+      at App.<anonymous> (C:\Users\Robert\AppData\Local\AnthropicClaude\app-0.11.6\resources\app.asar\.vite\build\index-Dwt_NcbE.js:261:11579)
+      at App.emit (node:events:518:28)
+      at n.emit (C:\Users\Robert\AppData\Local\AnthropicClaude\app-0.11.6\resources\app.asar\.vite\build\index-Dwt_NcbE.js:28:29583) {
+    [stack]: [Getter/Setter],
+    [message]: 'Invalid URL',
+    code: 'ERR_INVALID_URL',
+    input: '--fetch-schemes=sentry-ipc'
+  }
+}
+2025-07-14 20:49:12 [info] Starting app {
+  appVersion: '0.11.6',
+  isPackaged: true,
+  platform: 'win32',
+  arch: 'x64',
+  nodeVersion: '22.15.1'
+}
+2025-07-14 20:49:12 [info] Claude Studio: Feature disabled, skipping initialization
+2025-07-14 20:49:13 [info] App is installed, enabling initial check and auto-updates
+2025-07-14 20:49:13 [info] Checking for updates
+2025-07-14 20:49:14 [info] Navigation to https://claude.ai/api/challenge_redirect?to=https%3A%2F%2Fclaude.ai%2Fnew failed with status code 403: 
+2025-07-14 20:49:14 [info] Navigating back to https://claude.ai
+2025-07-14 20:49:14 [info] Navigation to https://claude.ai/ failed with status code 403: 
+2025-07-14 20:49:14 [info] Navigating back to https://claude.ai
+2025-07-14 20:49:14 [info] Navigation to https://claude.ai/ failed with status code 403: 
+2025-07-14 20:49:14 [info] Navigating back to https://claude.ai
+2025-07-14 20:49:14 [info] Navigation to https://claude.ai/ failed with status code 403: 
+2025-07-14 20:49:16 [error] Failed to show toast: {
+  error: Error
+      at t (C:\Users\Robert\AppData\Local\AnthropicClaude\app-0.11.6\resources\app.asar\.vite\build\index-Dwt_NcbE.js:35:7575)
+      at new <anonymous> (C:\Users\Robert\AppData\Local\AnthropicClaude\app-0.11.6\resources\app.asar\.vite\build\index-Dwt_NcbE.js:37:57511)
+      at u (C:\Users\Robert\AppData\Local\AnthropicClaude\app-0.11.6\resources\app.asar\.vite\build\index-Dwt_NcbE.js:37:58345)
+      at C:\Users\Robert\AppData\Local\AnthropicClaude\app-0.11.6\resources\app.asar\.vite\build\index-Dwt_NcbE.js:37:57995
+      at t.<anonymous> (C:\Users\Robert\AppData\Local\AnthropicClaude\app-0.11.6\resources\app.asar\.vite\build\index-Dwt_NcbE.js:37:49923)
+      at t._execute (C:\Users\Robert\AppData\Local\AnthropicClaude\app-0.11.6\resources\app.asar\.vite\build\index-Dwt_NcbE.js:37:27742)
+      at t.execute (C:\Users\Robert\AppData\Local\AnthropicClaude\app-0.11.6\resources\app.asar\.vite\build\index-Dwt_NcbE.js:37:27565)
+      at t.flush (C:\Users\Robert\AppData\Local\AnthropicClaude\app-0.11.6\resources\app.asar\.vite\build\index-Dwt_NcbE.js:37:31962)
+      at listOnTimeout (node:internal/timers:588:17)
+      at process.processTimers (node:internal/timers:523:7) {
+    stack: 'Error\n' +
+      '    at t (C:\\Users\\Robert\\AppData\\Local\\AnthropicClaude\\app-0.11.6\\resources\\app.asar\\.vite\\build\\index-Dwt_NcbE.js:35:7575)\n' +
+      '    at new <anonymous> (C:\\Users\\Robert\\AppData\\Local\\AnthropicClaude\\app-0.11.6\\resources\\app.asar\\.vite\\build\\index-Dwt_NcbE.js:37:57511)\n' +
+      '    at u (C:\\Users\\Robert\\AppData\\Local\\AnthropicClaude\\app-0.11.6\\resources\\app.asar\\.vite\\build\\index-Dwt_NcbE.js:37:58345)\n' +
+      '    at C:\\Users\\Robert\\AppData\\Local\\AnthropicClaude\\app-0.11.6\\resources\\app.asar\\.vite\\build\\index-Dwt_NcbE.js:37:57995\n' +
+      '    at t.<anonymous> (C:\\Users\\Robert\\AppData\\Local\\AnthropicClaude\\app-0.11.6\\resources\\app.asar\\.vite\\build\\index-Dwt_NcbE.js:37:49923)\n' +
+      '    at t._execute (C:\\Users\\Robert\\AppData\\Local\\AnthropicClaude\\app-0.11.6\\resources\\app.asar\\.vite\\build\\index-Dwt_NcbE.js:37:27742)\n' +
+      '    at t.execute (C:\\Users\\Robert\\AppData\\Local\\AnthropicClaude\\app-0.11.6\\resources\\app.asar\\.vite\\build\\index-Dwt_NcbE.js:37:27565)\n' +
+      '    at t.flush (C:\\Users\\Robert\\AppData\\Local\\AnthropicClaude\\app-0.11.6\\resources\\app.asar\\.vite\\build\\index-Dwt_NcbE.js:37:31962)\n' +
+      '    at listOnTimeout (node:internal/timers:588:17)\n' +
+      '    at process.processTimers (node:internal/timers:523:7)',
+    message: 'Timeout has occurred',
+    name: 'TimeoutError',
+    info: { meta: null, lastValue: null, seen: 0 }
+  }
+}
+2025-07-14 20:49:32 [info] Checking if UtilityProcess should be used for extension vibedoc
+2025-07-14 20:49:32 [warn] UtilityProcess Check: Extension vibedoc not found in installed extensions
+2025-07-14 22:40:06 [warn] Failed to fetch blocklist from https://claude.ai/api/organizations/50660eca-d26f-413d-838c-2302f7571931/dxt/blocklist: Error: Blocklist API returned status 403
+2025-07-14 22:40:06 [warn] No blocklist data found from any source
+2025-07-14 22:40:06 [warn] No blocklist data received
+2025-07-15 00:36:47 [error] Error in claudeURLHandler: {
+  error: TypeError: Invalid URL
+      at new URL (node:internal/url:818:25)
+      at U8 (C:\Users\Robert\AppData\Local\AnthropicClaude\app-0.11.6\resources\app.asar\.vite\build\index-Dwt_NcbE.js:107:12091)
+      at App.<anonymous> (C:\Users\Robert\AppData\Local\AnthropicClaude\app-0.11.6\resources\app.asar\.vite\build\index-Dwt_NcbE.js:261:11579)
+      at App.emit (node:events:518:28)
+      at n.emit (C:\Users\Robert\AppData\Local\AnthropicClaude\app-0.11.6\resources\app.asar\.vite\build\index-Dwt_NcbE.js:28:29583) {
+    [stack]: [Getter/Setter],
+    [message]: 'Invalid URL',
+    code: 'ERR_INVALID_URL',
+    input: '--fetch-schemes=sentry-ipc'
+  }
+}
+2025-07-15 00:36:47 [info] Starting app {
+  appVersion: '0.11.6',
+  isPackaged: true,
+  platform: 'win32',
+  arch: 'x64',
+  nodeVersion: '22.15.1'
+}
+2025-07-15 00:36:47 [info] Claude Studio: Feature disabled, skipping initialization
+2025-07-15 00:36:47 [info] App is installed, enabling initial check and auto-updates
+2025-07-15 00:36:47 [info] Checking for updates
+2025-07-15 00:36:48 [info] Reloading current URL: 'https://claude.ai/new'
+2025-07-15 00:36:54 [info] Checking if UtilityProcess should be used for extension vibedoc
+2025-07-15 00:36:54 [warn] UtilityProcess Check: Extension vibedoc not found in installed extensions
+2025-07-15 00:36:56 [error] Failed to show toast: {
+  error: Error
+      at t (C:\Users\Robert\AppData\Local\AnthropicClaude\app-0.11.6\resources\app.asar\.vite\build\index-Dwt_NcbE.js:35:7575)
+      at new <anonymous> (C:\Users\Robert\AppData\Local\AnthropicClaude\app-0.11.6\resources\app.asar\.vite\build\index-Dwt_NcbE.js:37:57511)
+      at u (C:\Users\Robert\AppData\Local\AnthropicClaude\app-0.11.6\resources\app.asar\.vite\build\index-Dwt_NcbE.js:37:58345)
+      at C:\Users\Robert\AppData\Local\AnthropicClaude\app-0.11.6\resources\app.asar\.vite\build\index-Dwt_NcbE.js:37:57995
+      at t.<anonymous> (C:\Users\Robert\AppData\Local\AnthropicClaude\app-0.11.6\resources\app.asar\.vite\build\index-Dwt_NcbE.js:37:49923)
+      at t._execute (C:\Users\Robert\AppData\Local\AnthropicClaude\app-0.11.6\resources\app.asar\.vite\build\index-Dwt_NcbE.js:37:27742)
+      at t.execute (C:\Users\Robert\AppData\Local\AnthropicClaude\app-0.11.6\resources\app.asar\.vite\build\index-Dwt_NcbE.js:37:27565)
+      at t.flush (C:\Users\Robert\AppData\Local\AnthropicClaude\app-0.11.6\resources\app.asar\.vite\build\index-Dwt_NcbE.js:37:31962)
+      at listOnTimeout (node:internal/timers:588:17)
+      at process.processTimers (node:internal/timers:523:7) {
+    stack: 'Error\n' +
+      '    at t (C:\\Users\\Robert\\AppData\\Local\\AnthropicClaude\\app-0.11.6\\resources\\app.asar\\.vite\\build\\index-Dwt_NcbE.js:35:7575)\n' +
+      '    at new <anonymous> (C:\\Users\\Robert\\AppData\\Local\\AnthropicClaude\\app-0.11.6\\resources\\app.asar\\.vite\\build\\index-Dwt_NcbE.js:37:57511)\n' +
+      '    at u (C:\\Users\\Robert\\AppData\\Local\\AnthropicClaude\\app-0.11.6\\resources\\app.asar\\.vite\\build\\index-Dwt_NcbE.js:37:58345)\n' +
+      '    at C:\\Users\\Robert\\AppData\\Local\\AnthropicClaude\\app-0.11.6\\resources\\app.asar\\.vite\\build\\index-Dwt_NcbE.js:37:57995\n' +
+      '    at t.<anonymous> (C:\\Users\\Robert\\AppData\\Local\\AnthropicClaude\\app-0.11.6\\resources\\app.asar\\.vite\\build\\index-Dwt_NcbE.js:37:49923)\n' +
+      '    at t._execute (C:\\Users\\Robert\\AppData\\Local\\AnthropicClaude\\app-0.11.6\\resources\\app.asar\\.vite\\build\\index-Dwt_NcbE.js:37:27742)\n' +
+      '    at t.execute (C:\\Users\\Robert\\AppData\\Local\\AnthropicClaude\\app-0.11.6\\resources\\app.asar\\.vite\\build\\index-Dwt_NcbE.js:37:27565)\n' +
+      '    at t.flush (C:\\Users\\Robert\\AppData\\Local\\AnthropicClaude\\app-0.11.6\\resources\\app.asar\\.vite\\build\\index-Dwt_NcbE.js:37:31962)\n' +
+      '    at listOnTimeout (node:internal/timers:588:17)\n' +
+      '    at process.processTimers (node:internal/timers:523:7)',
+    message: 'Timeout has occurred',
+    name: 'TimeoutError',
+    info: { meta: null, lastValue: null, seen: 0 }
+  }
+}
+2025-07-15 00:39:54 [info] Checking for updates
+2025-07-15 00:40:03 [warn] Failed to fetch blocklist from https://claude.ai/api/organizations/50660eca-d26f-413d-838c-2302f7571931/dxt/blocklist: Error: Blocklist API returned status 403
+2025-07-15 00:40:03 [warn] No blocklist data found from any source
+2025-07-15 00:40:03 [warn] No blocklist data received
+2025-07-15 12:36:41 [info] Starting app {
+  appVersion: '0.11.6',
+  isPackaged: true,
+  platform: 'win32',
+  arch: 'x64',
+  nodeVersion: '22.15.1'
+}
+2025-07-15 12:36:41 [info] Claude Studio: Feature disabled, skipping initialization
+2025-07-15 12:36:41 [info] App is installed, enabling initial check and auto-updates
+2025-07-15 12:36:41 [info] Checking for updates
+2025-07-15 12:36:44 [info] Found an update, downloading
+2025-07-15 12:36:45 [info] Starting periodic extension update checks (interval: 21600000ms)
+2025-07-15 12:36:45 [info] Checking if UtilityProcess should be used for extension vibedoc
+2025-07-15 12:36:45 [warn] UtilityProcess Check: Extension vibedoc not found in installed extensions
+2025-07-15 12:36:45 [info] Fetched 1 blocklists with 0 total entries
+2025-07-15 12:36:45 [info] Saved 1 blocklists with 0 entries
+2025-07-15 12:36:45 [info] Successfully updated 1 blocklists
+2025-07-15 12:37:24 [error] Error in claudeURLHandler: {
+  error: TypeError: Invalid URL
+      at new URL (node:internal/url:818:25)
+      at U8 (C:\Users\Robert\AppData\Local\AnthropicClaude\app-0.11.6\resources\app.asar\.vite\build\index-Dwt_NcbE.js:107:12091)
+      at App.<anonymous> (C:\Users\Robert\AppData\Local\AnthropicClaude\app-0.11.6\resources\app.asar\.vite\build\index-Dwt_NcbE.js:261:11579)
+      at App.emit (node:events:518:28)
+      at n.emit (C:\Users\Robert\AppData\Local\AnthropicClaude\app-0.11.6\resources\app.asar\.vite\build\index-Dwt_NcbE.js:28:29583) {
+    [stack]: [Getter/Setter],
+    [message]: 'Invalid URL',
+    code: 'ERR_INVALID_URL',
+    input: '0.12.16'
+  }
+}
+2025-07-15 12:37:24 [info] Starting app {
+  appVersion: '0.12.16',
+  isPackaged: true,
+  platform: 'win32',
+  arch: 'x64',
+  nodeVersion: '22.15.1'
+}
+2025-07-15 12:37:25 [info] Claude Studio: Feature disabled, skipping initialization
+2025-07-15 12:37:25 [info] App is installed, enabling initial check and auto-updates
+2025-07-15 12:37:25 [info] Checking for updates
+2025-07-15 12:37:27 [info] Update downloaded and ready to install { releaseName: '0.12.16' }
+2025-07-15 12:44:23 [info] Starting app {
+  appVersion: '0.12.16',
+  isPackaged: true,
+  platform: 'win32',
+  arch: 'x64',
+  nodeVersion: '22.15.1'
+}
+2025-07-15 12:44:23 [info] Claude Studio: Feature disabled, skipping initialization
+2025-07-15 12:44:23 [info] App is installed, enabling initial check and auto-updates
+2025-07-15 12:44:23 [info] Checking for updates
+2025-07-15 12:44:26 [info] Starting periodic extension update checks (interval: 21600000ms)
+2025-07-15 12:44:26 [info] Checking if UtilityProcess should be used for extension vibedoc
+2025-07-15 12:44:26 [warn] UtilityProcess Check: Extension vibedoc not found in installed extensions
+2025-07-15 12:44:27 [info] Fetched 1 blocklists with 0 total entries
+2025-07-15 12:44:27 [info] Saved 1 blocklists with 0 entries
+2025-07-15 12:44:27 [info] Successfully updated 1 blocklists
+2025-07-15 12:50:20 [info] Starting app {
+  appVersion: '0.12.16',
+  isPackaged: true,
+  platform: 'win32',
+  arch: 'x64',
+  nodeVersion: '22.15.1'
+}
+2025-07-15 12:50:21 [info] Claude Studio: Feature disabled, skipping initialization
+2025-07-15 12:50:21 [info] App is installed, enabling initial check and auto-updates
+2025-07-15 12:50:21 [info] Checking for updates
+2025-07-15 12:50:24 [info] Starting periodic extension update checks (interval: 21600000ms)
+2025-07-15 12:50:24 [info] Checking if UtilityProcess should be used for extension vibedoc
+2025-07-15 12:50:24 [warn] UtilityProcess Check: Extension vibedoc not found in installed extensions
+2025-07-15 12:50:24 [info] Fetched 1 blocklists with 0 total entries
+2025-07-15 12:50:24 [info] Saved 1 blocklists with 0 entries
+2025-07-15 12:50:24 [info] Successfully updated 1 blocklists
+2025-07-15 12:50:42 [info] Starting app {
+  appVersion: '0.12.16',
+  isPackaged: true,
+  platform: 'win32',
+  arch: 'x64',
+  nodeVersion: '22.15.1'
+}
+2025-07-15 12:50:43 [info] Claude Studio: Feature disabled, skipping initialization
+2025-07-15 12:50:43 [info] App is installed, enabling initial check and auto-updates
+2025-07-15 12:50:43 [info] Checking for updates
+2025-07-15 12:50:47 [info] Starting periodic extension update checks (interval: 21600000ms)
+2025-07-15 12:50:47 [info] Checking if UtilityProcess should be used for extension vibedoc
+2025-07-15 12:50:47 [warn] UtilityProcess Check: Extension vibedoc not found in installed extensions
+2025-07-15 12:50:47 [info] Fetched 1 blocklists with 0 total entries
+2025-07-15 12:50:47 [info] Saved 1 blocklists with 0 entries
+2025-07-15 12:50:47 [info] Successfully updated 1 blocklists
+2025-07-15 13:20:14 [info] Starting app {
+  appVersion: '0.12.16',
+  isPackaged: true,
+  platform: 'win32',
+  arch: 'x64',
+  nodeVersion: '22.15.1'
+}
+2025-07-15 13:20:14 [info] Claude Studio: Feature disabled, skipping initialization
+2025-07-15 13:20:15 [info] App is installed, enabling initial check and auto-updates
+2025-07-15 13:20:15 [info] Checking for updates
+2025-07-15 13:20:19 [info] Starting periodic extension update checks (interval: 21600000ms)
+2025-07-15 13:20:19 [info] Checking if UtilityProcess should be used for extension vibedoc
+2025-07-15 13:20:19 [warn] UtilityProcess Check: Extension vibedoc not found in installed extensions
+2025-07-15 13:20:19 [info] Fetched 1 blocklists with 0 total entries
+2025-07-15 13:20:19 [info] Saved 1 blocklists with 0 entries
+2025-07-15 13:20:19 [info] Successfully updated 1 blocklists
+2025-07-15 13:49:33 [info] Starting app {
+  appVersion: '0.12.16',
+  isPackaged: true,
+  platform: 'win32',
+  arch: 'x64',
+  nodeVersion: '22.15.1'
+}
+2025-07-15 13:49:33 [info] Claude Studio: Feature disabled, skipping initialization
+2025-07-15 13:49:33 [info] App is installed, enabling initial check and auto-updates
+2025-07-15 13:49:33 [info] Checking for updates
+2025-07-15 13:49:36 [info] Starting periodic extension update checks (interval: 21600000ms)
+2025-07-15 13:49:36 [info] Checking if UtilityProcess should be used for extension vibedoc
+2025-07-15 13:49:36 [warn] UtilityProcess Check: Extension vibedoc not found in installed extensions
+2025-07-15 13:49:36 [info] Fetched 1 blocklists with 0 total entries
+2025-07-15 13:49:36 [info] Saved 1 blocklists with 0 entries
+2025-07-15 13:49:36 [info] Successfully updated 1 blocklists
+2025-07-15 13:54:30 [info] Starting app {
+  appVersion: '0.12.16',
+  isPackaged: true,
+  platform: 'win32',
+  arch: 'x64',
+  nodeVersion: '22.15.1'
+}
+2025-07-15 13:54:30 [error] Error reading or parsing config file: {
+  error: SyntaxError: Unexpected non-whitespace character after JSON at position 13 (line 1 column 14)
+      at JSON.parse (<anonymous>)
+      at eUe (C:\Users\Robert\AppData\Local\AnthropicClaude\app-0.12.16\resources\app.asar\.vite\build\index-R66JDSay.js:167:8961)
+      at dr (C:\Users\Robert\AppData\Local\AnthropicClaude\app-0.12.16\resources\app.asar\.vite\build\index-R66JDSay.js:167:9585)
+      at Object.<anonymous> (C:\Users\Robert\AppData\Local\AnthropicClaude\app-0.12.16\resources\app.asar\.vite\build\index-R66JDSay.js:257:3901)
+      at Module._compile (node:internal/modules/cjs/loader:1738:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1904:10)
+      at Module.load (node:internal/modules/cjs/loader:1472:32)
+      at Module._load (node:internal/modules/cjs/loader:1289:12)
+      at c._load (node:electron/js2c/node_init:2:17950)
+      at TracingChannel.traceSync (node:diagnostics_channel:322:14) {
+    [stack]: [Getter/Setter],
+    [message]: 'Unexpected non-whitespace character after JSON at position 13 (line 1 column 14)'
+  }
+}
+2025-07-15 13:54:30 [info] Claude Studio: Feature disabled, skipping initialization
+2025-07-15 13:54:30 [info] App is installed, enabling initial check and auto-updates
+2025-07-15 13:54:30 [info] Checking for updates
+2025-07-15 13:54:35 [info] Starting periodic extension update checks (interval: 21600000ms)
+2025-07-15 13:54:35 [info] Fetched 1 blocklists with 0 total entries
+2025-07-15 13:54:35 [info] Saved 1 blocklists with 0 entries
+2025-07-15 13:54:35 [info] Successfully updated 1 blocklists
+2025-07-15 13:56:19 [error] Error in claudeURLHandler: {
+  error: TypeError: Invalid URL
+      at new URL (node:internal/url:818:25)
+      at G6 (C:\Users\Robert\AppData\Local\AnthropicClaude\app-0.12.16\resources\app.asar\.vite\build\index-R66JDSay.js:167:11900)
+      at App.<anonymous> (C:\Users\Robert\AppData\Local\AnthropicClaude\app-0.12.16\resources\app.asar\.vite\build\index-R66JDSay.js:257:7497)
+      at App.emit (node:events:518:28)
+      at n.emit (C:\Users\Robert\AppData\Local\AnthropicClaude\app-0.12.16\resources\app.asar\.vite\build\index-R66JDSay.js:28:29569) {
+    [stack]: [Getter/Setter],
+    [message]: 'Invalid URL',
+    code: 'ERR_INVALID_URL',
+    input: '--fetch-schemes=sentry-ipc'
+  }
+}
+2025-07-15 13:56:19 [info] Starting app {
+  appVersion: '0.12.16',
+  isPackaged: true,
+  platform: 'win32',
+  arch: 'x64',
+  nodeVersion: '22.15.1'
+}
+2025-07-15 13:56:19 [error] Error reading or parsing config file: {
+  error: SyntaxError: Unexpected non-whitespace character after JSON at position 13 (line 1 column 14)
+      at JSON.parse (<anonymous>)
+      at eUe (C:\Users\Robert\AppData\Local\AnthropicClaude\app-0.12.16\resources\app.asar\.vite\build\index-R66JDSay.js:167:8961)
+      at dr (C:\Users\Robert\AppData\Local\AnthropicClaude\app-0.12.16\resources\app.asar\.vite\build\index-R66JDSay.js:167:9585)
+      at Object.<anonymous> (C:\Users\Robert\AppData\Local\AnthropicClaude\app-0.12.16\resources\app.asar\.vite\build\index-R66JDSay.js:257:3901)
+      at Module._compile (node:internal/modules/cjs/loader:1738:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1904:10)
+      at Module.load (node:internal/modules/cjs/loader:1472:32)
+      at Module._load (node:internal/modules/cjs/loader:1289:12)
+      at c._load (node:electron/js2c/node_init:2:17950)
+      at TracingChannel.traceSync (node:diagnostics_channel:322:14) {
+    [stack]: [Getter/Setter],
+    [message]: 'Unexpected non-whitespace character after JSON at position 13 (line 1 column 14)'
+  }
+}
+2025-07-15 13:56:19 [info] Claude Studio: Feature disabled, skipping initialization
+2025-07-15 13:56:19 [info] App is installed, enabling initial check and auto-updates
+2025-07-15 13:56:19 [info] Checking for updates
+2025-07-15 13:56:29 [error] Error in claudeURLHandler: {
+  error: TypeError: Invalid URL
+      at new URL (node:internal/url:818:25)
+      at G6 (C:\Users\Robert\AppData\Local\AnthropicClaude\app-0.12.16\resources\app.asar\.vite\build\index-R66JDSay.js:167:11900)
+      at App.<anonymous> (C:\Users\Robert\AppData\Local\AnthropicClaude\app-0.12.16\resources\app.asar\.vite\build\index-R66JDSay.js:257:7497)
+      at App.emit (node:events:518:28)
+      at n.emit (C:\Users\Robert\AppData\Local\AnthropicClaude\app-0.12.16\resources\app.asar\.vite\build\index-R66JDSay.js:28:29569) {
+    [stack]: [Getter/Setter],
+    [message]: 'Invalid URL',
+    code: 'ERR_INVALID_URL',
+    input: '--fetch-schemes=sentry-ipc'
+  }
+}
+2025-07-15 13:56:29 [info] Starting app {
+  appVersion: '0.12.16',
+  isPackaged: true,
+  platform: 'win32',
+  arch: 'x64',
+  nodeVersion: '22.15.1'
+}
+2025-07-15 13:56:29 [error] Error reading or parsing config file: {
+  error: SyntaxError: Unexpected non-whitespace character after JSON at position 13 (line 1 column 14)
+      at JSON.parse (<anonymous>)
+      at eUe (C:\Users\Robert\AppData\Local\AnthropicClaude\app-0.12.16\resources\app.asar\.vite\build\index-R66JDSay.js:167:8961)
+      at dr (C:\Users\Robert\AppData\Local\AnthropicClaude\app-0.12.16\resources\app.asar\.vite\build\index-R66JDSay.js:167:9585)
+      at Object.<anonymous> (C:\Users\Robert\AppData\Local\AnthropicClaude\app-0.12.16\resources\app.asar\.vite\build\index-R66JDSay.js:257:3901)
+      at Module._compile (node:internal/modules/cjs/loader:1738:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1904:10)
+      at Module.load (node:internal/modules/cjs/loader:1472:32)
+      at Module._load (node:internal/modules/cjs/loader:1289:12)
+      at c._load (node:electron/js2c/node_init:2:17950)
+      at TracingChannel.traceSync (node:diagnostics_channel:322:14) {
+    [stack]: [Getter/Setter],
+    [message]: 'Unexpected non-whitespace character after JSON at position 13 (line 1 column 14)'
+  }
+}
+2025-07-15 13:56:29 [info] Claude Studio: Feature disabled, skipping initialization
+2025-07-15 13:56:29 [info] App is installed, enabling initial check and auto-updates
+2025-07-15 13:56:29 [info] Checking for updates
+2025-07-15 13:58:25 [info] Starting app {
+  appVersion: '0.12.16',
+  isPackaged: true,
+  platform: 'win32',
+  arch: 'x64',
+  nodeVersion: '22.15.1'
+}
+2025-07-15 13:58:25 [error] Error reading or parsing config file: {
+  error: SyntaxError: Unexpected non-whitespace character after JSON at position 13 (line 1 column 14)
+      at JSON.parse (<anonymous>)
+      at eUe (C:\Users\Robert\AppData\Local\AnthropicClaude\app-0.12.16\resources\app.asar\.vite\build\index-R66JDSay.js:167:8961)
+      at dr (C:\Users\Robert\AppData\Local\AnthropicClaude\app-0.12.16\resources\app.asar\.vite\build\index-R66JDSay.js:167:9585)
+      at Object.<anonymous> (C:\Users\Robert\AppData\Local\AnthropicClaude\app-0.12.16\resources\app.asar\.vite\build\index-R66JDSay.js:257:3901)
+      at Module._compile (node:internal/modules/cjs/loader:1738:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1904:10)
+      at Module.load (node:internal/modules/cjs/loader:1472:32)
+      at Module._load (node:internal/modules/cjs/loader:1289:12)
+      at c._load (node:electron/js2c/node_init:2:17950)
+      at TracingChannel.traceSync (node:diagnostics_channel:322:14) {
+    [stack]: [Getter/Setter],
+    [message]: 'Unexpected non-whitespace character after JSON at position 13 (line 1 column 14)'
+  }
+}
+2025-07-15 13:58:25 [info] Claude Studio: Feature disabled, skipping initialization
+2025-07-15 13:58:25 [info] App is installed, enabling initial check and auto-updates
+2025-07-15 13:58:25 [info] Checking for updates
+2025-07-15 13:58:30 [info] Starting periodic extension update checks (interval: 21600000ms)
+2025-07-15 13:58:30 [info] Fetched 1 blocklists with 0 total entries
+2025-07-15 13:58:30 [info] Saved 1 blocklists with 0 entries
+2025-07-15 13:58:30 [info] Successfully updated 1 blocklists
+2025-07-15 14:02:02 [info] Starting app {
+  appVersion: '0.12.16',
+  isPackaged: true,
+  platform: 'win32',
+  arch: 'x64',
+  nodeVersion: '22.15.1'
+}
+2025-07-15 14:02:02 [info] Claude Studio: Feature disabled, skipping initialization
+2025-07-15 14:02:02 [info] App is installed, enabling initial check and auto-updates
+2025-07-15 14:02:02 [info] Checking for updates
+2025-07-15 14:02:08 [info] Starting periodic extension update checks (interval: 21600000ms)
+2025-07-15 14:02:08 [info] Checking if UtilityProcess should be used for extension vibedoc
+2025-07-15 14:02:08 [warn] UtilityProcess Check: Extension vibedoc not found in installed extensions
+2025-07-15 14:02:09 [info] Fetched 1 blocklists with 0 total entries
+2025-07-15 14:02:09 [info] Saved 1 blocklists with 0 entries
+2025-07-15 14:02:09 [info] Successfully updated 1 blocklists
+2025-07-15 14:34:50 [info] Starting app {
+  appVersion: '0.12.16',
+  isPackaged: true,
+  platform: 'win32',
+  arch: 'x64',
+  nodeVersion: '22.15.1'
+}
+2025-07-15 14:34:51 [info] Claude Studio: Feature disabled, skipping initialization
+2025-07-15 14:34:51 [info] App is installed, enabling initial check and auto-updates
+2025-07-15 14:34:51 [info] Checking for updates
+2025-07-15 14:34:54 [info] Starting periodic extension update checks (interval: 21600000ms)
+2025-07-15 14:34:54 [info] Checking if UtilityProcess should be used for extension vibedoc
+2025-07-15 14:34:54 [warn] UtilityProcess Check: Extension vibedoc not found in installed extensions
+2025-07-15 14:34:54 [info] Fetched 1 blocklists with 0 total entries
+2025-07-15 14:34:54 [info] Saved 1 blocklists with 0 entries
+2025-07-15 14:34:54 [info] Successfully updated 1 blocklists
+2025-07-15 15:00:48 [info] Starting app {
+  appVersion: '0.12.16',
+  isPackaged: true,
+  platform: 'win32',
+  arch: 'x64',
+  nodeVersion: '22.15.1'
+}
+2025-07-15 15:00:48 [info] Claude Studio: Feature disabled, skipping initialization
+2025-07-15 15:00:48 [info] App is installed, enabling initial check and auto-updates
+2025-07-15 15:00:48 [info] Checking for updates
+2025-07-15 15:00:56 [info] Starting periodic extension update checks (interval: 21600000ms)
+2025-07-15 15:00:56 [info] Checking if UtilityProcess should be used for extension vibedoc
+2025-07-15 15:00:56 [warn] UtilityProcess Check: Extension vibedoc not found in installed extensions
+2025-07-15 15:00:56 [info] Fetched 1 blocklists with 0 total entries
+2025-07-15 15:00:56 [info] Saved 1 blocklists with 0 entries
+2025-07-15 15:00:56 [info] Successfully updated 1 blocklists
+2025-07-15 16:03:33 [info] Starting app {
+  appVersion: '0.12.16',
+  isPackaged: true,
+  platform: 'win32',
+  arch: 'x64',
+  nodeVersion: '22.15.1'
+}
+2025-07-15 16:03:33 [info] Claude Studio: Feature disabled, skipping initialization
+2025-07-15 16:03:33 [info] App is installed, enabling initial check and auto-updates
+2025-07-15 16:03:33 [info] Checking for updates
+2025-07-15 16:03:42 [info] Starting periodic extension update checks (interval: 21600000ms)
+2025-07-15 16:03:42 [info] Checking if UtilityProcess should be used for extension vibedoc
+2025-07-15 16:03:42 [warn] UtilityProcess Check: Extension vibedoc not found in installed extensions
+2025-07-15 16:03:42 [info] Fetched 1 blocklists with 0 total entries
+2025-07-15 16:03:42 [info] Saved 1 blocklists with 0 entries
+2025-07-15 16:03:42 [info] Successfully updated 1 blocklists
+2025-07-15 16:04:41 [info] Starting app {
+  appVersion: '0.12.16',
+  isPackaged: true,
+  platform: 'win32',
+  arch: 'x64',
+  nodeVersion: '22.15.1'
+}
+2025-07-15 16:04:41 [info] Claude Studio: Feature disabled, skipping initialization
+2025-07-15 16:04:41 [info] App is installed, enabling initial check and auto-updates
+2025-07-15 16:04:41 [info] Checking for updates
+2025-07-15 16:04:49 [info] Starting periodic extension update checks (interval: 21600000ms)
+2025-07-15 16:04:49 [info] Checking if UtilityProcess should be used for extension vibedoc
+2025-07-15 16:04:49 [warn] UtilityProcess Check: Extension vibedoc not found in installed extensions
+2025-07-15 16:04:49 [info] Fetched 1 blocklists with 0 total entries
+2025-07-15 16:04:49 [info] Saved 1 blocklists with 0 entries
+2025-07-15 16:04:49 [info] Successfully updated 1 blocklists
+2025-07-15 16:11:11 [info] Starting app {
+  appVersion: '0.12.16',
+  isPackaged: true,
+  platform: 'win32',
+  arch: 'x64',
+  nodeVersion: '22.15.1'
+}
+2025-07-15 16:11:11 [info] Claude Studio: Feature disabled, skipping initialization
+2025-07-15 16:11:12 [info] App is installed, enabling initial check and auto-updates
+2025-07-15 16:11:12 [info] Checking for updates
+2025-07-15 16:11:15 [info] Starting periodic extension update checks (interval: 21600000ms)
+2025-07-15 16:11:15 [info] Checking if UtilityProcess should be used for extension vibedoc
+2025-07-15 16:11:15 [warn] UtilityProcess Check: Extension vibedoc not found in installed extensions
+2025-07-15 16:11:16 [info] Fetched 1 blocklists with 0 total entries
+2025-07-15 16:11:16 [info] Saved 1 blocklists with 0 entries
+2025-07-15 16:11:16 [info] Successfully updated 1 blocklists
