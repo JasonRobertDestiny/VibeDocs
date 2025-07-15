@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 
-import { Server } from "@modelcontextprotocol/sdk/server/index.js";
-import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
+import { Server } from "../node_modules/@modelcontextprotocol/sdk/dist/esm/server/index.js";
+import { StdioServerTransport } from "../node_modules/@modelcontextprotocol/sdk/dist/esm/server/stdio.js";
 import {
   CallToolRequestSchema,
   ListToolsRequestSchema,
-} from "@modelcontextprotocol/sdk/types.js";
+} from "../node_modules/@modelcontextprotocol/sdk/dist/esm/types.js";
 import { SOP_TEMPLATE } from "../lib/sop-template.js";
 import { PipelineProcessor, ProcessingStatus } from "../lib/pipeline-processor.js";
 import { FileExportManager } from "../lib/file-export-manager.js";
