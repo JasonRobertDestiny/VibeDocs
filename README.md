@@ -287,21 +287,23 @@ graph TB
 
 ## 🎬 功能演示展示
 
-### 📸 核心功能截图
+### 📜 完整报告  
+[点击查看完整质量评估与进度监控报告](https://claude.ai/share/68fe7875-5449-4b1c-9758-8299849bb92b)  
 
-<div align="center">
+### 📸 核心功能截图  
+<div align="center">  
 
-#### 🚀 MCP Server启动界面
-<img src="./image/show.png" alt="MCP Server启动界面" width="800"/>
+#### 🚀 MCP Server 启动界面  
+<img src="./image/show.png" alt="MCP Server启动界面" width="800"/>  
 
-#### 🧠 AI开发规划生成过程
-<img src="./image/show1.png" alt="AI开发规划生成" width="800"/>
+#### 🧠 AI 开发规划生成过程  
+<img src="./image/show1.png" alt="AI开发规划生成" width="800"/>  
 
-#### 📊 完整开发计划输出
-<img src="./image/show2.png" alt="完整开发计划" width="800"/>
+#### 📊 完整开发计划输出  
+<img src="./image/show2.png" alt="完整开发计划" width="800"/>  
 
-#### 🔍 质量评估与进度监控
-<img src="./image/show3.png" alt="质量评估界面" width="800"/>
+#### 🔍 质量评估与进度监控  
+<img src="./image/show3.png" alt="质量评估界面" width="800"/>  
 
 </div>
 
