@@ -1,56 +1,34 @@
 {
   "name": "vibedoc-mcp-server",
-  "version": "1.0.0",
-  "description": "🏆 VibeDoc MCP Server - 魔搭MCP&Agent2025挑战赛MCP赛道一 | 首个基于Model Context Protocol的AI开发规划服务",
+  "version": "2.0.0",
+  "description": "🏆 VibeDoc MCP Server 2.0 - 魔搭MCP&Agent2025挑战赛MCP赛道一参赛作品 | 全球首个基于Model Context Protocol的AI开发规划服务，7大工具+双重质量评估+并行优化架构",
   "main": "src/index.ts",
   "type": "module",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build && npm run mcp:build",
-    "start": "cross-env PORT=${PORT:-3000} next start",
-    "lint": "next lint",
-    "mcp": "tsx src/index.ts",
+    "mcp": "npx tsx src/index.ts",
     "mcp:build": "tsc src/index.ts --outDir dist --target ES2022 --module ESNext --moduleResolution bundler --allowSyntheticDefaultImports",
-    "mcp:start": "node dist/index.js",
-    "test:mcp": "node test-mcp.js",
-    "postinstall": "npm run mcp:build"
+    "mcp:start": "node dist/src/index.js",
+    "test:mcp": "node test-mcp-server.js",
+    "test:full": "npm run mcp:build && node test-mcp-server.js",
+    "postinstall": "npm run mcp:build",
+    "dev": "npx tsx --watch src/index.ts",
+    "build": "npm run mcp:build",
+    "start": "npm run mcp:start"
   },
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.15.1",
-    "@radix-ui/react-label": "^2.1.7",
-    "@radix-ui/react-progress": "^1.1.7",
-    "@radix-ui/react-slot": "^1.2.3",
-    "@tailwindcss/typography": "^0.5.16",
-    "class-variance-authority": "^0.7.1",
-    "clsx": "^2.1.1",
-    "lucide-react": "^0.525.0",
-    "next": "15.3.5",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "react-markdown": "^10.1.0",
-    "remark-gfm": "^4.0.1",
-    "tailwind-merge": "^3.3.1"
+    "@modelcontextprotocol/sdk": "^1.15.1"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3",
-    "@tailwindcss/postcss": "^4",
     "@types/node": "^20.19.7",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "cross-env": "^7.0.3",
-    "eslint": "^9",
-    "eslint-config-next": "15.3.5",
-    "tailwindcss": "^4",
-    "ts-node": "^10.9.2",
     "tsx": "^4.20.3",
-    "tw-animate-css": "^1.3.5",
     "typescript": "^5"
   },
   "keywords": [
     "mcp-server",
     "model-context-protocol", 
     "魔搭挑战赛",
-    "modelscope-hackathon",
+    "modelscope-hackathon-2025",
+    "mcp-track-entry",
     "ai-development-planning",
     "claude-desktop",
     "silicon-flow",
@@ -60,7 +38,18 @@
     "ai-assistant",
     "project-planning",
     "智能开发助手",
-    "开发规划工具"
+    "开发规划工具",
+    "pipeline-processing",
+    "visualization-generation",
+    "prompt-engineering",
+    "quality-assessment",
+    "progress-monitoring",
+    "parallel-optimization",
+    "semantic-caching",
+    "mermaid-charts",
+    "markdown-export",
+    "real-time-feedback",
+    "competition-ready"
   ],
   "author": "JasonRobertDestiny <jason@vibedoc.dev>",
   "license": "MIT",
@@ -79,14 +68,26 @@
   "mcp": {
     "server": {
       "name": "vibedoc",
-      "version": "1.0.0",
-      "description": "AI-powered development planning MCP server",
+      "version": "2.0.0",
+      "description": "AI-powered development planning MCP server with 5-stage pipeline processing + dual quality assessment",
       "tools": [
         "generate_development_plan",
         "get_project_template", 
-        "generate_ai_prompts"
+        "generate_ai_prompts",
+        "validate_input",
+        "get_processing_status",
+        "generate_visualizations",
+        "export_report"
       ],
-      "protocol_version": "1.15.1"
+      "protocol_version": "1.15.1",
+      "features": [
+        "intelligent-quality-assessment",
+        "real-time-progress-monitoring", 
+        "parallel-processing-optimization",
+        "semantic-caching-system",
+        "mermaid-visualization-generation",
+        "markdown-report-export"
+      ]
     }
   },
   "funding": {

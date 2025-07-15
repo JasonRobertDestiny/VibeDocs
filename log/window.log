@@ -1,0 +1,397 @@
+2025-07-13 20:38:59 [warn] Error with Permissions-Policy header: Unrecognized feature: 'ambient-light-sensor'.
+2025-07-13 20:38:59 [warn] Error with Permissions-Policy header: Unrecognized feature: 'document-domain'.
+2025-07-13 20:38:59 [warn] Error with Permissions-Policy header: Unrecognized feature: 'speaker-selection'.
+2025-07-13 20:38:59 [warn] Error with Permissions-Policy header: Unrecognized feature: 'web-share'.
+2025-07-13 20:39:00 [warn] Error with Permissions-Policy header: Unrecognized feature: 'ambient-light-sensor'.
+2025-07-13 20:39:00 [warn] Error with Permissions-Policy header: Unrecognized feature: 'document-domain'.
+2025-07-13 20:39:00 [warn] Error with Permissions-Policy header: Unrecognized feature: 'speaker-selection'.
+2025-07-13 20:39:00 [warn] Error with Permissions-Policy header: Unrecognized feature: 'web-share'.
+2025-07-13 20:39:00 [warn] An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing.
+2025-07-13 20:39:05 [warn] [Intercom] The App ID in your code snippet has not been set. Set it to your App ID found in settings to complete installation: https://app.intercom.com/a/apps/_/settings/web
+2025-07-13 20:39:23 [error] Potential permissions policy violation: payment is not allowed in this document.
+2025-07-13 20:39:28 [error] Potential permissions policy violation: payment is not allowed in this document.
+2025-07-13 21:39:25 [warn] Error with Permissions-Policy header: Unrecognized feature: 'ambient-light-sensor'.
+2025-07-13 21:39:25 [warn] Error with Permissions-Policy header: Unrecognized feature: 'document-domain'.
+2025-07-13 21:39:25 [warn] Error with Permissions-Policy header: Unrecognized feature: 'speaker-selection'.
+2025-07-13 21:39:25 [warn] Error with Permissions-Policy header: Unrecognized feature: 'web-share'.
+2025-07-13 21:39:26 [warn] Found 1 service worker(s), which are no longer used. Unregistering.
+2025-07-13 21:39:26 [warn] Error with Permissions-Policy header: Unrecognized feature: 'ambient-light-sensor'.
+2025-07-13 21:39:26 [warn] Error with Permissions-Policy header: Unrecognized feature: 'document-domain'.
+2025-07-13 21:39:26 [warn] Error with Permissions-Policy header: Unrecognized feature: 'speaker-selection'.
+2025-07-13 21:39:26 [warn] Error with Permissions-Policy header: Unrecognized feature: 'web-share'.
+2025-07-13 21:39:26 [warn] An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing.
+2025-07-13 21:42:38 [error] Potential permissions policy violation: payment is not allowed in this document.
+2025-07-13 21:42:44 [error] Potential permissions policy violation: payment is not allowed in this document.
+2025-07-13 21:44:02 [warn] Error with Permissions-Policy header: Unrecognized feature: 'ambient-light-sensor'.
+2025-07-13 21:44:02 [warn] Error with Permissions-Policy header: Unrecognized feature: 'document-domain'.
+2025-07-13 21:44:02 [warn] Error with Permissions-Policy header: Unrecognized feature: 'speaker-selection'.
+2025-07-13 21:44:02 [warn] Error with Permissions-Policy header: Unrecognized feature: 'web-share'.
+2025-07-13 21:44:02 [warn] Error with Permissions-Policy header: Unrecognized feature: 'ambient-light-sensor'.
+2025-07-13 21:44:02 [warn] Error with Permissions-Policy header: Unrecognized feature: 'document-domain'.
+2025-07-13 21:44:02 [warn] Error with Permissions-Policy header: Unrecognized feature: 'speaker-selection'.
+2025-07-13 21:44:02 [warn] Error with Permissions-Policy header: Unrecognized feature: 'web-share'.
+2025-07-13 21:44:02 [warn] An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing.
+2025-07-13 21:44:02 [warn] Found 1 service worker(s), which are no longer used. Unregistering.
+2025-07-13 21:44:06 [error] Potential permissions policy violation: payment is not allowed in this document.
+2025-07-13 21:44:11 [error] Potential permissions policy violation: payment is not allowed in this document.
+2025-07-13 21:44:26 [error] `DialogContent` requires a `DialogTitle` for the component to be accessible for screen reader users.
+
+If you want to hide the `DialogTitle`, you can wrap it with our VisuallyHidden component.
+
+For more information, see https://radix-ui.com/primitives/docs/components/dialog
+2025-07-13 21:44:26 [warn] Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+2025-07-13 21:45:11 [warn] Error with Permissions-Policy header: Unrecognized feature: 'ambient-light-sensor'.
+2025-07-13 21:45:11 [warn] Error with Permissions-Policy header: Unrecognized feature: 'document-domain'.
+2025-07-13 21:45:11 [warn] Error with Permissions-Policy header: Unrecognized feature: 'speaker-selection'.
+2025-07-13 21:45:11 [warn] Error with Permissions-Policy header: Unrecognized feature: 'web-share'.
+2025-07-13 21:45:12 [warn] Error with Permissions-Policy header: Unrecognized feature: 'ambient-light-sensor'.
+2025-07-13 21:45:12 [warn] Error with Permissions-Policy header: Unrecognized feature: 'document-domain'.
+2025-07-13 21:45:12 [warn] Error with Permissions-Policy header: Unrecognized feature: 'speaker-selection'.
+2025-07-13 21:45:12 [warn] Error with Permissions-Policy header: Unrecognized feature: 'web-share'.
+2025-07-13 21:45:12 [warn] An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing.
+2025-07-13 21:45:12 [warn] Found 1 service worker(s), which are no longer used. Unregistering.
+2025-07-13 21:45:17 [warn]   WARN  [Statsig] Failed to flush events.
+2025-07-13 21:45:18 [error] Potential permissions policy violation: payment is not allowed in this document.
+2025-07-13 21:45:19 [warn]   WARN  [Statsig] Failed to flush events.
+2025-07-13 21:45:25 [error] Potential permissions policy violation: payment is not allowed in this document.
+2025-07-13 21:46:14 [error] Could not attach to MCP server vibedoc: Error: MCP error -32001: Request timed out
+2025-07-13 21:50:20 [warn] Error with Permissions-Policy header: Unrecognized feature: 'ambient-light-sensor'.
+2025-07-13 21:50:20 [warn] Error with Permissions-Policy header: Unrecognized feature: 'document-domain'.
+2025-07-13 21:50:20 [warn] Error with Permissions-Policy header: Unrecognized feature: 'speaker-selection'.
+2025-07-13 21:50:20 [warn] Error with Permissions-Policy header: Unrecognized feature: 'web-share'.
+2025-07-13 21:50:21 [warn] Found 1 service worker(s), which are no longer used. Unregistering.
+2025-07-13 21:50:21 [warn] Error with Permissions-Policy header: Unrecognized feature: 'ambient-light-sensor'.
+2025-07-13 21:50:21 [warn] Error with Permissions-Policy header: Unrecognized feature: 'document-domain'.
+2025-07-13 21:50:21 [warn] Error with Permissions-Policy header: Unrecognized feature: 'speaker-selection'.
+2025-07-13 21:50:21 [warn] Error with Permissions-Policy header: Unrecognized feature: 'web-share'.
+2025-07-13 21:50:21 [warn] An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing.
+2025-07-13 21:50:25 [error] Potential permissions policy violation: payment is not allowed in this document.
+2025-07-13 21:50:31 [error] Potential permissions policy violation: payment is not allowed in this document.
+2025-07-13 21:51:22 [error] Could not attach to MCP server vibedoc: Error: MCP error -32001: Request timed out
+2025-07-13 21:52:09 [warn] Error with Permissions-Policy header: Unrecognized feature: 'ambient-light-sensor'.
+2025-07-13 21:52:09 [warn] Error with Permissions-Policy header: Unrecognized feature: 'document-domain'.
+2025-07-13 21:52:09 [warn] Error with Permissions-Policy header: Unrecognized feature: 'speaker-selection'.
+2025-07-13 21:52:09 [warn] Error with Permissions-Policy header: Unrecognized feature: 'web-share'.
+2025-07-13 21:52:09 [warn] Found 1 service worker(s), which are no longer used. Unregistering.
+2025-07-13 21:52:09 [warn] Error with Permissions-Policy header: Unrecognized feature: 'ambient-light-sensor'.
+2025-07-13 21:52:09 [warn] Error with Permissions-Policy header: Unrecognized feature: 'document-domain'.
+2025-07-13 21:52:09 [warn] Error with Permissions-Policy header: Unrecognized feature: 'speaker-selection'.
+2025-07-13 21:52:09 [warn] Error with Permissions-Policy header: Unrecognized feature: 'web-share'.
+2025-07-13 21:52:09 [warn] An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing.
+2025-07-13 21:52:14 [error] Potential permissions policy violation: payment is not allowed in this document.
+2025-07-13 21:52:19 [error] Potential permissions policy violation: payment is not allowed in this document.
+2025-07-13 21:53:11 [error] Could not attach to MCP server vibedoc: Error: MCP error -32001: Request timed out
+2025-07-13 21:54:05 [warn] Error with Permissions-Policy header: Unrecognized feature: 'ambient-light-sensor'.
+2025-07-13 21:54:05 [warn] Error with Permissions-Policy header: Unrecognized feature: 'document-domain'.
+2025-07-13 21:54:05 [warn] Error with Permissions-Policy header: Unrecognized feature: 'speaker-selection'.
+2025-07-13 21:54:05 [warn] Error with Permissions-Policy header: Unrecognized feature: 'web-share'.
+2025-07-13 21:54:06 [warn] Error with Permissions-Policy header: Unrecognized feature: 'ambient-light-sensor'.
+2025-07-13 21:54:06 [warn] Error with Permissions-Policy header: Unrecognized feature: 'document-domain'.
+2025-07-13 21:54:06 [warn] Error with Permissions-Policy header: Unrecognized feature: 'speaker-selection'.
+2025-07-13 21:54:06 [warn] Error with Permissions-Policy header: Unrecognized feature: 'web-share'.
+2025-07-13 21:54:06 [warn] An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing.
+2025-07-13 21:54:06 [warn] Found 1 service worker(s), which are no longer used. Unregistering.
+2025-07-13 21:54:11 [error] Potential permissions policy violation: payment is not allowed in this document.
+2025-07-13 21:54:16 [error] Potential permissions policy violation: payment is not allowed in this document.
+2025-07-13 21:55:08 [error] Could not attach to MCP server vibedoc: Error: MCP error -32001: Request timed out
+2025-07-13 21:57:45 [warn] Error with Permissions-Policy header: Unrecognized feature: 'ambient-light-sensor'.
+2025-07-13 21:57:45 [warn] Error with Permissions-Policy header: Unrecognized feature: 'document-domain'.
+2025-07-13 21:57:45 [warn] Error with Permissions-Policy header: Unrecognized feature: 'speaker-selection'.
+2025-07-13 21:57:45 [warn] Error with Permissions-Policy header: Unrecognized feature: 'web-share'.
+2025-07-13 21:57:45 [warn] Found 1 service worker(s), which are no longer used. Unregistering.
+2025-07-13 21:57:45 [warn] Error with Permissions-Policy header: Unrecognized feature: 'ambient-light-sensor'.
+2025-07-13 21:57:45 [warn] Error with Permissions-Policy header: Unrecognized feature: 'document-domain'.
+2025-07-13 21:57:45 [warn] Error with Permissions-Policy header: Unrecognized feature: 'speaker-selection'.
+2025-07-13 21:57:45 [warn] Error with Permissions-Policy header: Unrecognized feature: 'web-share'.
+2025-07-13 21:57:45 [warn] An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing.
+2025-07-13 21:57:49 [error] Potential permissions policy violation: payment is not allowed in this document.
+2025-07-13 21:57:56 [error] Potential permissions policy violation: payment is not allowed in this document.
+2025-07-13 21:58:00 [warn] Error with Permissions-Policy header: Unrecognized feature: 'ambient-light-sensor'.
+2025-07-13 21:58:00 [warn] Error with Permissions-Policy header: Unrecognized feature: 'document-domain'.
+2025-07-13 21:58:00 [warn] Error with Permissions-Policy header: Unrecognized feature: 'speaker-selection'.
+2025-07-13 21:58:00 [warn] Error with Permissions-Policy header: Unrecognized feature: 'web-share'.
+2025-07-13 21:58:01 [warn] Error with Permissions-Policy header: Unrecognized feature: 'ambient-light-sensor'.
+2025-07-13 21:58:01 [warn] Error with Permissions-Policy header: Unrecognized feature: 'document-domain'.
+2025-07-13 21:58:01 [warn] Error with Permissions-Policy header: Unrecognized feature: 'speaker-selection'.
+2025-07-13 21:58:01 [warn] Error with Permissions-Policy header: Unrecognized feature: 'web-share'.
+2025-07-13 21:58:01 [warn] An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing.
+2025-07-13 21:58:01 [warn] Found 1 service worker(s), which are no longer used. Unregistering.
+2025-07-13 21:58:04 [error] Potential permissions policy violation: payment is not allowed in this document.
+2025-07-13 21:58:09 [error] Potential permissions policy violation: payment is not allowed in this document.
+2025-07-13 21:58:13 [warn] Error with Permissions-Policy header: Unrecognized feature: 'ambient-light-sensor'.
+2025-07-13 21:58:13 [warn] Error with Permissions-Policy header: Unrecognized feature: 'document-domain'.
+2025-07-13 21:58:13 [warn] Error with Permissions-Policy header: Unrecognized feature: 'speaker-selection'.
+2025-07-13 21:58:13 [warn] Error with Permissions-Policy header: Unrecognized feature: 'web-share'.
+2025-07-13 21:58:13 [warn] Error with Permissions-Policy header: Unrecognized feature: 'ambient-light-sensor'.
+2025-07-13 21:58:13 [warn] Error with Permissions-Policy header: Unrecognized feature: 'document-domain'.
+2025-07-13 21:58:13 [warn] Error with Permissions-Policy header: Unrecognized feature: 'speaker-selection'.
+2025-07-13 21:58:13 [warn] Error with Permissions-Policy header: Unrecognized feature: 'web-share'.
+2025-07-13 21:58:13 [warn] An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing.
+2025-07-13 21:58:14 [warn] Found 1 service worker(s), which are no longer used. Unregistering.
+2025-07-13 21:58:20 [error] Potential permissions policy violation: payment is not allowed in this document.
+2025-07-13 21:58:26 [error] Potential permissions policy violation: payment is not allowed in this document.
+2025-07-13 21:59:15 [error] Could not attach to MCP server vibedoc: Error: MCP error -32001: Request timed out
+2025-07-13 22:00:30 [error] Uncaught (in promise) undefined
+2025-07-13 22:00:34 [warn] Error with Permissions-Policy header: Unrecognized feature: 'ambient-light-sensor'.
+2025-07-13 22:00:34 [warn] Error with Permissions-Policy header: Unrecognized feature: 'document-domain'.
+2025-07-13 22:00:34 [warn] Error with Permissions-Policy header: Unrecognized feature: 'speaker-selection'.
+2025-07-13 22:00:34 [warn] Error with Permissions-Policy header: Unrecognized feature: 'web-share'.
+2025-07-13 22:00:35 [warn] Error with Permissions-Policy header: Unrecognized feature: 'ambient-light-sensor'.
+2025-07-13 22:00:35 [warn] Error with Permissions-Policy header: Unrecognized feature: 'document-domain'.
+2025-07-13 22:00:35 [warn] Error with Permissions-Policy header: Unrecognized feature: 'speaker-selection'.
+2025-07-13 22:00:35 [warn] Error with Permissions-Policy header: Unrecognized feature: 'web-share'.
+2025-07-13 22:00:35 [warn] An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing.
+2025-07-13 22:00:35 [warn] Found 1 service worker(s), which are no longer used. Unregistering.
+2025-07-13 22:00:44 [error] Potential permissions policy violation: payment is not allowed in this document.
+2025-07-13 22:00:50 [error] Potential permissions policy violation: payment is not allowed in this document.
+2025-07-13 22:03:46 [warn] Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+2025-07-13 22:04:57 [warn] Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+2025-07-13 22:05:08 [error] Potential permissions policy violation: fullscreen is not allowed in this document.
+2025-07-13 22:05:08 [warn] Received message does not conform to basic message shape, ignoring
+2025-07-13 22:06:56 [error] Uncaught (in promise) Error: prompt is too long
+2025-07-13 23:44:08 [warn] Error with Permissions-Policy header: Unrecognized feature: 'ambient-light-sensor'.
+2025-07-13 23:44:08 [warn] Error with Permissions-Policy header: Unrecognized feature: 'document-domain'.
+2025-07-13 23:44:08 [warn] Error with Permissions-Policy header: Unrecognized feature: 'speaker-selection'.
+2025-07-13 23:44:08 [warn] Error with Permissions-Policy header: Unrecognized feature: 'web-share'.
+2025-07-13 23:44:09 [warn] Error with Permissions-Policy header: Unrecognized feature: 'ambient-light-sensor'.
+2025-07-13 23:44:09 [warn] Error with Permissions-Policy header: Unrecognized feature: 'document-domain'.
+2025-07-13 23:44:09 [warn] Error with Permissions-Policy header: Unrecognized feature: 'speaker-selection'.
+2025-07-13 23:44:09 [warn] Error with Permissions-Policy header: Unrecognized feature: 'web-share'.
+2025-07-13 23:44:09 [warn] An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing.
+2025-07-13 23:44:09 [warn] Found 1 service worker(s), which are no longer used. Unregistering.
+2025-07-13 23:44:14 [error] Potential permissions policy violation: payment is not allowed in this document.
+2025-07-13 23:44:20 [error] Potential permissions policy violation: payment is not allowed in this document.
+2025-07-14 20:39:59 [warn] Error with Permissions-Policy header: Unrecognized feature: 'ambient-light-sensor'.
+2025-07-14 20:39:59 [warn] Error with Permissions-Policy header: Unrecognized feature: 'document-domain'.
+2025-07-14 20:39:59 [warn] Error with Permissions-Policy header: Unrecognized feature: 'speaker-selection'.
+2025-07-14 20:39:59 [warn] Error with Permissions-Policy header: Unrecognized feature: 'web-share'.
+2025-07-14 20:40:00 [warn] Error with Permissions-Policy header: Unrecognized feature: 'ambient-light-sensor'.
+2025-07-14 20:40:00 [warn] Error with Permissions-Policy header: Unrecognized feature: 'document-domain'.
+2025-07-14 20:40:00 [warn] Error with Permissions-Policy header: Unrecognized feature: 'speaker-selection'.
+2025-07-14 20:40:00 [warn] Error with Permissions-Policy header: Unrecognized feature: 'web-share'.
+2025-07-14 20:40:00 [warn] An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing.
+2025-07-14 20:40:01 [warn] Found 1 service worker(s), which are no longer used. Unregistering.
+2025-07-14 20:40:05 [error] Potential permissions policy violation: payment is not allowed in this document.
+2025-07-14 20:40:13 [error] Potential permissions policy violation: payment is not allowed in this document.
+2025-07-14 20:49:21 [error] Potential permissions policy violation: autoplay is not allowed in this document.
+2025-07-14 20:49:24 [warn] The resource https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/cmg/1 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.
+2025-07-14 20:49:27 [error] %c%d font-size:0;color:transparent NaN
+2025-07-14 20:49:27 [error] %c%d font-size:0;color:transparent NaN
+2025-07-14 20:49:27 [warn] %c%d font-size:0;color:transparent NaN
+2025-07-14 20:49:27 [warn] %c%d font-size:0;color:transparent NaN
+2025-07-14 20:49:31 [warn] Error with Permissions-Policy header: Unrecognized feature: 'ambient-light-sensor'.
+2025-07-14 20:49:31 [warn] Error with Permissions-Policy header: Unrecognized feature: 'document-domain'.
+2025-07-14 20:49:31 [warn] Error with Permissions-Policy header: Unrecognized feature: 'speaker-selection'.
+2025-07-14 20:49:31 [warn] Error with Permissions-Policy header: Unrecognized feature: 'web-share'.
+2025-07-14 20:49:31 [warn] Error with Permissions-Policy header: Unrecognized feature: 'ambient-light-sensor'.
+2025-07-14 20:49:31 [warn] Error with Permissions-Policy header: Unrecognized feature: 'document-domain'.
+2025-07-14 20:49:31 [warn] Error with Permissions-Policy header: Unrecognized feature: 'speaker-selection'.
+2025-07-14 20:49:31 [warn] Error with Permissions-Policy header: Unrecognized feature: 'web-share'.
+2025-07-14 20:49:31 [warn] An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing.
+2025-07-14 20:49:32 [warn] Found 1 service worker(s), which are no longer used. Unregistering.
+2025-07-14 20:49:37 [error] Potential permissions policy violation: payment is not allowed in this document.
+2025-07-14 20:49:45 [error] Potential permissions policy violation: payment is not allowed in this document.
+2025-07-15 00:36:53 [warn]   WARN  [Statsig] Failed to flush events.
+2025-07-15 00:36:54 [warn] Error with Permissions-Policy header: Unrecognized feature: 'ambient-light-sensor'.
+2025-07-15 00:36:54 [warn] Error with Permissions-Policy header: Unrecognized feature: 'document-domain'.
+2025-07-15 00:36:54 [warn] Error with Permissions-Policy header: Unrecognized feature: 'speaker-selection'.
+2025-07-15 00:36:54 [warn] Error with Permissions-Policy header: Unrecognized feature: 'web-share'.
+2025-07-15 00:36:54 [error] Uncaught Error: Minified React error #418; visit https://react.dev/errors/418?args[]=text&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+2025-07-15 00:36:54 [warn] Found 1 service worker(s), which are no longer used. Unregistering.
+2025-07-15 00:36:54 [warn] Error with Permissions-Policy header: Unrecognized feature: 'ambient-light-sensor'.
+2025-07-15 00:36:54 [warn] Error with Permissions-Policy header: Unrecognized feature: 'document-domain'.
+2025-07-15 00:36:54 [warn] Error with Permissions-Policy header: Unrecognized feature: 'speaker-selection'.
+2025-07-15 00:36:54 [warn] Error with Permissions-Policy header: Unrecognized feature: 'web-share'.
+2025-07-15 00:36:54 [warn] An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing.
+2025-07-15 00:36:56 [error] Potential permissions policy violation: payment is not allowed in this document.
+2025-07-15 00:37:02 [error] Potential permissions policy violation: payment is not allowed in this document.
+2025-07-15 12:36:42 [warn] Error with Permissions-Policy header: Unrecognized feature: 'ambient-light-sensor'.
+2025-07-15 12:36:42 [warn] Error with Permissions-Policy header: Unrecognized feature: 'document-domain'.
+2025-07-15 12:36:42 [warn] Error with Permissions-Policy header: Unrecognized feature: 'speaker-selection'.
+2025-07-15 12:36:42 [warn] Error with Permissions-Policy header: Unrecognized feature: 'web-share'.
+2025-07-15 12:36:44 [warn] Error with Permissions-Policy header: Unrecognized feature: 'ambient-light-sensor'.
+2025-07-15 12:36:44 [warn] Error with Permissions-Policy header: Unrecognized feature: 'document-domain'.
+2025-07-15 12:36:44 [warn] Error with Permissions-Policy header: Unrecognized feature: 'speaker-selection'.
+2025-07-15 12:36:44 [warn] Error with Permissions-Policy header: Unrecognized feature: 'web-share'.
+2025-07-15 12:36:44 [warn] An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing.
+2025-07-15 12:36:44 [warn] Found 1 service worker(s), which are no longer used. Unregistering.
+2025-07-15 12:36:51 [error] Potential permissions policy violation: payment is not allowed in this document.
+2025-07-15 12:36:56 [error] Potential permissions policy violation: payment is not allowed in this document.
+2025-07-15 12:37:45 [error] Could not attach to MCP server vibedoc: Error: MCP error -32001: Request timed out
+2025-07-15 12:44:25 [warn] Error with Permissions-Policy header: Unrecognized feature: 'ambient-light-sensor'.
+2025-07-15 12:44:25 [warn] Error with Permissions-Policy header: Unrecognized feature: 'document-domain'.
+2025-07-15 12:44:25 [warn] Error with Permissions-Policy header: Unrecognized feature: 'speaker-selection'.
+2025-07-15 12:44:25 [warn] Error with Permissions-Policy header: Unrecognized feature: 'web-share'.
+2025-07-15 12:44:25 [warn] Error with Permissions-Policy header: Unrecognized feature: 'ambient-light-sensor'.
+2025-07-15 12:44:25 [warn] Error with Permissions-Policy header: Unrecognized feature: 'document-domain'.
+2025-07-15 12:44:25 [warn] Error with Permissions-Policy header: Unrecognized feature: 'speaker-selection'.
+2025-07-15 12:44:25 [warn] Error with Permissions-Policy header: Unrecognized feature: 'web-share'.
+2025-07-15 12:44:25 [warn] An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing.
+2025-07-15 12:44:25 [warn] Found 1 service worker(s), which are no longer used. Unregistering.
+2025-07-15 12:44:33 [error] Potential permissions policy violation: payment is not allowed in this document.
+2025-07-15 12:44:40 [error] Potential permissions policy violation: payment is not allowed in this document.
+2025-07-15 12:45:27 [error] Could not attach to MCP server vibedoc: Error: MCP error -32001: Request timed out
+2025-07-15 12:50:22 [warn] Error with Permissions-Policy header: Unrecognized feature: 'ambient-light-sensor'.
+2025-07-15 12:50:22 [warn] Error with Permissions-Policy header: Unrecognized feature: 'document-domain'.
+2025-07-15 12:50:22 [warn] Error with Permissions-Policy header: Unrecognized feature: 'speaker-selection'.
+2025-07-15 12:50:22 [warn] Error with Permissions-Policy header: Unrecognized feature: 'web-share'.
+2025-07-15 12:50:23 [warn] Error with Permissions-Policy header: Unrecognized feature: 'ambient-light-sensor'.
+2025-07-15 12:50:23 [warn] Error with Permissions-Policy header: Unrecognized feature: 'document-domain'.
+2025-07-15 12:50:23 [warn] Error with Permissions-Policy header: Unrecognized feature: 'speaker-selection'.
+2025-07-15 12:50:23 [warn] Error with Permissions-Policy header: Unrecognized feature: 'web-share'.
+2025-07-15 12:50:23 [warn] An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing.
+2025-07-15 12:50:23 [warn] Found 1 service worker(s), which are no longer used. Unregistering.
+2025-07-15 12:50:28 [error] Potential permissions policy violation: payment is not allowed in this document.
+2025-07-15 12:50:33 [error] Potential permissions policy violation: payment is not allowed in this document.
+2025-07-15 12:50:44 [warn] Error with Permissions-Policy header: Unrecognized feature: 'ambient-light-sensor'.
+2025-07-15 12:50:44 [warn] Error with Permissions-Policy header: Unrecognized feature: 'document-domain'.
+2025-07-15 12:50:44 [warn] Error with Permissions-Policy header: Unrecognized feature: 'speaker-selection'.
+2025-07-15 12:50:44 [warn] Error with Permissions-Policy header: Unrecognized feature: 'web-share'.
+2025-07-15 12:50:45 [warn] Error with Permissions-Policy header: Unrecognized feature: 'ambient-light-sensor'.
+2025-07-15 12:50:45 [warn] Error with Permissions-Policy header: Unrecognized feature: 'document-domain'.
+2025-07-15 12:50:45 [warn] Error with Permissions-Policy header: Unrecognized feature: 'speaker-selection'.
+2025-07-15 12:50:45 [warn] Error with Permissions-Policy header: Unrecognized feature: 'web-share'.
+2025-07-15 12:50:45 [warn] An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing.
+2025-07-15 12:50:46 [warn] Found 1 service worker(s), which are no longer used. Unregistering.
+2025-07-15 12:50:54 [error] Potential permissions policy violation: payment is not allowed in this document.
+2025-07-15 12:50:54 [error] Potential permissions policy violation: payment is not allowed in this document.
+2025-07-15 12:51:48 [error] Could not attach to MCP server vibedoc: Error: MCP error -32001: Request timed out
+2025-07-15 13:20:17 [warn] Error with Permissions-Policy header: Unrecognized feature: 'ambient-light-sensor'.
+2025-07-15 13:20:17 [warn] Error with Permissions-Policy header: Unrecognized feature: 'document-domain'.
+2025-07-15 13:20:17 [warn] Error with Permissions-Policy header: Unrecognized feature: 'speaker-selection'.
+2025-07-15 13:20:17 [warn] Error with Permissions-Policy header: Unrecognized feature: 'web-share'.
+2025-07-15 13:20:17 [warn] Error with Permissions-Policy header: Unrecognized feature: 'ambient-light-sensor'.
+2025-07-15 13:20:17 [warn] Error with Permissions-Policy header: Unrecognized feature: 'document-domain'.
+2025-07-15 13:20:17 [warn] Error with Permissions-Policy header: Unrecognized feature: 'speaker-selection'.
+2025-07-15 13:20:17 [warn] Error with Permissions-Policy header: Unrecognized feature: 'web-share'.
+2025-07-15 13:20:17 [warn] An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing.
+2025-07-15 13:20:17 [warn] Found 1 service worker(s), which are no longer used. Unregistering.
+2025-07-15 13:20:24 [error] Potential permissions policy violation: payment is not allowed in this document.
+2025-07-15 13:20:31 [error] Potential permissions policy violation: payment is not allowed in this document.
+2025-07-15 13:21:19 [error] Could not attach to MCP server vibedoc: Error: MCP error -32001: Request timed out
+2025-07-15 13:49:34 [warn] Error with Permissions-Policy header: Unrecognized feature: 'ambient-light-sensor'.
+2025-07-15 13:49:34 [warn] Error with Permissions-Policy header: Unrecognized feature: 'document-domain'.
+2025-07-15 13:49:34 [warn] Error with Permissions-Policy header: Unrecognized feature: 'speaker-selection'.
+2025-07-15 13:49:34 [warn] Error with Permissions-Policy header: Unrecognized feature: 'web-share'.
+2025-07-15 13:49:35 [warn] Found 1 service worker(s), which are no longer used. Unregistering.
+2025-07-15 13:49:35 [warn] Error with Permissions-Policy header: Unrecognized feature: 'ambient-light-sensor'.
+2025-07-15 13:49:35 [warn] Error with Permissions-Policy header: Unrecognized feature: 'document-domain'.
+2025-07-15 13:49:35 [warn] Error with Permissions-Policy header: Unrecognized feature: 'speaker-selection'.
+2025-07-15 13:49:35 [warn] Error with Permissions-Policy header: Unrecognized feature: 'web-share'.
+2025-07-15 13:49:35 [warn] An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing.
+2025-07-15 13:49:38 [error] Potential permissions policy violation: payment is not allowed in this document.
+2025-07-15 13:49:49 [error] Potential permissions policy violation: payment is not allowed in this document.
+2025-07-15 13:54:32 [warn] Error with Permissions-Policy header: Unrecognized feature: 'ambient-light-sensor'.
+2025-07-15 13:54:32 [warn] Error with Permissions-Policy header: Unrecognized feature: 'document-domain'.
+2025-07-15 13:54:32 [warn] Error with Permissions-Policy header: Unrecognized feature: 'speaker-selection'.
+2025-07-15 13:54:32 [warn] Error with Permissions-Policy header: Unrecognized feature: 'web-share'.
+2025-07-15 13:54:33 [warn] Error with Permissions-Policy header: Unrecognized feature: 'ambient-light-sensor'.
+2025-07-15 13:54:33 [warn] Error with Permissions-Policy header: Unrecognized feature: 'document-domain'.
+2025-07-15 13:54:33 [warn] Error with Permissions-Policy header: Unrecognized feature: 'speaker-selection'.
+2025-07-15 13:54:33 [warn] Error with Permissions-Policy header: Unrecognized feature: 'web-share'.
+2025-07-15 13:54:33 [warn] An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing.
+2025-07-15 13:54:33 [warn] Found 1 service worker(s), which are no longer used. Unregistering.
+2025-07-15 13:54:41 [error] Potential permissions policy violation: payment is not allowed in this document.
+2025-07-15 13:54:46 [warn] Error with Permissions-Policy header: Unrecognized feature: 'ambient-light-sensor'.
+2025-07-15 13:54:46 [warn] Error with Permissions-Policy header: Unrecognized feature: 'document-domain'.
+2025-07-15 13:54:46 [warn] Error with Permissions-Policy header: Unrecognized feature: 'speaker-selection'.
+2025-07-15 13:54:46 [warn] Error with Permissions-Policy header: Unrecognized feature: 'web-share'.
+2025-07-15 13:54:47 [warn] Found 1 service worker(s), which are no longer used. Unregistering.
+2025-07-15 13:54:47 [warn] Error with Permissions-Policy header: Unrecognized feature: 'ambient-light-sensor'.
+2025-07-15 13:54:47 [warn] Error with Permissions-Policy header: Unrecognized feature: 'document-domain'.
+2025-07-15 13:54:47 [warn] Error with Permissions-Policy header: Unrecognized feature: 'speaker-selection'.
+2025-07-15 13:54:47 [warn] Error with Permissions-Policy header: Unrecognized feature: 'web-share'.
+2025-07-15 13:54:47 [warn] An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing.
+2025-07-15 13:58:28 [warn] Error with Permissions-Policy header: Unrecognized feature: 'ambient-light-sensor'.
+2025-07-15 13:58:28 [warn] Error with Permissions-Policy header: Unrecognized feature: 'document-domain'.
+2025-07-15 13:58:28 [warn] Error with Permissions-Policy header: Unrecognized feature: 'speaker-selection'.
+2025-07-15 13:58:28 [warn] Error with Permissions-Policy header: Unrecognized feature: 'web-share'.
+2025-07-15 13:58:28 [warn] Error with Permissions-Policy header: Unrecognized feature: 'ambient-light-sensor'.
+2025-07-15 13:58:28 [warn] Error with Permissions-Policy header: Unrecognized feature: 'document-domain'.
+2025-07-15 13:58:28 [warn] Error with Permissions-Policy header: Unrecognized feature: 'speaker-selection'.
+2025-07-15 13:58:28 [warn] Error with Permissions-Policy header: Unrecognized feature: 'web-share'.
+2025-07-15 13:58:28 [warn] An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing.
+2025-07-15 13:58:28 [warn] Found 1 service worker(s), which are no longer used. Unregistering.
+2025-07-15 13:58:35 [error] Potential permissions policy violation: payment is not allowed in this document.
+2025-07-15 13:58:41 [error] Potential permissions policy violation: payment is not allowed in this document.
+2025-07-15 14:02:07 [warn] Error with Permissions-Policy header: Unrecognized feature: 'ambient-light-sensor'.
+2025-07-15 14:02:07 [warn] Error with Permissions-Policy header: Unrecognized feature: 'document-domain'.
+2025-07-15 14:02:07 [warn] Error with Permissions-Policy header: Unrecognized feature: 'speaker-selection'.
+2025-07-15 14:02:07 [warn] Error with Permissions-Policy header: Unrecognized feature: 'web-share'.
+2025-07-15 14:02:07 [warn] Found 1 service worker(s), which are no longer used. Unregistering.
+2025-07-15 14:02:07 [warn] Error with Permissions-Policy header: Unrecognized feature: 'ambient-light-sensor'.
+2025-07-15 14:02:07 [warn] Error with Permissions-Policy header: Unrecognized feature: 'document-domain'.
+2025-07-15 14:02:07 [warn] Error with Permissions-Policy header: Unrecognized feature: 'speaker-selection'.
+2025-07-15 14:02:07 [warn] Error with Permissions-Policy header: Unrecognized feature: 'web-share'.
+2025-07-15 14:02:07 [warn] An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing.
+2025-07-15 14:02:15 [error] Potential permissions policy violation: payment is not allowed in this document.
+2025-07-15 14:02:23 [error] Potential permissions policy violation: payment is not allowed in this document.
+2025-07-15 14:03:09 [error] Could not attach to MCP server vibedoc: Error: MCP error -32001: Request timed out
+2025-07-15 14:34:52 [warn] Error with Permissions-Policy header: Unrecognized feature: 'ambient-light-sensor'.
+2025-07-15 14:34:52 [warn] Error with Permissions-Policy header: Unrecognized feature: 'document-domain'.
+2025-07-15 14:34:52 [warn] Error with Permissions-Policy header: Unrecognized feature: 'speaker-selection'.
+2025-07-15 14:34:52 [warn] Error with Permissions-Policy header: Unrecognized feature: 'web-share'.
+2025-07-15 14:34:53 [warn] Error with Permissions-Policy header: Unrecognized feature: 'ambient-light-sensor'.
+2025-07-15 14:34:53 [warn] Error with Permissions-Policy header: Unrecognized feature: 'document-domain'.
+2025-07-15 14:34:53 [warn] Error with Permissions-Policy header: Unrecognized feature: 'speaker-selection'.
+2025-07-15 14:34:53 [warn] Error with Permissions-Policy header: Unrecognized feature: 'web-share'.
+2025-07-15 14:34:53 [warn] An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing.
+2025-07-15 14:34:53 [warn] Found 1 service worker(s), which are no longer used. Unregistering.
+2025-07-15 14:34:58 [error] Potential permissions policy violation: payment is not allowed in this document.
+2025-07-15 14:35:06 [error] Potential permissions policy violation: payment is not allowed in this document.
+2025-07-15 14:35:54 [error] Could not attach to MCP server vibedoc: Error: MCP error -32001: Request timed out
+2025-07-15 14:38:27 [error] Uncaught (in promise) undefined
+2025-07-15 15:00:54 [warn] Error with Permissions-Policy header: Unrecognized feature: 'ambient-light-sensor'.
+2025-07-15 15:00:54 [warn] Error with Permissions-Policy header: Unrecognized feature: 'document-domain'.
+2025-07-15 15:00:54 [warn] Error with Permissions-Policy header: Unrecognized feature: 'speaker-selection'.
+2025-07-15 15:00:54 [warn] Error with Permissions-Policy header: Unrecognized feature: 'web-share'.
+2025-07-15 15:00:54 [warn] Error with Permissions-Policy header: Unrecognized feature: 'ambient-light-sensor'.
+2025-07-15 15:00:54 [warn] Error with Permissions-Policy header: Unrecognized feature: 'document-domain'.
+2025-07-15 15:00:54 [warn] Error with Permissions-Policy header: Unrecognized feature: 'speaker-selection'.
+2025-07-15 15:00:54 [warn] Error with Permissions-Policy header: Unrecognized feature: 'web-share'.
+2025-07-15 15:00:54 [warn] An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing.
+2025-07-15 15:00:55 [warn] Found 1 service worker(s), which are no longer used. Unregistering.
+2025-07-15 15:01:03 [error] Potential permissions policy violation: payment is not allowed in this document.
+2025-07-15 15:01:15 [error] Potential permissions policy violation: payment is not allowed in this document.
+2025-07-15 15:01:57 [error] Could not attach to MCP server vibedoc: Error: MCP error -32001: Request timed out
+2025-07-15 15:02:29 [error] Uncaught (in promise) undefined
+2025-07-15 16:03:39 [warn] Error with Permissions-Policy header: Unrecognized feature: 'ambient-light-sensor'.
+2025-07-15 16:03:39 [warn] Error with Permissions-Policy header: Unrecognized feature: 'document-domain'.
+2025-07-15 16:03:39 [warn] Error with Permissions-Policy header: Unrecognized feature: 'speaker-selection'.
+2025-07-15 16:03:39 [warn] Error with Permissions-Policy header: Unrecognized feature: 'web-share'.
+2025-07-15 16:03:40 [warn] Error with Permissions-Policy header: Unrecognized feature: 'ambient-light-sensor'.
+2025-07-15 16:03:40 [warn] Error with Permissions-Policy header: Unrecognized feature: 'document-domain'.
+2025-07-15 16:03:40 [warn] Error with Permissions-Policy header: Unrecognized feature: 'speaker-selection'.
+2025-07-15 16:03:40 [warn] Error with Permissions-Policy header: Unrecognized feature: 'web-share'.
+2025-07-15 16:03:40 [warn] An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing.
+2025-07-15 16:03:40 [warn] Found 1 service worker(s), which are no longer used. Unregistering.
+2025-07-15 16:03:50 [error] Potential permissions policy violation: payment is not allowed in this document.
+2025-07-15 16:04:01 [error] Potential permissions policy violation: payment is not allowed in this document.
+2025-07-15 16:04:10 [error] undefined
+2025-07-15 16:04:10 [error] undefined
+2025-07-15 16:04:10 [error] undefined
+2025-07-15 16:04:46 [warn] Error with Permissions-Policy header: Unrecognized feature: 'ambient-light-sensor'.
+2025-07-15 16:04:46 [warn] Error with Permissions-Policy header: Unrecognized feature: 'document-domain'.
+2025-07-15 16:04:46 [warn] Error with Permissions-Policy header: Unrecognized feature: 'speaker-selection'.
+2025-07-15 16:04:46 [warn] Error with Permissions-Policy header: Unrecognized feature: 'web-share'.
+2025-07-15 16:04:47 [warn] Error with Permissions-Policy header: Unrecognized feature: 'ambient-light-sensor'.
+2025-07-15 16:04:47 [warn] Error with Permissions-Policy header: Unrecognized feature: 'document-domain'.
+2025-07-15 16:04:47 [warn] Error with Permissions-Policy header: Unrecognized feature: 'speaker-selection'.
+2025-07-15 16:04:47 [warn] Error with Permissions-Policy header: Unrecognized feature: 'web-share'.
+2025-07-15 16:04:47 [warn] An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing.
+2025-07-15 16:04:47 [warn] Found 1 service worker(s), which are no longer used. Unregistering.
+2025-07-15 16:04:59 [error] Potential permissions policy violation: payment is not allowed in this document.
+2025-07-15 16:05:04 [error] Potential permissions policy violation: payment is not allowed in this document.
+2025-07-15 16:05:49 [error] Could not attach to MCP server vibedoc: Error: MCP error -32001: Request timed out
+2025-07-15 16:11:13 [warn] Error with Permissions-Policy header: Unrecognized feature: 'ambient-light-sensor'.
+2025-07-15 16:11:13 [warn] Error with Permissions-Policy header: Unrecognized feature: 'document-domain'.
+2025-07-15 16:11:13 [warn] Error with Permissions-Policy header: Unrecognized feature: 'speaker-selection'.
+2025-07-15 16:11:13 [warn] Error with Permissions-Policy header: Unrecognized feature: 'web-share'.
+2025-07-15 16:11:14 [warn] Error with Permissions-Policy header: Unrecognized feature: 'ambient-light-sensor'.
+2025-07-15 16:11:14 [warn] Error with Permissions-Policy header: Unrecognized feature: 'document-domain'.
+2025-07-15 16:11:14 [warn] Error with Permissions-Policy header: Unrecognized feature: 'speaker-selection'.
+2025-07-15 16:11:14 [warn] Error with Permissions-Policy header: Unrecognized feature: 'web-share'.
+2025-07-15 16:11:14 [warn] An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing.
+2025-07-15 16:11:14 [warn] Found 1 service worker(s), which are no longer used. Unregistering.
+2025-07-15 16:11:20 [error] Potential permissions policy violation: payment is not allowed in this document.
+2025-07-15 16:11:27 [error] Potential permissions policy violation: payment is not allowed in this document.
