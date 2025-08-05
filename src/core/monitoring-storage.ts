@@ -97,7 +97,7 @@ export class MonitoringStorage {
       // 创建主数据目录
       if (!fs.existsSync(this.config.dataDir)) {
         fs.mkdirSync(this.config.dataDir, { recursive: true });
-        console.error(`📁 [MonitoringStorage] 创建数据目录: ${this.config.dataDir}`);
+        // console.error(`📁 [MonitoringStorage] 创建数据目录: ${this.config.dataDir}`);
       }
 
       // 创建备份目录
@@ -109,7 +109,7 @@ export class MonitoringStorage {
       }
 
     } catch (error) {
-      console.error(`❌ [MonitoringStorage] 初始化存储失败: ${error.message}`);
+      // console.error(`❌ [MonitoringStorage] 初始化存储失败: ${error.message}`);
       throw new Error(`存储初始化失败: ${error.message}`);
     }
   }
@@ -124,7 +124,7 @@ export class MonitoringStorage {
       if (fs.existsSync(recordsPath)) {
         const recordsData = fs.readFileSync(recordsPath, 'utf8');
         this.recordsCache = JSON.parse(recordsData);
-        console.error(`📊 [MonitoringStorage] 加载${this.recordsCache.length}条监控记录`);
+        // console.error(`📊 [MonitoringStorage] 加载${this.recordsCache.length}条监控记录`);
       }
 
       // 加载统计数据
@@ -135,7 +135,7 @@ export class MonitoringStorage {
       }
 
     } catch (error) {
-      console.error(`⚠️ [MonitoringStorage] 数据加载失败: ${error.message}`);
+      // console.error(`⚠️ [MonitoringStorage] 数据加载失败: ${error.message}`);
       // 数据损坏时重置
       this.recordsCache = [];
       this.statsCache = null;
@@ -167,7 +167,7 @@ export class MonitoringStorage {
       this.lastSaveTime = now;
 
     } catch (error) {
-      console.error(`❌ [MonitoringStorage] 数据保存失败: ${error.message}`);
+      // console.error(`❌ [MonitoringStorage] 数据保存失败: ${error.message}`);
       throw new Error(`数据保存失败: ${error.message}`);
     }
   }
@@ -199,7 +199,7 @@ export class MonitoringStorage {
     // 保存到磁盘
     await this.saveData();
 
-    console.error(`📝 [MonitoringStorage] 添加监控记录: ${id}`);
+    // console.error(`📝 [MonitoringStorage] 添加监控记录: ${id}`);
     return id;
   }
 
@@ -393,7 +393,7 @@ export class MonitoringStorage {
     const cleanedCount = beforeCount - afterCount;
 
     if (cleanedCount > 0) {
-      console.error(`🧹 [MonitoringStorage] 清理${cleanedCount}条旧记录`);
+      // console.error(`🧹 [MonitoringStorage] 清理${cleanedCount}条旧记录`);
     }
   }
 
@@ -417,7 +417,7 @@ export class MonitoringStorage {
     };
 
     await fs.promises.writeFile(backupFile, JSON.stringify(backupData, null, 2));
-    console.error(`💾 [MonitoringStorage] 创建备份: ${backupFile}`);
+    // console.error(`💾 [MonitoringStorage] 创建备份: ${backupFile}`);
 
     return backupFile;
   }
@@ -433,7 +433,7 @@ export class MonitoringStorage {
       this.statsCache = backupData.stats || null;
 
       await this.saveData();
-      console.error(`🔄 [MonitoringStorage] 恢复备份: ${backupFile}`);
+      // console.error(`🔄 [MonitoringStorage] 恢复备份: ${backupFile}`);
 
     } catch (error) {
       throw new Error(`备份恢复失败: ${error.message}`);
@@ -520,7 +520,7 @@ export class MonitoringStorage {
       }
 
     } catch (error) {
-      console.error(`⚠️ [MonitoringStorage] 获取存储信息失败: ${error.message}`);
+      // console.error(`⚠️ [MonitoringStorage] 获取存储信息失败: ${error.message}`);
     }
 
     return {
@@ -537,7 +537,7 @@ export class MonitoringStorage {
    */
   async close(): Promise<void> {
     await this.saveData();
-    console.error(`📁 [MonitoringStorage] 存储已关闭`);
+    // console.error(`📁 [MonitoringStorage] 存储已关闭`);
   }
 }
 

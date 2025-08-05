@@ -35,7 +35,7 @@ class FocusedMCPServer {
       }
     );
 
-    // 初始化监控存储
+    // 初始化监控存储（静默模式，避免干扰MCP通信）
     this.monitoringStorage = new MonitoringStorage();
 
     this.setupToolHandlers();
@@ -292,8 +292,9 @@ class FocusedMCPServer {
       const prediction = await QualityPredictor.predictQuality(args.text, args.config || {});
       const processingTime = Date.now() - startTime;
 
-      console.error(`📊 [FocusedMCP] 预测完成: ${prediction.overallScore}/100 (${prediction.qualityLevel})`);
-      console.error(`⏱️ [FocusedMCP] 处理耗时: ${processingTime}ms`);
+      // 移除console输出，避免干扰MCP协议通信
+      // console.error(`📊 [FocusedMCP] 预测完成: ${prediction.overallScore}/100 (${prediction.qualityLevel})`);
+      // console.error(`⏱️ [FocusedMCP] 处理耗时: ${processingTime}ms`);
 
       // 生成响应内容
       let responseContent: string;
@@ -795,7 +796,7 @@ class FocusedMCPServer {
   async run(): Promise<void> {
     const transport = new StdioServerTransport();
     await this.server.connect(transport);
-    console.error("🎯 Focused MCP Server running on stdio");
+    // 移除console输出，避免干扰MCP协议通信
   }
 }
 

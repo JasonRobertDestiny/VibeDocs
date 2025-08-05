@@ -90,7 +90,7 @@ export class ResultEvaluator {
     const startTime = Date.now();
 
     try {
-      console.error(`🔍 [ResultEvaluator] 开始结果质量评估...`);
+      // console.error(`🔍 [ResultEvaluator] 开始结果质量评估...`);
 
       // 1. 基础特征提取
       const features = TextAnalyzer.extractFeatures(generatedContent);
@@ -144,7 +144,7 @@ export class ResultEvaluator {
       const confidence = this.calculateConfidence(features, overallScore);
 
       const evaluationTime = Date.now() - startTime;
-      console.error(`✅ [ResultEvaluator] 评估完成: ${overallScore}/100 (${evaluationTime}ms)`);
+      // console.error(`✅ [ResultEvaluator] 评估完成: ${overallScore}/100 (${evaluationTime}ms)`);
 
       return {
         overallScore: Math.round(overallScore),
@@ -164,7 +164,7 @@ export class ResultEvaluator {
       };
 
     } catch (error) {
-      console.error(`❌ [ResultEvaluator] 评估失败: ${error.message}`);
+      // console.error(`❌ [ResultEvaluator] 评估失败: ${error.message}`);
       throw new Error(`结果质量评估失败: ${error.message}`);
     }
   }

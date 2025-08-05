@@ -58,7 +58,7 @@ export class AIPlanner {
 
     while (retryCount <= fullConfig.maxRetries) {
       try {
-        console.error(`🤖 [AIPlanner] 开始生成规划 (尝试 ${retryCount + 1}/${fullConfig.maxRetries + 1})`);
+        // console.error(`🤖 [AIPlanner] 开始生成规划 (尝试 ${retryCount + 1}/${fullConfig.maxRetries + 1})`);
         
         const startTime = Date.now();
         const result = await this.callAIService(optimizedInput, apiKey, fullConfig);
@@ -68,11 +68,11 @@ export class AIPlanner {
           // 评估生成结果的质量
           const qualityScore = await this.evaluateResultQuality(result.content);
           
-          console.error(`📊 [AIPlanner] 生成质量: ${qualityScore}/100`);
+          // console.error(`📊 [AIPlanner] 生成质量: ${qualityScore}/100`);
 
           // 检查质量是否达标
           if (qualityScore >= fullConfig.qualityThreshold) {
-            console.error(`✅ [AIPlanner] 规划生成成功，质量达标`);
+            // console.error(`✅ [AIPlanner] 规划生成成功，质量达标`);
             return {
               success: true,
               content: result.content,
@@ -85,7 +85,7 @@ export class AIPlanner {
               retryCount
             };
           } else {
-            console.error(`⚠️ [AIPlanner] 质量不达标 (${qualityScore}/${fullConfig.qualityThreshold})，准备重试`);
+            // console.error(`⚠️ [AIPlanner] 质量不达标 (${qualityScore}/${fullConfig.qualityThreshold})，准备重试`);
             retryCount++;
             continue;
           }
@@ -96,7 +96,7 @@ export class AIPlanner {
       } catch (error) {
         retryCount++;
         const errorMessage = error instanceof Error ? error.message : String(error);
-        console.error(`❌ [AIPlanner] 生成失败 (尝试 ${retryCount}): ${errorMessage}`);
+        // console.error(`❌ [AIPlanner] 生成失败 (尝试 ${retryCount}): ${errorMessage}`);
 
         if (retryCount > fullConfig.maxRetries) {
           return {
@@ -240,7 +240,7 @@ ${input}
       const prediction = await QualityPredictor.predictQuality(content);
       return prediction.overallScore;
     } catch (error) {
-      console.error(`⚠️ [AIPlanner] 质量评估失败: ${error.message}`);
+      // console.error(`⚠️ [AIPlanner] 质量评估失败: ${error.message}`);
       // 如果质量评估失败，使用简单的启发式方法
       return this.simpleQualityCheck(content);
     }
@@ -318,7 +318,7 @@ ${input}
       fullConfig.maxRetries = 1;
     }
 
-    console.error(`🎯 [AIPlanner] 智能重试策略: 质量阈值${fullConfig.qualityThreshold}, 最大重试${fullConfig.maxRetries}次`);
+    // console.error(`🎯 [AIPlanner] 智能重试策略: 质量阈值${fullConfig.qualityThreshold}, 最大重试${fullConfig.maxRetries}次`);
 
     return await this.generatePlan(optimizedInput, apiKey, fullConfig);
   }
