@@ -5,6 +5,7 @@ FROM node:20-alpine AS base
 FROM base AS deps
 WORKDIR /app
 
+
 # Copy package files
 COPY package*.json ./
 RUN npm ci --only=production && npm cache clean --force

@@ -1,19 +1,15 @@
 {
-  "name": "vibedoc-mcp-server",
-  "version": "2.0.0",
-  "description": "🏆 VibeDoc MCP Server 2.0 - 魔搭MCP&Agent2025挑战赛MCP赛道一参赛作品 | 全球首个基于Model Context Protocol的AI开发规划服务，7大工具+双重质量评估+并行优化架构",
+  "name": "focused-mcp-server",
+  "version": "1.0.0",
+  "description": "🎯 Focused MCP Server - AI规划质量预测与优化 | 专注解决AI生成开发规划质量不稳定的核心痛点",
   "main": "src/index.ts",
   "type": "module",
   "scripts": {
     "mcp": "npx tsx src/index.ts",
-    "mcp:build": "tsc src/index.ts --outDir dist --target ES2022 --module ESNext --moduleResolution bundler --allowSyntheticDefaultImports",
-    "mcp:start": "node dist/src/index.js",
-    "test:mcp": "node test-mcp-server.js",
-    "test:full": "npm run mcp:build && node test-mcp-server.js",
-    "postinstall": "npm run mcp:build",
     "dev": "npx tsx --watch src/index.ts",
-    "build": "npm run mcp:build",
-    "start": "npm run mcp:start"
+    "build": "tsc --project tsconfig.json",
+    "start": "npm run mcp",
+    "test": "npx tsx src/test.ts"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.15.1"
@@ -67,26 +63,21 @@
   },
   "mcp": {
     "server": {
-      "name": "vibedoc",
-      "version": "2.0.0",
-      "description": "AI-powered development planning MCP server with 5-stage pipeline processing + dual quality assessment",
+      "name": "focused-mcp",
+      "version": "1.0.0",
+      "description": "AI规划质量预测与优化MCP服务器 - 3秒预测质量，自动优化输入，持续监控改进",
       "tools": [
-        "generate_development_plan",
-        "get_project_template", 
-        "generate_ai_prompts",
-        "validate_input",
-        "get_processing_status",
-        "generate_visualizations",
-        "export_report"
+        "predict_quality",
+        "optimize_input",
+        "monitor_results"
       ],
       "protocol_version": "1.15.1",
       "features": [
-        "intelligent-quality-assessment",
-        "real-time-progress-monitoring", 
-        "parallel-processing-optimization",
-        "semantic-caching-system",
-        "mermaid-visualization-generation",
-        "markdown-report-export"
+        "quality-prediction",
+        "input-optimization",
+        "result-monitoring",
+        "pattern-recognition",
+        "success-rate-calculation"
       ]
     }
   },

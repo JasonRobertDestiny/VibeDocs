@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "vibedoc": {
+      "command": "node",
+      "args": [
+        "/mnt/d/VibeCoding_pgm/VibeDocs_MCP/dist/src/index.js"
+      ],
+      "env": {
+        "SILICONFLOW_API_KEY": "YOUR_API_KEY_HERE"
+      }
+    }
+  }
+}

@@ -1,22 +1,28 @@
 {
+  "$schema": "https://json.schemastore.org/tsconfig",
   "compilerOptions": {
     "target": "ES2022",
     "lib": ["ES2022", "DOM"],
     "module": "ESNext",
-    "moduleResolution": "bundler",
+    "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "allowJs": true,
     "checkJs": false,
     "skipLibCheck": true,
-    "strict": true,
+    "strict": false,
     "noImplicitAny": false,
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": false,
     "outDir": "dist",
-    "declaration": true,
-    "sourceMap": true,
+    "rootDir": ".",
+    "baseUrl": ".",
+    "paths": {
+      "*": ["./node_modules/*"]
+    },
+    "declaration": false,
+    "sourceMap": false,
     "types": ["node"]
   },
   "include": [

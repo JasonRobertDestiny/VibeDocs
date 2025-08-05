@@ -1,28 +1,6 @@
----
-title: VibeDoc MCP Server
-emoji: 🤖
-colorFrom: blue
-colorTo: purple
-sdk: docker
-app_port: 3000
-pinned: true
-license: mit
-tags:
-  - MCP Server
-  - Model Context Protocol
-  - AI Agent
-  - 魔搭挑战赛
-  - Development Planning
-  - Silicon Flow
-  - TypeScript
-  - 智能开发助手
-short_description: 🏆 VibeDoc MCP Server - 魔搭MCP&Agent2025挑战赛MCP赛道一 | AI驱动的智能开发计划生成服务
-duplicated_from: JasonRobertDestiny/VibeDocs
----
-
 <div align="center">
 
-# 🤖 VibeDoc MCP Server
+# 🎯 Focused MCP Server
 
 ### 🏆 魔搭MCP&Agent2025挑战赛 - MCP赛道一参赛项目
 
