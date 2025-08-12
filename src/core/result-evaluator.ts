@@ -259,21 +259,22 @@ export class ResultEvaluator {
     if (hasList) score += 10;
 
     // 语言清晰度
-    const avgSentenceLength = features.avgWordsPerSentence;
+    const avgSentenceLength = features.metadata?.wordCount && features.metadata?.sentenceCount 
+      ? features.metadata.wordCount / features.metadata.sentenceCount : 0;
     if (avgSentenceLength >= 10 && avgSentenceLength <= 25) {
       score += 15;
     } else if (avgSentenceLength < 5 || avgSentenceLength > 40) {
       score -= 10;
     }
 
-    // 专业术语使用
-    const techTerms = features.keywordDensity.technical;
-    if (techTerms > 2 && techTerms < 8) {
+    // 专业术语使用 - 使用领域特异性分数
+    const techTerms = features.domainSpecificity || 0;
+    if (techTerms > 20 && techTerms < 80) {
       score += 10;
     }
 
-    // 逻辑连接
-    if (features.complexity.logicalConnectorCount > 0) {
+    // 逻辑连接 - 使用逻辑流畅性分数
+    if (features.logicalFlow > 50) {
       score += 10;
     }
 
@@ -411,11 +412,11 @@ export class ResultEvaluator {
     }
 
     // 基于文本特征的建议
-    if (features.length < 500) {
+    if (features.metadata?.textLength && features.metadata.textLength < 500) {
       recommendations.push('📝 扩展内容详细程度，提供更多具体信息和实施细节');
     }
 
-    if (features.qualityIndicators.hasNumbers === false) {
+    if (features.informationDensity < 50) {
       recommendations.push('📊 添加具体的数字和指标，增强规划的可量化性');
     }
 
@@ -451,23 +452,23 @@ export class ResultEvaluator {
     let confidence = 70; // 基础置信度
 
     // 基于文本长度
-    if (features.length > 1000) {
+    const textLength = features.metadata?.textLength || 0;
+    if (textLength > 1000) {
       confidence += 15;
-    } else if (features.length > 500) {
+    } else if (textLength > 500) {
       confidence += 10;
-    } else if (features.length < 200) {
+    } else if (textLength < 200) {
       confidence -= 20;
     }
 
     // 基于结构化程度
-    const structureScore = features.complexity.logicalConnectorCount * 2;
+    const structureScore = features.logicalFlow * 0.1;
     confidence += Math.min(structureScore, 10);
 
-    // 基于关键词密度
-    const totalDensity = Object.values(features.keywordDensity).reduce((sum, density) => sum + density, 0);
-    if (totalDensity > 10) {
+    // 基于信息密度
+    if (features.informationDensity > 60) {
       confidence += 10;
-    } else if (totalDensity < 3) {
+    } else if (features.informationDensity < 30) {
       confidence -= 10;
     }
 

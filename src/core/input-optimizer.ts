@@ -45,19 +45,68 @@ export interface OptimizationResult {
  */
 export class InputOptimizer {
   
-  // 技术导向优化策略
+  // 技术导向优化策略 - 针对实际开发项目优化
   private static readonly TECHNICAL_STRATEGY: OptimizationStrategy = {
     name: '技术导向优化',
     focus: 'technical',
-    description: '补充技术栈、架构设计、性能要求等技术细节',
-    expectedGain: 25,
+    description: '补充具体的技术实现方案、核心功能设计和开发路径',
+    expectedGain: 30,
     templates: [
       {
-        trigger: '缺少技术栈说明',
-        pattern: /^(?!.*(?:react|vue|angular|node|python|java|go|rust|php|mysql|mongodb|redis)).*/i,
-        improvement: '\n\n**技术架构**：\n- 前端：React 18 + TypeScript + Tailwind CSS\n- 后端：Node.js + Express + TypeScript\n- 数据库：MongoDB + Redis缓存\n- 部署：Docker + 云服务器',
+        trigger: 'MCP Server开发项目',
+        pattern: /mcp.*server|model.*context.*protocol|claude.*mcp|mcp.*工具/i,
+        improvement: '\n\n**MCP专业架构**：\n- 协议实现：完全符合MCP 1.0标准规范\n- 工具注册：支持动态工具发现和注册机制\n- 流式处理：支持大数据量的流式响应\n- 错误处理：完整的错误处理和重试机制\n\n**技术创新点**：\n- 智能工具路由：根据用户意图自动选择最佳工具\n- 多模态支持：文本、图像、音频多种输入格式\n- 缓存优化：智能缓存机制提升响应速度\n- 监控体系：完整的性能监控和日志系统',
+        priority: 10,
+        expectedGain: 30
+      },
+      {
+        trigger: 'AI Agent开发项目',
+        pattern: /ai.*agent|智能.*助手|聊天.*机器人|语音.*助手/i,
+        improvement: '\n\n**AI Agent核心能力**：\n- 多轮对话：上下文理解和记忆机制\n- 意图识别：NLU自然语言理解引擎\n- 知识图谱：结构化知识存储和检索\n- 个性化：用户画像和偏好学习\n\n**技术实现栈**：\n- LLM集成：OpenAI/Anthropic/本地大模型\n- 向量数据库：Pinecone/Weaviate用于语义搜索\n- 对话管理：Rasa/Dialogflow对话流程\n- 部署方案：Docker容器化+K8s编排',
         priority: 9,
+        expectedGain: 28
+      },
+      {
+        trigger: '朋友圈文案生成项目',
+        pattern: /朋友圈.*文案.*生成|文案.*生成.*agent|朋友圈.*agent/i,
+        improvement: '\n\n**核心功能设计**：\n- 场景分类：美食、旅游、工作、情感、节日等15+场景\n- 风格选择：文艺、幽默、励志、日常、商务等8种风格\n- 智能配图：CV图像识别+文案匹配推荐\n- 个性化定制：基于用户历史偏好的强化学习\n\n**技术实现方案**：\n- AI模型：GPT-4 API + 微调模型优化\n- 前端：React Native + Expo跨平台\n- 后端：Python FastAPI + Celery异步任务\n- 数据：10万+优质文案语料库训练',
+        priority: 9,
+        expectedGain: 25
+      },
+      {
+        trigger: '数据分析工具项目',
+        pattern: /数据.*分析|可视化.*工具|报表.*生成|bi.*系统/i,
+        improvement: '\n\n**数据分析核心**：\n- 数据源连接：MySQL/PostgreSQL/MongoDB/API\n- ETL处理：Apache Airflow数据流水线\n- 分析引擎：Pandas/NumPy + Spark大数据\n- 可视化：D3.js/Chart.js + 自定义图表\n\n**技术架构**：\n- 前端：Vue 3 + TypeScript + Echarts\n- 后端：Python Django + DRF\n- 数据库：ClickHouse时序数据库\n- 缓存：Redis + 分布式缓存策略',
+        priority: 8,
+        expectedGain: 22
+      },
+      {
+        trigger: '电商系统项目',
+        pattern: /电商.*系统|商城.*开发|购物.*平台|订单.*管理/i,
+        improvement: '\n\n**电商核心模块**：\n- 商品管理：SKU/SPU管理、库存同步\n- 订单系统：下单流程、支付集成、物流追踪\n- 用户系统：注册登录、会员等级、积分体系\n- 营销工具：优惠券、秒杀、拼团功能\n\n**技术选型**：\n- 微服务：Spring Cloud + Dubbo\n- 数据库：MySQL主从 + Redis缓存\n- 消息队列：RabbitMQ/Apache Kafka\n- 搜索引擎：Elasticsearch商品搜索',
+        priority: 8,
+        expectedGain: 20
+      },
+      {
+        trigger: '通用项目功能增强',
+        pattern: /.*/i, // 匹配所有项目
+        improvement: '\n\n**核心功能架构**：\n- 用户管理：注册登录、权限控制、个人设置\n- 数据处理：数据存储、备份恢复、安全加密\n- 系统监控：性能监控、日志管理、错误追踪\n- API设计：RESTful接口、文档生成、版本控制\n\n**用户体验优化**：\n- 响应式设计：支持PC/移动端适配\n- 性能优化：缓存策略、CDN加速、懒加载\n- 交互体验：流畅动画、友好提示、快捷操作\n- 可访问性：无障碍设计、多语言支持',
+        priority: 5, // 较低优先级，作为兜底方案
         expectedGain: 15
+      },
+      {
+        trigger: '通用商业模式建议',
+        pattern: /^(?!.*(?:商业模式|盈利|收费|变现|营收)).*/i,
+        improvement: '\n\n**商业模式设计**：\n- 基础版：免费使用，核心功能开放\n- 专业版：订阅制，高级功能解锁\n- 企业版：定制服务，专业技术支持\n- 生态合作：API开放、第三方集成\n\n**市场策略**：\n- 用户获取：内容营销、社区建设、口碑传播\n- 用户留存：持续优化、功能迭代、客户服务\n- 数据驱动：用户行为分析、A/B测试、精准运营',
+        priority: 4,
+        expectedGain: 12
+      },
+      {
+        trigger: '通用技术选型增强',
+        pattern: /^(?!.*(?:技术栈|架构|框架|数据库|部署)).*/i,
+        improvement: '\n\n**技术栈建议**：\n- 前端技术：React/Vue.js + TypeScript + 组件库\n- 后端服务：Node.js/Python + Express/FastAPI\n- 数据存储：PostgreSQL/MongoDB + Redis缓存\n- 部署运维：Docker容器化 + 云服务部署\n\n**开发工具链**：\n- 版本控制：Git + GitHub/GitLab\n- 自动化：CI/CD流水线、自动测试、代码检查\n- 监控运维：日志收集、性能监控、告警系统',
+        priority: 6,
+        expectedGain: 18
       },
       {
         trigger: '缺少架构设计',
@@ -135,19 +184,33 @@ export class InputOptimizer {
     ]
   };
 
-  // 用户导向优化策略
+  // 用户导向优化策略 - MCP比赛特别优化版
   private static readonly USER_STRATEGY: OptimizationStrategy = {
     name: '用户导向优化',
     focus: 'user',
-    description: '突出用户体验、使用场景、价值主张等用户相关内容',
-    expectedGain: 25,
+    description: '突出MCP工具的用户体验、实际应用价值和Claude集成优势',
+    expectedGain: 30,
     templates: [
+      {
+        trigger: 'MCP工具用户体验优化',
+        pattern: /mcp.*工具|claude.*工具|ai.*助手/i,
+        improvement: '\n\n**Claude用户体验设计**：\n- 无缝集成：与Claude Desktop原生集成，零学习成本\n- 智能触发：基于用户输入自动识别调用时机\n- 即时反馈：毫秒级响应，实时质量评估\n- 渐进增强：从简单查询到深度分析的渐进式体验\n\n**实际使用价值**：\n- 提升AI对话质量30%以上\n- 减少无效提问和重复修改\n- 智能建议帮助用户表达更准确\n- 专业分析报告提供决策支持',
+        priority: 10,
+        expectedGain: 25
+      },
       {
         trigger: '缺少目标用户定义',
         pattern: /^(?!.*(?:目标用户|用户群体|客户|使用者)).*/i,
-        improvement: '\n\n**目标用户**：\n- 主要用户：25-45岁职场人士\n- 使用场景：日常工作、学习提升\n- 用户特征：追求效率、重视体验\n- 用户规模：预计覆盖10万+活跃用户',
-        priority: 10,
+        improvement: '\n\n**目标用户群体**：\n- 核心用户：AI应用开发者、技术咨询师\n- 扩展用户：产品经理、创业者、学生\n- 使用场景：项目规划、需求分析、技术选型\n- 用户特征：追求高效、重视专业建议\n- 用户规模：预计覆盖5万+Claude活跃用户',
+        priority: 9,
         expectedGain: 18
+      },
+      {
+        trigger: '缺少Claude集成优势',
+        pattern: /^(?!.*(?:claude|anthropic|集成|mcp|协议)).*/i,
+        improvement: '\n\n**Claude生态集成优势**：\n- 原生体验：无需切换应用，工作流程不中断\n- 数据同步：与Claude对话历史无缝衔接\n- 智能协同：Claude理解上下文，提供更精准建议\n- 生态兼容：符合Anthropic MCP标准，未来扩展性强',
+        priority: 9,
+        expectedGain: 20
       },
       {
         trigger: '缺少用户体验设计',
@@ -322,15 +385,15 @@ export class InputOptimizer {
     switch (focus) {
       case 'technical':
         // 如果技术关键词密度已经很高，可能不需要添加更多技术内容
-        return features.keywordDensity.technical < 5;
+        return features.domainSpecificity < 50;
       
       case 'business':
         // 如果商业关键词密度已经很高，可能不需要添加更多商业内容
-        return features.keywordDensity.business < 4;
+        return features.businessViability < 50;
       
       case 'user':
-        // 如果用户关键词密度已经很高，可能不需要添加更多用户内容
-        return features.keywordDensity.user < 4;
+        // 如果用户相关特征已经很强，可能不需要添加更多用户内容
+        return features.competitiveAdvantage < 60; // 使用竞争优势作为用户导向的代理指标
       
       default:
         return true;
